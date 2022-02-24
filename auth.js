@@ -8,7 +8,7 @@ loginForm.addEventListener('submit', (e) => {
   const password = loginForm['login-password'].value;
   //console.log(email);
   console.log(password);
-  if (email == "jr@zz.com") {
+  if ((email == "jrjeep@gmail.com") && (password == "12345678")) {
     console.log(email);
     window.open("index2.html");
    }
