@@ -11,6 +11,8 @@ loginForm.addEventListener('submit', (e) => {
   if ((email == "jrjeep@gmail.com") && (password == "12345678")) {
     console.log(email);
     window.open("index2.html");
+   } else {
+     window.open("error.html");
    }
   // log the user in
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
