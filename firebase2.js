@@ -23,7 +23,7 @@
   //  dbBigTextEvaluationStudentsRef.on('value', snap => bigTextEvaluationStudents.innerText = snap.val());
   
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Questionarios').orderByChild('numPergunta').endAt('02');
+    const dbEvaluationStudentsRef = firebase.database().ref('Questionarios').orderByChild('numPergunta').endAt('04');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -69,10 +69,10 @@
                   cell.innerHTML = students[i][j];
                   //cell.innerHTML = j;
                   
-                  if ((students[i][j] == '01')){ 
+                  if ((students[i][j] == '03')){ 
                       x = 1  ;
                   } 
-                  //if ((students[i][j] == '01') ){ 
+                  //if ((students[i][j] == '03') ){ 
   
                   if ((students[i][j] == 'Masculino')){ 
                       r0101++;		
@@ -83,7 +83,7 @@
                   //x = 0 ;
   
   
-                  if ((students[i][j] == '02')){ 
+                  if ((students[i][j] == '04')){ 
                       x = 1  ;
                   } 
   
