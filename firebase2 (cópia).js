@@ -37,10 +37,15 @@
   //      console.log(students);
             var outputArray00 = [
                 ['Grade', 'Formulários'],
-                ['pesquisador01', 0],
-                ['pesquisador02', 0],
+                ['pesquisador03', 0],
+                ['pesquisador00', 0],
                 ['pesquisador03', 0],
                 ['pesquisador04', 0]
+            ];
+            var outputArray03 = [
+                ['Grade', 'Votos'],
+                ['Masculino', 0],
+                ['Feminino', 0]
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
@@ -65,42 +70,19 @@
 
             ];
   
-            var outputArray03 = [
-                ['Grade', 'Sexo'],
-                ['Masculino', 0],
-                ['Feminino', 0]
-            ];
-
   //pesquisador            
   var r0001 =0;
   var r0002 =0;
   var r0003 =0;
   var r0004 =0;
 
-  //bairro
-  var r0101 =0;
-  var r0102 =0;
-  var r0103 =0;
-  var r0104 =0;
-  var r0105 =0;
-  var r0106 =0;
-  var r0107 =0;
-  var r0108 =0;
-  var r0109 =0;
-  var r0110 =0;
-  var r0111 =0;
-  var r0112 =0;
-  var r0113 =0;
-  var r0114 =0;
-  var r0115 =0;
-  var r0116 =0;
-  var r0117 =0;
-  var r0118 =0;
-
   //sexo
   var r0301 =0;
   var r0302 =0;
 
+  //bairro
+  var r0101 =0;
+  var r0102 =0;
 
      var x = 0;
      var pesquisador = "";
@@ -112,16 +94,30 @@
                   cell = row.insertCell(-1);
                   cell.innerHTML = students[i][j];
                   //cell.innerHTML = j;
-
-		  //pesquisador  
-                  if ((students[i][j] == '00')){ 
+                  
+                  if ((students[i][j] == '03')){ 
                       x = 1  ;
                   } 
+                  //if ((students[i][j] == '03') ){ 
   
-                  if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador01')){ 
+                  if ((students[i][j] == 'Masculino')){ 
+                      r0301++;		
+                      x = 0;
+                  } else if ((x==1) && (students[i][j] == 'Feminino')) { 
+                      x = 0;
+                      r0302++;				}
+                  //x = 0 ;
+  
+  
+                  if ((students[i][j] == '00')){ 
+                      x = 1  ;
+                      //pesquisador = ;
+                  } 
+  
+                  if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       r0001++;		
                       x = 0;
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador02')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador00')){ 
                       x = 0;
                       r0002++;			    				
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
@@ -137,85 +133,6 @@
                       x = 0;
                       r0006++;
                   }
-
-
-		  //bairro               
-                  if ((students[i][j] == '01')){ 
-                      x = 1  ;
-                  } 
-                  //if ((students[i][j] == '03') ){ 
-  
-                  if ((x==1) && (students[i][j] == '7 - CONDOMÍNIOS - MONDRIAN / PORTAL DA MATA / CARPE DIEM')){ 
-                      r0101++;		
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '5 - AQUARELA BRASIL / NOSSA SENHORA APARECIDA / JARDIM ITALIA / RESIDENCIAL FLORENÇA / AQUARELA DAS ARTES')) { 
-                      r0102++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '8 - DAURY RIVA / JARDIM VENEZA / JARDIM CALIFÓRNIA')) { 
-                      r0103++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '5 - SÃO PAULO I, II / MARIA VINDILINA I, II / RECANTO DOS PÁSSAROS')) { 
-                      r0104++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '10 - JARDIM BOA ESPERANÇA / JARDIM NOVO ESTADO / JARDIM DOS IPÊS')) { 
-                      r0105++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '5 - JARDIM EUROPA / RESIDENCIAL DELTA / RESIDENCIAL VITÓRIA RÉGIA')) { 
-                      r0106++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '11 - JARDIM DAS PALMEIRAS / JARDIM IMPERIAL')) { 
-                      r0107++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '15 - JARDIM JEQUITIBAS / JARDIM OLIVEIRAS / JARDIM AZALEIAS / JARDIM VIOLETAS')) { 
-                      r0108++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '4 - LOTEAMENTO FLORAIS DA AMAZÔNIA / RESIDENCIAL GENTE FELIZ I, II / JARDIM SAFIRA')) { 
-                      r0109++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '11 - JARIDM PRIMAVERAS / PARQUE DAS ARARAS / JARDIM DAS ORQUÍDEAS / RESIDENCIAL CANADA')) { 
-                      r0110++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '8 - RESIDENCIAL NORTE / SETOR COMERCIAL PARTE NORTE (AO NORTE DA JULIO CAMPOS)')) { 
-                      r0111++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '4 - JARDIM PARAÍSO II, III / JARDIM BELO HORIZONTE / RESIDENCIAL BELA SUIÇA')) { 
-                      r0112++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '8 - JARDIM BOTÂNICO / JARDIM PARAÍSO I')) { 
-                      r0113++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '6 - JARDIM SANTA MÔNICA / JARDIM IPIRANGA / RESIDENCIAL MARIPÁ / ADRIANO LEITÃO / JARDIM PAULISTA I, II / JARDIM IBIRAPUERA / PEQUENA LONDRES')) { 
-                      r0114++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '10 - JARDIM JACARANDÁS / HABITAR BRASIL / JARDIM CELESTE / JARDIM ITAÚBAS')) { 
-                      r0115++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '5 - RECANTO DOS BURITIS RESIDENCIAL / RESERVA CELESTE I, II, III / RESIDENCIAL SÃO FRANCISCO / RESIDENCIAL MORIA')) { 
-                      r0116++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '8 - SÃO CRISTOVÃO / MENINO JESUS I, II / IPORÃ / PÉROLA / LISBOA / UMUARAMA I / VILLA ITALIA')) { 
-                      r0117++;				
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == '10 - SEBASTIÃO DE MATOS I, II / UMUARAMA II / VILA MARIANA / VILA LOBOS / VILA SANTANA / VILA JULIANA / VILA AMÉRICA / BOA VISTA')) { 
-                      r0118++;				
-                      x = 0;
-                  }
-
-
-		  //sexo                  
-                  if ((students[i][j] == '03')){ 
-                      x = 1  ;
-                  } 
-                  //if ((students[i][j] == '03') ){ 
-  
-                  if ((x==1) && (students[i][j] == 'Masculino')){ 
-                      r0301++;		
-                      x = 0;
-                  } else if ((x==1) && (students[i][j] == 'Feminino')) { 
-                      r0302++;				
-                      x = 0;
-                  }
-  
           }
           }
   
@@ -256,7 +173,6 @@
   
             drawChart01(outputArray03);
             drawChart02(outputArray00);
-            drawChart03(outputArray01);
   
     });
   
@@ -292,19 +208,5 @@
   
   }
   
-  var drawChart03 = function(withData) {
-          var data = google.visualization.arrayToDataTable(withData);
-  
-  
-          var options = {
-            title: 'Bairro',
-            hAxis: {title: 'Bairro',  titleTextStyle: {color: '#333'}},
-            vAxis: {minValue: 0}
-          };
-  
-          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv03'));
-          chart.draw(data, options);
-  
-  }
   
   
