@@ -21,7 +21,7 @@
   //  dbBigTextEvaluationStudentsRef.on('value', snap => bigTextEvaluationStudents.innerText = snap.val());
   
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Quest_Juara').orderByChild('numPergunta').endAt('04');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Quest_Juara').orderByChild('numPergunta').endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -65,11 +65,28 @@
                 ['Outros', 0]
             ];
 
+            var outputArray04 = [
+                ['Grade', 'Idade'],
+                ['16 a 24', 0],
+                ['25 a 34', 0],
+                ['35 a 44', 0],
+                ['45 a 54', 0],
+                ['55 a 64', 0],
+                ['65 ou mais', 0]
+            ];
   //pesquisador            
   var r0001 =0;
   var r0002 =0;
   var r0003 =0;
   var r0004 =0;
+
+  //idade
+  var r0501 =0;
+  var r0502 =0;
+  var r0503 =0;
+  var r0504 =0;
+  var r0505 =0;
+  var r0506 =0;
 
   //bairro
   var r0301 =0;
@@ -161,6 +178,21 @@
                   } else if (students[i][j] == 'R0499') { 
                       R0499++;				
                   }
+                  
+                  //idade               
+                  if (students[i][j] == 'R0501'){ 
+                      r0501++;		
+                  } else if (students[i][j] == 'R0502') { 
+                      r0502++;				
+                  } else if (students[i][j] == 'R0503') { 
+                      r0503++;				
+                  } else if (students[i][j] == 'R0504') { 
+                      r0504++;				
+                  } else if (students[i][j] == 'R0505') { 
+                      r0505++;				
+                  } else if (students[i][j] == 'R0506') { 
+                      r0506++;				
+                  }
   
           }
           }
@@ -174,6 +206,14 @@
   outputArray03[2][1]=R0402;
   outputArray03[3][1]=R0403;
   outputArray03[4][1]=R0499;
+  //idade
+  outputArray04[1][1]=r0501;
+  outputArray04[2][1]=r0502;
+  outputArray04[3][1]=r0503;
+  outputArray04[4][1]=r0504;
+  outputArray04[5][1]=r0505;
+  outputArray04[6][1]=r0506;
+
   //Bairro
   outputArray01[1][1]=r0301;
   outputArray01[2][1]=r0302;
@@ -198,6 +238,7 @@
             drawChart01(outputArray03);
             drawChart02(outputArray00);
             drawChart03(outputArray01);
+            drawChart04(outputArray04);
   
     });
   
@@ -240,7 +281,8 @@
           var options = {
             title: 'Bairro',
             hAxis: {title: 'Bairro',  titleTextStyle: {color: '#333'}},
-            vAxis: {minValue: 0}
+            vAxis: {minValue: 0},
+            colors: ['#444444', '#c6693e', '#cc8f6e', '#f3b49f', '#f6c7b6']
           };
   
           var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv03'));
@@ -248,4 +290,19 @@
   
   }
   
+    var drawChart04 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+  
+          var options = {
+            title: 'idade',
+            hAxis: {title: 'idade',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0},
+            colors: ['#008000', '#c6693e', '#cc8f6e', '#f3b49f', '#f6c7b6']
+          };
+  
+          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv04'));
+          chart.draw(data, options);
+  
+  }
   
