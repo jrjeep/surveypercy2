@@ -38,7 +38,7 @@
                 ['pesquisador01', 0],
                 ['pesquisador02', 0],
                 ['pesquisador03', 0],
-                ['jr - BASE DE TESTES!', 0]
+                ['pesquisador04', 0]
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
@@ -130,7 +130,7 @@
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
                       r0003++;			    				
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                       r0004++;				
                   }
