@@ -301,7 +301,7 @@
             colors: ['#008000', '#c6693e', '#cc8f6e', '#f3b49f', '#f6c7b6']
           };
   
-          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv04'));
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv04'));
           chart.draw(data, options);
   
   }
