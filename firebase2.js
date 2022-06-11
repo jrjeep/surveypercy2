@@ -130,7 +130,7 @@
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
                       r0003++;			    				
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'pesquisador04')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                       r0004++;				
                   }
