@@ -282,7 +282,7 @@
             title: 'Bairro',
             hAxis: {title: 'Bairro',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0},
-            colors: ['#444444', '#c6693e', '#cc8f6e', '#f3b49f', '#f6c7b6']
+            colors: ['#008000', '#c6693e', '#cc8f6e', '#f3b49f', '#f6c7b6']
           };
   
           var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv03'));
