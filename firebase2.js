@@ -297,8 +297,7 @@
           var options = {
             title: 'idade',
             hAxis: {title: 'idade',  titleTextStyle: {color: '#333'}},
-            vAxis: {minValue: 0},
-            colors: ['#008000', '#4CFF33', '#337DFF', '#33FFE0', '#f6c7b6', '#AF33FF']
+            vAxis: {minValue: 0}
           };
   
           var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv04'));
