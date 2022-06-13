@@ -21,7 +21,7 @@
   //  dbBigTextEvaluationStudentsRef.on('value', snap => bigTextEvaluationStudents.innerText = snap.val());
   
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Juara_Dia02').orderByChild('numPergunta').endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Quest_Tabapora').orderByChild('numPergunta').endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
