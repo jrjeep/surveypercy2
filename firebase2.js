@@ -43,7 +43,7 @@
             var outputArray01 = [
                 ['Grade', 'Bairros'],
                 ['LESTE TABAPORÃ LESTE (LESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
-                ['LESTE TABAPORÃ OESTE (OESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
+                ['OESTE TABAPORÃ OESTE (OESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
                 ['GLEBA MERCEDES - NOVA FRONTEIRA', 0 ],
                 ['NOVA AMERICANA DO NORTE', 0 ],
                 ['Outro', 0 ]
