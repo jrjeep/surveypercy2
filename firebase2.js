@@ -42,18 +42,18 @@
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-                ['PQ ALVORADA I, II / VILA OPERÁRIA / JD. SANTA MARIA / JD PAULISTA', 0 ],
-                ['JD CRUZEIRO DO SUL', 0 ],
-                ['CENTRO NORTE', 0 ],
-                ['CENTRO SUL', 0 ],
-                ['JD PRIMAVERA I, II / JD CONTINENTAL', 0 ],
-                ['JD CALIFORNIA I, II / FLAMBOYANT / JOAO DE BARRO / JD FLORESTA / TOCAIA GRANDE / ELDORADO', 0 ],                
-                ['JD AMÉRICA / SÃO GABRIEL / BANDEIRANTES', 0 ],
-                ['RESIDENCIAL PORTO SEGURO I, II / PORTAL DAS FLORES / VILA BOTELHO', 0 ],
-                ['SÃO JOÃO / ITALIA / STA ANTONIETA / VILA AURORA / LOT GOUVEIA', 0 ],
-                ['ITAPUÃ / BOA VISTA / PANORAMA / UBIRAJARA / COLINAS / SANTA ROSA', 0 ],
-                ['SANTA CRUZ / VITORIA / BELA VISTA / AZOIA / SANTA CLARA', 0 ],
-                ['JD PARANAGUA / KENNEDY / STA HELENA / COOHAB', 0 ]
+                ['TABAPORÃ LESTE (LESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
+                ['TABAPORÃ OESTE (OESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
+                ['GLEBA MERCEDES - NOVA FRONTEIRA', 0 ],
+                ['NOVA AMERICANA DO NORTE', 0 ],
+                ['Outro', 0 ],
+                ['vazio', 0 ],                
+                ['vazio', 0 ],
+                ['vazio', 0 ],
+                ['vazio', 0 ],
+                ['vazio', 0 ],
+                ['vazio', 0 ],
+                ['vazio', 0 ]
 
             ];
   
@@ -100,7 +100,7 @@
   var r0309 =0;
   var r0310 =0;
   var r0311 =0;
-  var r0312 =0;
+  var r0399 =0;
   
 
   //sexo
@@ -164,8 +164,8 @@
                       r0310++;				
                   } else if (students[i][j] == 'R0311') { 
                       r0311++;				
-                  } else if (students[i][j] == 'R0312') { 
-                      r0312++;				
+                  } else if (students[i][j] == 'R0399') { 
+                      r0399++;				
                   }
 
 		  //sexo                    
@@ -219,14 +219,14 @@
   outputArray01[2][1]=r0302;
   outputArray01[3][1]=r0303;
   outputArray01[4][1]=r0304;
-  outputArray01[5][1]=r0305;
-  outputArray01[6][1]=r0306;
-  outputArray01[7][1]=r0307;
-  outputArray01[8][1]=r0308;
-  outputArray01[9][1]=r0309;
-  outputArray01[10][1]=r0310;
-  outputArray01[11][1]=r0311;
-  outputArray01[12][1]=r0312;
+  outputArray01[5][1]=r0399;
+  //outputArray01[6][1]=r0306;
+  //outputArray01[7][1]=r0307;
+  //outputArray01[8][1]=r0308;
+  //outputArray01[9][1]=r0309;
+  //outputArray01[10][1]=r0310;
+  //outputArray01[11][1]=r0311;
+  //outputArray01[12][1]=r0312;
   
      //var total = 0;
      //for(var i in students) {
