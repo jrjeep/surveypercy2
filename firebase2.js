@@ -225,6 +225,15 @@
 			r9905 =0;
 			r9906 =0;
                   }  
+		  // para não contar os que estão escrito teste na primeira questão
+                  if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
+			r9901 =0;
+			r9902 =0;
+			r9903 =0;
+			r9904 =0;
+			r9905 =0;
+			r9906 =0;
+                  } 		
                   
 
 
