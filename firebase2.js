@@ -38,14 +38,16 @@
                 ['pesquisador01', 0],
                 ['pesquisador02', 0],
                 ['pesquisador03', 0],
-                ['pesquisador04', 0]
+                ['pesquisador04', 0],
+                ['pesquisador05', 0],
+                ['pesquisador06', 0]
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-                ['LESTE TABAPORÃ LESTE (LESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
-                ['OESTE TABAPORÃ OESTE (OESTE DA AVENIDA ZÉ PARANÁ)', 0 ],
-                ['GLEBA MERCEDES - NOVA FRONTEIRA', 0 ],
-                ['NOVA AMERICANA DO NORTE', 0 ],
+                ['Bairro01)', 0 ],
+                ['Bairro02', 0 ],
+                ['Bairro03', 0 ],
+                ['Bairro04', 0 ],
                 ['Outro', 0 ]
                 //['vazio', 0 ],                
                 //['vazio', 0 ],
@@ -79,6 +81,8 @@
   var r0002 =0;
   var r0003 =0;
   var r0004 =0;
+  var r0005 =0;
+  var r0006 =0;
 
   //idade
   var r0501 =0;
@@ -138,6 +142,14 @@
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                       r0004++;				
+                  }
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador05')){ 
+                      x = 0;
+                      r0005++;				
+                  }
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
+                      x = 0;
+                      r0006++;				
                   }
 
 
