@@ -213,6 +213,8 @@
   outputArray00[2][1]=r0002;
   outputArray00[3][1]=r0003;
   outputArray00[4][1]=r0004;
+  outputArray00[5][1]=r0005;
+  outputArray00[6][1]=r0006;
   //sexo
   outputArray03[1][1]=R0401;
   outputArray03[2][1]=R0402;
