@@ -7,8 +7,8 @@
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
     };
-  
-        // Draw the pie chart for Sarah's pizza when Charts is loaded.
+
+	// Draw the pie chart for Sarah's pizza when Charts is loaded.
         //google.charts.setOnLoadCallback(drawSarahChart);
   
     firebase.initializeApp(config);
@@ -21,7 +21,7 @@
   //  dbBigTextEvaluationStudentsRef.on('value', snap => bigTextEvaluationStudents.innerText = snap.val());
   
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Sinop_15072022').orderByChild('numPergunta').endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Sinop_15072022').orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -44,18 +44,29 @@
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-                ['Bairro01)', 0 ],
-                ['Bairro02', 0 ],
-                ['Bairro03', 0 ],
-                ['Bairro04', 0 ],
-                ['Outro', 0 ]
-                //['vazio', 0 ],                
-                //['vazio', 0 ],
-                //['vazio', 0 ],
-                //['vazio', 0 ],
-                //['vazio', 0 ],
-                //['vazio', 0 ],
-                //['vazio', 0 ]
+		['CAMPING CLUBE', 0 ],
+		['AQUARELA BRASIL / NOSSA SENHORA APARECIDA / JARDIM ITÁLIA / RESIDENCIAL FLORENÇA', 0 ],
+		['DAURY RIVA / JARDIM VENEZA / JARDIM CALIFÓRNIA', 0 ],
+		['SÃO PAULO I, II / MARIA VINDILINA I, II / RECANTO DOS PÁSSAROS', 0 ],
+		['JARDIM BOA ESPERANÇA / JARDIM NOVO ESTADO / JARDIM DOS IPÊS', 0 ],
+		['JARDIM EUROPA / RESIDENCIAL DELTA / RESIDENCIAL VITÓRIA RÉGIA', 0 ],
+		['JARDIM DAS PALMEIRAS / JARDIM IMPERIAL ', 0 ],
+		['JARDIM JEQUITIBAS / JARDIM OLIVEIRAS / JARDIM AZALEIAS / JARDIM VIOLETAS', 0 ],
+		['LOTEAMENTO FLORAIS DA AMAZÔNIA / RESIDENCIAL GENTE FELIZ I, II / JARDIM SAFIRA ', 0 ],
+		['JARDIM PRIMAVERAS / PARQUE DAS ARARAS / JARDIM DAS ORQUÍDEAS / RESIDENCIAL CANADÁ', 0 ],
+		['RESIDENCIAL NORTE / SETOR COMERCIAL PARTE NORTE (AO NORTE DA JULIO CAMPOS)', 0 ],
+		['JARDIM MARINGÁ I, II / SETOR RESIDENCIAL SUL / SETOR COMERCIAL PARTE SUL', 0 ],
+		['JARDIM PARAÍSO II, III / JARDIM BELO HORIZONTE / RESIDENCIAL BELA SUIÇA', 0 ],
+		['JARDIM BOT NICO / JARDIM PARAÍSO I', 0 ],
+		['JARDIM SANTA MÔNICA / JARDIM IPIRANGA / RESIDENCIAL MARIPÁ / ADRIANO LEITÃO / JARDIM PAULISTA I, II / JARDIM IBIRAPUERA / PEQUENA LONDRES', 0 ],
+		['JARDIM JACARANDÁS / HABITAR BRASIL / JARDIM CELESTE / JARDIM ITAÚBAS', 0 ],
+		['JARDIM TERRA RICA / INDUSTRIAL SUL ', 0 ],
+		['RESIDENCIAL BRASÍLIA / INDUSTRIAL NORTE', 0 ],
+		['RECANTO DOS BURITIS / RESIDENCIAL RESERVA CELESTE I, II, III / RESIDENCIAL SÃO FRANCISCO / RESIDENCIAL MORIA', 0 ],
+		['BOM JARDIM / COMUNIDADE VITÓRIA', 0 ],
+		['SÃO CRISTOVÃO / MENINO JESUS I, II / IPORÃ / PÉROLA / LISBOA / UMUARAMA I / VILLA ITÁLIA', 0 ],
+		['SEBASTIÃO DE MATOS I, II / UMUARAMA II / VILA MARIANA / VILA LOBOS / VILA SANTANA / VILA JULIANA / VILA AMÉRICA / BOA VISTA', 0 ],
+		['ALTO DA GLÓRIA / CIDADE ALTA / JARDIM AMÉRICA / JARDIM VIENA', 0 ]
 
             ];
   
@@ -83,6 +94,13 @@
   var r0004 =0;
   var r0005 =0;
   var r0006 =0;
+    //pesquisador            
+  var r9901 =0;
+  var r9902 =0;
+  var r9903 =0;
+  var r9904 =0;
+  var r9905 =0;
+  var r9906 =0;
 
   //idade
   var r0501 =0;
@@ -104,7 +122,18 @@
   var r0309 =0;
   var r0310 =0;
   var r0311 =0;
-  var r0399 =0;
+  var r0312 =0;
+  var r0313 =0;
+  var r0314 =0;
+  var r0315 =0;
+  var r0316 =0;
+  var r0317 =0;
+  var r0318 =0;
+  var r0319 =0;
+  var r0320 =0;
+  var r0321 =0;
+  var r0322 =0;
+  var r0323 =0;
   
 
   //sexo
@@ -125,32 +154,78 @@
                   cell.innerHTML = students[i][j];
                   //cell.innerHTML = j;
 
-		  //pesquisador  
+		  //pesquisador .. tem que unir com a ultima pergunta pra contar somente formularios completos
                   if ((students[i][j] == '00')){ 
                       x = 1  ;
-                  } 
+                    } 
   
                   if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador01')){ 
-                      r0001++;		
                       x = 0;
+			r9901 =1;
+			r9902 =0;
+			r9903 =0;
+			r9904 =0;
+			r9905 =0;
+			r9906 =0;
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador02')){ 
                       x = 0;
-                      r0002++;			    				
+			r9901 =0;
+			r9902 =1;
+			r9903 =0;
+			r9904 =0;
+			r9905 =0;
+			r9906 =0;
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
-                      r0003++;			    				
+			r9901 =0;
+			r9902 =0;
+			r9903 =1;
+			r9904 =0;
+			r9905 =0;
+			r9906 =0;
+                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
-                      r0004++;				
-                  }
+			r9901 =0;
+			r9902 =0;
+			r9903 =0;
+			r9904 =1;
+			r9905 =0;
+			r9906 =0;
+                                    
+		  //ultima pergunta            
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador05')){ 
                       x = 0;
-                      r0005++;				
-                  }
+			r9901 =0;
+			r9902 =0;
+			r9903 =0;
+			r9904 =0;
+			r9905 =1;
+			r9906 =0;                 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
-                      r0006++;				
-                  }
+			r9901 =0;
+			r9902 =0;
+			r9903 =0;
+			r9904 =0;
+			r9905 =0;
+			r9906 =1;
+                  }                  
+                  if (students[i][j] == 'R3799'){ 
+                      r0001 = r0001 + r9901;		
+                      r0002 = r0002 + r9902;		
+                      r0003 = r0003 + r9903;		
+                      r0004 = r0004 + r9904;		
+                      r0005 = r0005 + r9905;		
+                      r0006 = r0006 + r9906;		
+			r9901 =0;
+			r9902 =0;
+			r9903 =0;
+			r9904 =0;
+			r9905 =0;
+			r9906 =0;
+                  }  
+                  
 
 
 		  //bairro               
@@ -176,8 +251,30 @@
                       r0310++;				
                   } else if (students[i][j] == 'R0311') { 
                       r0311++;				
-                  } else if (students[i][j] == 'R0399') { 
-                      r0399++;				
+                  } else if (students[i][j] == 'R0312') { 
+                      r0312++;				
+                  } else if (students[i][j] == 'R0313') { 
+                      r0313++;				
+                  } else if (students[i][j] == 'R0314') { 
+                      r0314++;				
+                  } else if (students[i][j] == 'R0315') { 
+                      r0315++;				
+                  } else if (students[i][j] == 'R0316') { 
+                      r0316++;				
+                  } else if (students[i][j] == 'R0317') { 
+                      r0317++;				
+                  } else if (students[i][j] == 'R0318') { 
+                      r0318++;				
+                  } else if (students[i][j] == 'R0319') { 
+                      r0319++;				
+                  } else if (students[i][j] == 'R0320') { 
+                      r0320++;				
+                  } else if (students[i][j] == 'R0321') { 
+                      r0321++;				
+                  } else if (students[i][j] == 'R0322') { 
+                      r0322++;				
+                  } else if (students[i][j] == 'R0323') { 
+                      r0323++;				
                   }
 
 		  //sexo                    
@@ -233,14 +330,25 @@
   outputArray01[2][1]=r0302;
   outputArray01[3][1]=r0303;
   outputArray01[4][1]=r0304;
-  outputArray01[5][1]=r0399;
-  //outputArray01[6][1]=r0306;
-  //outputArray01[7][1]=r0307;
-  //outputArray01[8][1]=r0308;
-  //outputArray01[9][1]=r0309;
-  //outputArray01[10][1]=r0310;
-  //outputArray01[11][1]=r0311;
-  //outputArray01[12][1]=r0312;
+  outputArray01[5][1]=r0305;
+  outputArray01[6][1]=r0306;
+  outputArray01[7][1]=r0307;
+  outputArray01[8][1]=r0308;
+  outputArray01[9][1]=r0309;
+  outputArray01[10][1]=r0310;
+  outputArray01[11][1]=r0311;
+  outputArray01[12][1]=r0312;
+  outputArray01[13][1]=r0313;
+  outputArray01[14][1]=r0314;
+  outputArray01[15][1]=r0315;
+  outputArray01[16][1]=r0316;
+  outputArray01[17][1]=r0317;
+  outputArray01[18][1]=r0318;
+  outputArray01[19][1]=r0319;
+  outputArray01[20][1]=r0320;
+  outputArray01[21][1]=r0321;
+  outputArray01[22][1]=r0322;
+  outputArray01[23][1]=r0323;
   
      //var total = 0;
      //for(var i in students) {
@@ -288,7 +396,7 @@
   
   }
   
-  var drawChart03 = function(withData) {
+ var drawChart03 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
   
   
@@ -318,4 +426,3 @@
           chart.draw(data, options);
   
   }
-  
