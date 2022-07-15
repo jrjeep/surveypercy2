@@ -143,7 +143,7 @@
   var R0499 =0;
 
 
-     var x = 0;
+     var x = 0, teste=0;
      var pesquisador = "";
      for(var i in students) {
         var row = table.insertRow(-1);
@@ -157,6 +157,7 @@
 		  //pesquisador .. tem que unir com a ultima pergunta pra contar somente formularios completos
                   if ((students[i][j] == '00')){ 
                       x = 1  ;
+                      teste = 0; // teste falso
                     } 
   
                   if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador01')){ 
@@ -225,7 +226,7 @@
 			r9905 =0;
 			r9906 =0;
                   }  
-		  // para não contar os que estão escrito teste na primeira questão
+                  
                   if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
 			r9901 =0;
 			r9902 =0;
@@ -233,9 +234,10 @@
 			r9904 =0;
 			r9905 =0;
 			r9906 =0;
-                  } 		
+			teste = 1; // teste verdadeiro 
+                  } 
                   
-
+               if (teste == 0) {   
 
 		  //bairro               
                   if (students[i][j] == 'R0301'){ 
@@ -311,6 +313,7 @@
                   } else if (students[i][j] == 'R0506') { 
                       r0506++;				
                   }
+               }   
   
           }
           }
