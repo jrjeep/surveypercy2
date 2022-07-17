@@ -31,7 +31,7 @@
   //var movie = snapshot.val();
   //      console.log(movie);
   
-      var students = snap.val();
+     var students = snap.val();
   //      console.log(students);
             var outputArray00 = [
                 ['Grade', 'Formulários'],
@@ -127,8 +127,8 @@
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
                         var R99 = [0,0,0,1,0,0,0];
-                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
+                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                         var R99 = [0,0,0,0,1,0,0];
 		  //ultima pergunta            
@@ -160,13 +160,13 @@
 			  }
                   	
                   	//idade
-		        var R05 = [0,0,0,0,0,0,0];
+		        R05 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        var R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		        R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
-		        var R04 = [0,0,0,0,0];
+		        R04 = [0,0,0,0,0];
 		        
                       R99 = [0,0,0,0,0,0,0];
                   }  
@@ -180,12 +180,14 @@
 
 		  //bairro               
                   if (students[i][j].slice(0,3) == 'R03'){ 
+                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
                       R03[indice03] = R03[indice03]+1;
                   }
 
 		  //sexo                    
                   if (students[i][j].slice(0,3) == 'R04'){ 
+                  	R04 = [0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       //if indice = 99 {indice = 4}
                       R04[indice] = R04[indice]+1;
@@ -193,6 +195,7 @@
                   
                   //idade               
                   if (students[i][j].slice(0,3) == 'R05'){ 
+                   	R05 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       R05[indice] = R05[indice]+1;
                   }
