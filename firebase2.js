@@ -7,32 +7,20 @@
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
     };
-
-	// Draw the pie chart for Sarah's pizza when Charts is loaded.
-        //google.charts.setOnLoadCallback(drawSarahChart);
-  
     firebase.initializeApp(config);
   
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
-  
-  //  const bigTextEvaluationStudents = document.getElementById('Questionarios');
-  //  const dbBigTextEvaluationStudentsRef = firebase.database().ref().child('Questionarios').orderByChild('numPergunta').startAt('01');
-  //  dbBigTextEvaluationStudentsRef.on('value', snap => bigTextEvaluationStudents.innerText = snap.val());
-  
+    
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Sinop_22072022').orderByChild('numPergunta');//.endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Matupa__170922').orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
               table.removeChild(table.firstChild);
               
         }
-  //var movie = snapshot.val();
-  //      console.log(movie);
-  
-     var students = snap.val();
-  //      console.log(students);
+      var students = snap.val();
             var outputArray00 = [
                 ['Grade', 'Formulários'],
                 ['pesquisador01', 0],
@@ -44,30 +32,11 @@
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-		['CAMPING CLUBE', 0 ],
-		['AQUARELA BRASIL / NOSSA SENHORA APARECIDA / JARDIM ITÁLIA / RESIDENCIAL FLORENÇA', 0 ],
-		['DAURY RIVA / JARDIM VENEZA / JARDIM CALIFÓRNIA', 0 ],
-		['SÃO PAULO I, II / MARIA VINDILINA I, II / RECANTO DOS PÁSSAROS', 0 ],
-		['JARDIM BOA ESPERANÇA / JARDIM NOVO ESTADO / JARDIM DOS IPÊS', 0 ],
-		['JARDIM EUROPA / RESIDENCIAL DELTA / RESIDENCIAL VITÓRIA RÉGIA', 0 ],
-		['JARDIM DAS PALMEIRAS / JARDIM IMPERIAL ', 0 ],
-		['JARDIM JEQUITIBAS / JARDIM OLIVEIRAS / JARDIM AZALEIAS / JARDIM VIOLETAS', 0 ],
-		['LOTEAMENTO FLORAIS DA AMAZÔNIA / RESIDENCIAL GENTE FELIZ I, II / JARDIM SAFIRA ', 0 ],
-		['JARDIM PRIMAVERAS / PARQUE DAS ARARAS / JARDIM DAS ORQUÍDEAS / RESIDENCIAL CANADÁ', 0 ],
-		['RESIDENCIAL NORTE / SETOR COMERCIAL PARTE NORTE (AO NORTE DA JULIO CAMPOS)', 0 ],
-		['JARDIM MARINGÁ I, II / SETOR RESIDENCIAL SUL / SETOR COMERCIAL PARTE SUL', 0 ],
-		['JARDIM PARAÍSO II, III / JARDIM BELO HORIZONTE / RESIDENCIAL BELA SUIÇA', 0 ],
-		['JARDIM BOT NICO / JARDIM PARAÍSO I', 0 ],
-		['JARDIM SANTA MÔNICA / JARDIM IPIRANGA / RESIDENCIAL MARIPÁ / ADRIANO LEITÃO / JARDIM PAULISTA I, II / JARDIM IBIRAPUERA / PEQUENA LONDRES', 0 ],
-		['JARDIM JACARANDÁS / HABITAR BRASIL / JARDIM CELESTE / JARDIM ITAÚBAS', 0 ],
-		['JARDIM TERRA RICA / INDUSTRIAL SUL ', 0 ],
-		['RESIDENCIAL BRASÍLIA / INDUSTRIAL NORTE', 0 ],
-		['RECANTO DOS BURITIS / RESIDENCIAL RESERVA CELESTE I, II, III / RESIDENCIAL SÃO FRANCISCO / RESIDENCIAL MORIA', 0 ],
-		['BOM JARDIM / COMUNIDADE VITÓRIA', 0 ],
-		['SÃO CRISTOVÃO / MENINO JESUS I, II / IPORÃ / PÉROLA / LISBOA / UMUARAMA I / VILLA ITÁLIA', 0 ],
-		['SEBASTIÃO DE MATOS I, II / UMUARAMA II / VILA MARIANA / VILA LOBOS / VILA SANTANA / VILA JULIANA / VILA AMÉRICA / BOA VISTA', 0 ],
-		['ALTO DA GLÓRIA / CIDADE ALTA / JARDIM AMÉRICA / JARDIM VIENA', 0 ]
-
+		['LINHA 03 UNIÃO-PADOVANI', 0 ],
+		['ZH2-002 / ZC2-001 ALTO DOS LAGOS / ZH2-004 CIDADE ALTA', 0 ],
+		['ZH2-001 / ZH2-003 UNIÃO', 0 ],
+		['ZC1-001 ZONA CENTRAL / ZC1-002 ZONA CENTRAL / ZC1-003 ZONA CENTRAL / ZH1-001 / ZG-001 / ZG-002 / ZR-001 - ZONA REGIONAL / ZH1-003', 0 ],
+		['ZC1-004 ZONA CENTRAL / ZC1-005 ZONA CENTRAL / ZI 002 SETOR INDUSTRIAL / ZI-003 - ZONA INDUSTRIAL / ZI-006', 0 ],
             ];
   
             var outputArray03 = [
@@ -84,8 +53,7 @@
                 ['25 a 34', 0],
                 ['35 a 44', 0],
                 ['45 a 59', 0],
-                ['60 acima', 0],
-                ['65 ou mais', 0]
+                ['60 acima', 0]
             ];
   //pesquisador 
   var R00 = [0,0,0,0,0,0,0]           
@@ -127,8 +95,8 @@
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
                         var R99 = [0,0,0,1,0,0,0];
-                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
+                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                         var R99 = [0,0,0,0,1,0,0];
 		  //ultima pergunta            
