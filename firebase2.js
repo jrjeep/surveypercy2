@@ -95,8 +95,8 @@
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
                         var R99 = [0,0,0,1,0,0,0];
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
-                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
+                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                         var R99 = [0,0,0,0,1,0,0];
 		  //ultima pergunta            
@@ -113,17 +113,17 @@
                   	}
                   	
                   	  //sexo
-			  for (let i = 1; i < R04.length; i++)  {
+			  for (let i = 1; i < R04.length-1; i++)  {
 			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
 			  }  
 
 			  //idade
-			  for (let i = 1; i < R05.length; i++)  {
+			  for (let i = 1; i < R05.length-1; i++)  {
 			  	outputArray04[i][1]=outputArray04[i][1]+R05[i];
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R03.length; i++)  {
+			  for (let i = 1; i < R03.length-20; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
 			  }
                   	
