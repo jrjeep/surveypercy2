@@ -113,7 +113,7 @@
                   	}
                   	
                   	  //sexo
-			  for (let i = 1; i < R04.length-1; i++)  {
+			  for (let i = 1; i < R04.length; i++)  {
 			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
 			  }  
 
@@ -123,7 +123,7 @@
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R03.length-20; i++)  {
+			  for (let i = 1; i < R03.length-18; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
 			  }
                   	
