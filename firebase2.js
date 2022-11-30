@@ -138,7 +138,7 @@
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R02.length-18; i++)  {
+			  for (let i = 1; i < R02.length-4; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R02[i];
 			  }
                   	
