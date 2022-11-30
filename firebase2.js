@@ -13,7 +13,7 @@
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Matupa__170922').orderByChild('numPergunta');//.endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Sinop_Mercado_2022_2').orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -32,11 +32,26 @@
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-		['LINHA 03 UNIÃO-PADOVANI', 0 ],
-		['ZH2-002 / ZC2-001 ALTO DOS LAGOS / ZH2-004 CIDADE ALTA', 0 ],
-		['ZH2-001 / ZH2-003 UNIÃO', 0 ],
-		['ZC1-001 ZONA CENTRAL / ZC1-002 ZONA CENTRAL / ZC1-003 ZONA CENTRAL / ZH1-001 / ZG-001 / ZG-002 / ZR-001 - ZONA REGIONAL / ZH1-003', 0 ],
-		['ZC1-004 ZONA CENTRAL / ZC1-005 ZONA CENTRAL / ZI 002 SETOR INDUSTRIAL / ZI-003 - ZONA INDUSTRIAL / ZI-006', 0 ],
+		['CONDOMÍNIOS - MONDRIAN / PORTAL DA MATA / CARPE DIEM', 0 ],
+		['AQUARELA BRASIL / NOSSA SENHORA APARECIDA / JARDIM ITALIA / RESIDENCIAL FLORENÇA / AQUARELA DAS ARTES', 0 ],
+		['DAURY RIVA / JARDIM VENEZA / JARDIM CALIFÓRNIA', 0 ],
+		['SÃO PAULO I, II / MARIA VINDILINA I, II / RECANTO DOS PÁSSAROS', 0 ],
+		['JARDIM BOA ESPERANÇA / JARDIM NOVO ESTADO / JARDIM DOS IPÊS', 0 ],
+		["JARDIM EUROPA / RESIDENCIAL DELTA / RESIDENCIAL VITÓRIA RÉGIA", 0 ],
+		["JARDIM DAS PALMEIRAS / JARDIM IMPERIAL", 0 ],
+		["JARDIM JEQUITIBAS / JARDIM OLIVEIRAS / JARDIM AZALEIAS / JARDIM VIOLETAS", 0 ],
+		["LOTEAMENTO FLORAIS DA AMAZÔNIA / RESIDENCIAL GENTE FELIZ I, II / JARDIM SAFIRA", 0 ],
+		["JARIDM PRIMAVERAS / PARQUE DAS ARARAS / JARDIM DAS ORQUÍDEAS / RESIDENCIAL CANADA", 0 ],
+		["RESIDENCIAL NORTE / SETOR COMERCIAL PARTE NORTE (AO NORTE DA JULIO CAMPOS)", 0 ],
+		["JARDIM PARAÍSO II, III / JARDIM BELO HORIZONTE / RESIDENCIAL BELA SUIÇA", 0 ],
+		["JARDIM BOTÂNICO / JARDIM PARAÍSO I", 0 ],
+		["JARDIM SANTA MÔNICA / JARDIM IPIRANGA / RESIDENCIAL MARIPÁ / ADRIANO LEITÃO / JARDIM PAULISTA I, II / JARDIM IBIRAPUERA / PEQUENA LONDRES", 0 ],
+		["JARDIM JACARANDÁS / HABITAR BRASIL / JARDIM CELESTE / JARDIM ITAÚBAS", 0 ],
+		["RECANTO DOS BURITIS RESIDENCIAL / RESERVA CELESTE I, II, III / RESIDENCIAL SÃO FRANCISCO / RESIDENCIAL MORIA", 0 ],
+		["SÃO CRISTOVÃO / MENINO JESUS I, II / IPORÃ / PÉROLA / LISBOA / UMUARAMA I / VILLA ITALIA", 0 ],
+		["JARDIM MARINGÁ I, II / SETOR RESIDENCIAL SUL  / SETOR COMERCIAL PARTE SUL", 0 ],
+		["SEBASTIÃO DE MATOS I, II / UMUARAMA II / VILA MARIANA / VILA LOBOS / VILA SANTANA / VILA JULIANA / VILA AMÉRICA / BOA VISTA", 0 ],
+
             ];
   
             var outputArray03 = [
@@ -61,13 +76,13 @@
   var R99 = [0,0,0,0,0,0,0];
 
   //idade
-  var R05 = [0,0,0,0,0,0,0];
+  var R04 = [0,0,0,0,0,0,0];
 
   //bairro
-  var R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R02 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   //sexo
-  var R04 = [0,0,0,0,0];
+  var R03 = [0,0,0,0,0];
 
      var x = 0, teste=0;
      var pesquisador = "";
@@ -113,28 +128,28 @@
                   	}
                   	
                   	  //sexo
-			  for (let i = 1; i < R04.length; i++)  {
-			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
+			  for (let i = 1; i < R03.length; i++)  {
+			  	outputArray03[i][1]=outputArray03[i][1]+R03[i];
 			  }  
 
 			  //idade
-			  for (let i = 1; i < R05.length-1; i++)  {
-			  	outputArray04[i][1]=outputArray04[i][1]+R05[i];
+			  for (let i = 1; i < R04.length-1; i++)  {
+			  	outputArray04[i][1]=outputArray04[i][1]+R04[i];
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R03.length-18; i++)  {
-			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
+			  for (let i = 1; i < R02.length-18; i++)  {
+			  	outputArray01[i][1]=outputArray01[i][1]+R02[i];
 			  }
                   	
                   	//idade
-		        R05 = [0,0,0,0,0,0,0];
+		        R04 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		        R02 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
-		        R04 = [0,0,0,0,0];
+		        R03 = [0,0,0,0,0];
 		        
                       R99 = [0,0,0,0,0,0,0];
                   }  
@@ -147,25 +162,25 @@
                if (teste == 0) {   
 
 		  //bairro               
-                  if (students[i][j].slice(0,3) == 'R03'){ 
-                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R02'){ 
+                  	R02 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
-                      R03[indice03] = R03[indice03]+1;
+                      R02[indice03] = R02[indice03]+1;
                   }
 
 		  //sexo                    
-                  if (students[i][j].slice(0,3) == 'R04'){ 
-                  	R04 = [0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R03'){ 
+                  	R03 = [0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       //if indice = 99 {indice = 4}
-                      R04[indice] = R04[indice]+1;
+                      R03[indice] = R03[indice]+1;
                   }
                   
                   //idade               
-                  if (students[i][j].slice(0,3) == 'R05'){ 
-                   	R05 = [0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R04'){ 
+                   	R04 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      R05[indice] = R05[indice]+1;
+                      R04[indice] = R04[indice]+1;
                   }
 
                   
@@ -180,18 +195,18 @@
   }
   /* está fazendo acima, para filtrar formularios totalmente preenchidos
   //sexo
-  for (let i = 1; i < R04.length; i++)  {
-  	outputArray03[i][1]=R04[i];
+  for (let i = 1; i < R03.length; i++)  {
+  	outputArray03[i][1]=R03[i];
   }  
 
   //idade
-  for (let i = 1; i < R05.length; i++)  {
-  	outputArray04[i][1]=R05[i];
+  for (let i = 1; i < R04.length; i++)  {
+  	outputArray04[i][1]=R04[i];
   }   
   
   //Bairro
-  for (let i = 1; i < R03.length; i++)  {
-  	outputArray01[i][1]=R03[i];
+  for (let i = 1; i < R02.length; i++)  {
+  	outputArray01[i][1]=R02[i];
   }
   */
 
