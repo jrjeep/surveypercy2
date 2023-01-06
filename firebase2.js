@@ -142,7 +142,7 @@
                         var R99 = [0,0,0,0,0,0,1];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
                   }                  
-                  if (students[i][j] == 'R2799'){ 
+                  if (students[i][j] == 'R3599'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	}
@@ -158,7 +158,9 @@
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R09.length-4	; i++)  {
+			  //for (let i = 1; i < R09.length-4; i++)  {
+			  // *** ATENÇÃO: coloquei 31 pq não estava achando o 99 nesta resposta!!! ALTERAR ******
+			  for (let i = 1; i < 31; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R09[i];
 			  }
                   	
@@ -179,7 +181,8 @@
 		      teste = 1; // teste verdadeiro 
                   } 
                   
-               if (teste == 0) {   
+               //if (teste == 0) {   
+               if (true) {
 
 		  //bairro               
                   if (students[i][j].slice(0,3) == 'R09'){ 
