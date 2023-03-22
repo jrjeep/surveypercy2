@@ -13,7 +13,7 @@
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Guarapari_2022').orderByChild('numPergunta');//.endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Juara__Unif').orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -33,45 +33,19 @@
             var outputArray01 = [
                 ['Grade', 'Bairros'],
 		['CAMPING CLUBE', 0 ],
-		['LOTEAMENTO FLORAIS DA AMAZÔNIA / JARDIM SAFIRA / VILA RICA / JARDIM DO OURO / JARDIM DOS JESUÍTAS / ECO PARK RESIDENCE II / RESIDENCIAL GENTE FELIZ I, II / VILA VERDE', 0 ],
-		['LIC NORTE / JARDIM IPORÃ / RESIDENCIAL BRASÍLIA / INDUSTRIAL NORTE (LESTE BR-163) / DISTRITO COMERCIAL E INDÚSTRIAL', 0 ],
-		['CIDADE JARDIM I E II', 0 ],
-		['JARDIM DUBAI / SÃO LOURENÇO / TERRA RICA I, II / INDUSTRIAL SUL (LESTE BR-163) / JARDIM COPACABANA', 0 ],
-		['RECANTO DOS BURITIS / SÃO FRANCISCO / RESIDENCIAL RESERVA CELESTE I, II, III / RESIDENCIAL MORIÁ / BOM JARDIM / COMUNIDADE VITÓRIA', 0 ],
-		['SÃO CRISTÓVÃO / MENINO JESUS I, II / IPORÃ / PÉROLA / LISBOA / LISBOA 2 / UMUARAMA I / VILLA ITÁLIA', 0 ],
-		['BELA MORADA / JARDIM ATENAS / JARDIM UMUARAMA I / PARQUE TANGARÁ / RESIDENCIAL SANTA CATARINA', 0 ],
-		['SEBASTIÃO DE MATOS I, II / UMUARAMA II e III/ VILA MARIANA / VILA LOBOS / VILA SANTANA / VILA JULIANA / VILA AMÉRICA / BOA VISTA / SABRINA I / SABRINA II / NOVO JARDIM / JARDIM AURORA / ROMA', 0 ],
-		['ALTO DA GLÓRIA / CIDADE ALTA / JARDIM AMÉRICA / JARDIM VIENA / JARDIM ORIENTE / LIC SUL', 0 ],
-		['JARDIM SANTA MÔNICA / JARDIM IPIRANGA / RESIDENCIAL MARIPÁ / ADRIANO LEITÃO / JARDIM PAULISTA I, II / JARDIM IBIRAPUERA / PEQUENA LONDRES / JARAGUÁ', 0 ],
-		['RESIDENCIAL BOUGANVILLE / JARDIM MILÃO I, II / MORUMBI / MONTE CARLO / RESIDENCIAL PIENZA / RESIDENCIAL MONTREAL / TULIPAS', 0 ],
-		['JARDIM ITAÚBAS / JARDIM CURITIBA I, II', 0 ],
-		['JARDIM JACARANDÁS / INDUSTRIAL SUL', 0 ],
-		['HABITAR BRASIL / JARDIM CELESTE', 0 ],
-		['JARDIM BOTÂNICO / JARDIM PARAÍSO', 0 ],
-		['JARDIM BELO HORIZONTE / RESIDENCIAL BELA SUÍÇA / QUINTA DA PAMPULHA', 0 ],
-		['JARDIM DAS NAÇÕES / NOSSA SENHORA APARECIDA', 0 ],
-		['JARDIM MARINGÁ I, II / SETOR RESIDENCIAL SUL / SETOR COMERCIAL PARTE SUL', 0 ],
-		['RESIDENCIAL NORTE / SETOR COMERCIAL PARTE NORTE (AO NORTE DA JULIO CAMPOS) / INDUSTRIAL (OESTE BR-163)', 0 ],
-		['JARDIM DAS PALMEIRAS / JARDIM IMPERIAL', 0 ],
-		['JARDIM JEQUITIBÁS / JARDIM OLIVEIRAS / JARDIM VIOLETAS', 0 ],
-		['JARDIM AZALÉIAS / JARDIM MARIA CAROLINA / JARDIM DOS CRAVOS', 0 ],
-		['JARDIM EUROPA / RESIDENCIAL DELTA / RESIDENCIAL VITÓRIA RÉGIA / JARDIM CONQUISTA', 0 ],
-		['JARDIM BOA ESPERANÇA / JARDIM SANTA RITA / JARDIM NOVO ESTADO / JARDIM DOS IPÊS', 0 ],
-		['CARANDÁ BOSQUE / NOVO HORIZONTE / SÃO PAULO I, II', 0 ],
-		['MARIA VINDILINA I, II, III / RECANTO DOS PÁSSAROS / JARDIM TARUMÃS / JARDIM DAS ACÁCIAS / RESIDENCIAL ARAGUAIA', 0 ],
-		['DAURY RIVA / JARDIM VENEZA / JARDIM CALIFÓRNIA', 0 ],
-		['JARDIM CARIBE / JARDIM DAS ROSAS / KAIABI RESIDENCIAL', 0 ],
-		['JARDIM ITÁLIA I, II, III / BARCELONA I, II / RESIDENCIAL FLORENÇA I, II, III, IV, V / RESIDENCIAL DEVILLE / SANTA CECÍLIA', 0 ],
-		['DE MONET / RECANTO SUIÇO / AQUARELA BRASIL RESIDENCIAL / IPANEMA', 0 ],
-		['RIVIERA SUÍÇA / PORTINARI I, II', 0 ],
-		['RESIDENCIAL MONDRIAN / PORTAL DA MATA / CARPE DIEM RESIDENCIAL / ALAMEDA DAS CORES', 0 ],
-		['RESIDENCIAL PARIS / AQUARELA DAS ARTES', 0 ],
-		['JARDIM PRIMAVERAS / PARQUE DAS ARARAS I, II / JARDIM DAS ORQUÍDEAS / RESIDENCIAL CANADÁ / INDUSTRIAL NORTE', 0 ],
-		['BELVEDERE I, II e III / VILLA TOSCANA / CANARINHO', 0 ],
-		['KAIABI RESIDENCIAL / RECANTO DA MATA', 0 ],
-		['RESIDENCIAL GENTE FELIZ I, II / VILA VERDE', 0 ],
-		['RESIDENCIAL MONTE CARLO / JARDIM PIENZA', 0 ],
-
+		['PQ ALVORADA I, II / VILA OPERÁRIA / JD. SANTA MARIA / JD PAULISTA', 0 ],
+		['JD CRUZEIRO DO SUL', 0 ],
+		['CENTRO NORTE', 0 ],
+		['CENTRO SUL', 0 ],
+		['JD PRIMAVERA I, II / JD CONTINENTAL', 0 ],
+		['JD CALIFORNIA I, II / FLAMBOYANT / JOÃO DE BARRO / JD FLORESTA / TOCAIA GRANDE / ELDORADO', 0 ],
+		['JD AMÉRICA / SÃO GABRIEL / BANDEIRANTES', 0 ],
+		['RESIDENCIAL PORTO SEGURO I, II / PORTAL DAS FLORES / VILA BOTELHO', 0 ],
+		['SÃO JOÃO / ITALIA / STA ANTONIETA / VILA AURORA / LOT GOUVEIA', 0 ],
+		['ITAPUÃ / BOA VISTA / PANORAMA / UBIRAJARA / COLINAS / SANTA ROSA', 0 ],
+		['SANTA CRUZ / VITÓRIA / BELA VISTA / AZOIA / SANTA CLARA', 0 ],
+		['JD PARANAGUÁ / KENNEDY / STA HELENA / COOHAB', 0 ],
+		['PARANORTE', 0 ],
             ];
   
             var outputArray03 = [
@@ -90,20 +64,97 @@
                 ['45 a 59', 0],
                 ['60 acima', 0]
             ];
+            
+            var outputArray09 = [
+                ['Grade', 'Renda'],
+                ['MENOS DE R$ 1.302,00', 0],
+                ['R$ 1.303,00 A R$ 3.906,00 (1 A 3 S.M.)', 0],
+                ['R$ 3.907,00 A R$ 6.510,00 (3 A 5 S.M.)', 0],
+                ['R$ 6.511,00 A R$ 13.020,00 (5 A 10 S.M.)', 0],
+                ['R$ 13.021,00 ACIMA (MAIS DE 10 S.M.)', 0]
+            ];
+            
+            var outputArray07 = [
+                ['Grade', 'Profissão'],
+                ['APOSENTADO(A) OU PENSIONISTA', 0],
+                ['AUTÔNOMO(A) (POR CONTA PRÓPRIA)', 0],
+                ['DO LAR (DONO(A) DE CASA)', 0],
+                ['DESEMPREGADO(A)', 0],
+                ['EMPREGADO(A) COM CARTEIRA ASSINADA', 0],
+                ['EMPREGADO(A) SEM CARTEIRA ASSINADA', 0],
+                ['EMPRESÁRIO(A) (EMPREENDEDOR(A))', 0],
+                ['ESTUDANTE', 0],
+                ['FUNCIONÁRIO(A) PÚBLICO(A)', 0],
+                ['PRODUTOR(A) RURAL (AGRICULTOR(A), PECUARISTA)', 0]
+            ];
+            
+            //instrução
+            var outputArray06 = [
+                ['Grade', 'Instrução'],
+                ['ANALFABETO OU LÊ E ESCREVE', 0],
+                ['1º AO 4º ANO (FUND. I)', 0],
+                ['5º AO 9º ANO (FUND. II)', 0],
+                ['MÉDIO (1º AO 3º ANO DO SEGUNDO GRAU)', 0],
+                ['SUPERIOR (1º SEM. ACIMA)', 0]
+            ];
+            
+            //Religião
+            var outputArray08 = [
+                ['Grade', 'Religião'],
+                ['ATEU', 0],
+                ['CATÓLICO', 0],
+                ['CRÊ EM DEUS, SEM RELIGIÃO', 0],
+                ['EVANGÉLICO', 0],
+                ['ESPÍRITA', 0],
+                ['UMBANDISTA', 0],
+                ['NS/NR', 0]
+            ]; 
+                       
+            //Mídia
+            var outputArray10 = [
+                ['Grade', 'Mídia'],
+                ['Rádio', 0],
+                ['TV', 0],
+                ['Facebook', 0],
+                ['Instagram', 0],
+                ['Whatsapp', 0],
+                ['TikTok', 0],
+                ['Site de Notícias', 0],
+                ['Revista', 0],
+                ['Parentes ou amigos', 0],
+                ['Outro', 0]
+            ];
+            
+                        
   //pesquisador 
   var R00 = [0,0,0,0,0,0,0]           
   //pesquisador ultima resposta            
   var R99 = [0,0,0,0,0,0,0];
 
   //idade
-  var R06 = [0,0,0,0,0,0,0];
+  var R05 = [0,0,0,0,0,0,0];
 
   //bairro
-  var R09 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   //sexo
-  var R05 = [0,0,0,0,0];
+  var R04 = [0,0,0,0,0];
 
+  //renda
+  var R09 = [0,0,0,0,0,0];
+
+  //Profissão
+  var R07 = [0,0,0,0,0,0,0,0,0,0,0];
+
+  //Instrução
+  var R06 = [0,0,0,0,0];
+
+  //Religião
+  var R08 = [0,0,0,0,0,0,0];
+
+  //Mídia
+  var R10 = [0,0,0,0,0,0,0,0,0,0,0];
+    
      var x = 0, teste=0;
      var pesquisador = "";
      for(var i in students) {
@@ -149,35 +200,75 @@
                         var R99 = [0,0,0,0,0,0,1];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
                   }                  
-                  if (students[i][j] == 'R3599'){ 
+                  if (students[i][j] == 'R3299'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	}
                   	
                   	  //sexo
-			  for (let i = 1; i < R05.length; i++)  {
-			  	outputArray03[i][1]=outputArray03[i][1]+R05[i];
+			  for (let i = 1; i < R04.length; i++)  {
+			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
 			  }  
 
 			  //idade
-			  for (let i = 1; i < R06.length-1; i++)  {
-			  	outputArray04[i][1]=outputArray04[i][1]+R06[i];
+			  for (let i = 1; i < R05.length-1; i++)  {
+			  	outputArray04[i][1]=outputArray04[i][1]+R05[i];
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R09.length-4; i++)  {
-			  	outputArray01[i][1]=outputArray01[i][1]+R09[i];
+			  for (let i = 1; i < R03.length; i++)  {
+			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
+			  }
+			  
+			  //Renda
+			  for (let i = 1; i < R09.length; i++)  {
+			  	outputArray09[i][1]=outputArray09[i][1]+R09[i];
+			  }
+
+			  //Profissão
+			  for (let i = 1; i < R07.length; i++)  {
+			  	outputArray07[i][1]=outputArray07[i][1]+R07[i];
+			  }
+
+			  //Instrução
+			  for (let i = 1; i < R06.length; i++)  {
+			  	outputArray06[i][1]=outputArray06[i][1]+R06[i];
 			  }
                   	
+			  //Religião
+			  for (let i = 1; i < R08.length; i++)  {
+			  	outputArray08[i][1]=outputArray08[i][1]+R08[i];
+			  }
+
+			  //Mídia
+			  for (let i = 1; i < R10.length; i++)  {
+			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
+			  }
+
                   	//idade
-		        R06 = [0,0,0,0,0,0,0];
+		        R05 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R09 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		        R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
-		        R05 = [0,0,0,0,0];
+		        R04 = [0,0,0,0,0];
 		        
+		        //Renda
+		        R09 = [0,0,0,0,0,0];
+			  
+			//Profissão
+			R07 = [0,0,0,0,0,0,0,0,0,0,0];
+
+		        //Instrução
+		        R06 = [0,0,0,0,0];
+
+		        //Religião
+		        R06 = [0,0,0,0,0,0,0];
+
+			//Mídia
+			R10 = [0,0,0,0,0,0,0,0,0,0,0];
+			  		        
                       R99 = [0,0,0,0,0,0,0];
                   }  
                   
@@ -190,27 +281,62 @@
                //if (true) {
 
 		  //bairro               
-                  if (students[i][j].slice(0,3) == 'R10'){ 
-                  	R09 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R03'){ 
+                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
-                      R09[indice03] = R09[indice03]+1;
+                      R03[indice03] = R03[indice03]+1;
                   }
 
 		  //sexo                    
-                  if (students[i][j].slice(0,3) == 'R05'){ 
-                  	R05 = [0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R04'){ 
+                  	R04 = [0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       //if indice = 99 {indice = 4}
-                      R05[indice] = R05[indice]+1;
+                      R04[indice] = R04[indice]+1;
                   }
                   
                   //idade               
+                  if (students[i][j].slice(0,3) == 'R05'){ 
+                   	R05 = [0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      R05[indice] = R05[indice]+1;
+                  }
+                  
+                  //Renda               
+                  if (students[i][j].slice(0,3) == 'R09'){ 
+                   	R09 = [0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      R09[indice] = R09[indice]+1;
+                  }
+
+                  //Profissão               
+                  if (students[i][j].slice(0,3) == 'R07'){ 
+                   	R07 = [0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      R07[indice] = R07[indice]+1;
+                  }
+
+                  //Instrução               
                   if (students[i][j].slice(0,3) == 'R06'){ 
-                   	R06 = [0,0,0,0,0,0,0];
+                   	R06 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       R06[indice] = R06[indice]+1;
                   }
 
+                  //Religião               
+                  if (students[i][j].slice(0,3) == 'R08'){ 
+                   	R08 = [0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      R08[indice] = R08[indice]+1;
+                  }
+
+                  //Mídia               
+                  if (students[i][j].slice(0,3) == 'R10'){ 
+                   	R10 = [0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = 10};
+                      R10[indice] = R10[indice]+1;
+                  }
                   
                }   
   
@@ -275,6 +401,11 @@ tableCreate();
             drawChart02(outputArray00);
             drawChart03(outputArray01);
             drawChart04(outputArray04);
+            drawChart06(outputArray06);
+            drawChart07(outputArray07);
+            drawChart08(outputArray08);
+            drawChart09(outputArray09);
+            drawChart10(outputArray10);
   
     });
   
@@ -340,3 +471,75 @@ tableCreate();
           chart.draw(data, options);
   
   }
+  
+    var drawChart09 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+  
+          var options = {
+            title: 'Renda',
+            hAxis: {title: 'Renda',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv09'));
+          chart.draw(data, options);
+  
+  }   
+  
+    var drawChart07 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+  
+          var options = {
+            title: 'Profissão',
+            hAxis: {title: 'Profissão',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv07'));
+          chart.draw(data, options);
+  
+  }   
+  
+    var drawChart06 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData); 
+  
+          var options = {
+            title: 'Instrução',
+            hAxis: {title: 'Instrução',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv06'));
+          chart.draw(data, options);
+  
+  }     
+  
+    var drawChart08 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+          var options = {
+            title: 'Religião',
+            hAxis: {title: 'Religião',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv08'));
+          chart.draw(data, options);
+  
+  } 
+        
+    var drawChart10 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+          var options = {
+            title: 'Mídia',
+            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv10'));
+          chart.draw(data, options);
+  
+  }         
