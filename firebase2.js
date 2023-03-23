@@ -13,7 +13,7 @@
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Juara__Unif').orderByChild('numPergunta');//.endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Juara_Marco_2023').orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
