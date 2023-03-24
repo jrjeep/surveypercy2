@@ -10,7 +10,7 @@
     firebase.initializeApp(config);
     
   
-    // Load Charts and the corechart package.
+     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
@@ -33,7 +33,6 @@
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-		['CAMPING CLUBE', 0 ],
 		['PQ ALVORADA I, II / VILA OPERÁRIA / JD. SANTA MARIA / JD PAULISTA', 0 ],
 		['JD CRUZEIRO DO SUL', 0 ],
 		['CENTRO NORTE', 0 ],
