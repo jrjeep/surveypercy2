@@ -5,9 +5,10 @@
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
-    messagingSenderId: "748138801996"
+
     };
     firebase.initializeApp(config);
+    
   
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
@@ -45,7 +46,7 @@
 		['ITAPUÃ / BOA VISTA / PANORAMA / UBIRAJARA / COLINAS / SANTA ROSA', 0 ],
 		['SANTA CRUZ / VITÓRIA / BELA VISTA / AZOIA / SANTA CLARA', 0 ],
 		['JD PARANAGUÁ / KENNEDY / STA HELENA / COOHAB', 0 ],
-		['PARANORTE', 0 ],
+		['PARANORTE', 0 ]
             ];
   
             var outputArray03 = [
@@ -85,7 +86,8 @@
                 ['EMPRESÁRIO(A) (EMPREENDEDOR(A))', 0],
                 ['ESTUDANTE', 0],
                 ['FUNCIONÁRIO(A) PÚBLICO(A)', 0],
-                ['PRODUTOR(A) RURAL (AGRICULTOR(A), PECUARISTA)', 0]
+                ['PRODUTOR(A) RURAL (AGRICULTOR(A), PECUARISTA)', 0],
+                ['Outro', 0]                
             ];
             
             //instrução
@@ -125,9 +127,9 @@
                 ['Outro', 0]
             ];
             
-                        
+            
   //pesquisador 
-  var R00 = [0,0,0,0,0,0,0]           
+  var R00 = [0,0,0,0,0,0,0];           
   //pesquisador ultima resposta            
   var R99 = [0,0,0,0,0,0,0];
 
@@ -154,7 +156,7 @@
 
   //Mídia
   var R10 = [0,0,0,0,0,0,0,0,0,0,0];
-    
+
      var x = 0, teste=0;
      var pesquisador = "";
      for(var i in students) {
@@ -200,7 +202,7 @@
                         var R99 = [0,0,0,0,0,0,1];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
                   }                  
-                  if (students[i][j] == 'R3299'){ 
+                  if (students[i][j] == 'R3399'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	}
@@ -219,7 +221,7 @@
 			  for (let i = 1; i < R03.length; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
 			  }
-			  
+
 			  //Renda
 			  for (let i = 1; i < R09.length; i++)  {
 			  	outputArray09[i][1]=outputArray09[i][1]+R09[i];
@@ -244,7 +246,7 @@
 			  for (let i = 1; i < R10.length; i++)  {
 			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
 			  }
-
+                  	
                   	//idade
 		        R05 = [0,0,0,0,0,0,0];
 
@@ -253,7 +255,7 @@
 
 		        //sexo
 		        R04 = [0,0,0,0,0];
-		        
+
 		        //Renda
 		        R09 = [0,0,0,0,0,0];
 			  
@@ -264,11 +266,11 @@
 		        R06 = [0,0,0,0,0];
 
 		        //Religião
-		        R06 = [0,0,0,0,0,0,0];
+		        R08 = [0,0,0,0,0,0,0];
 
 			//Mídia
-			R10 = [0,0,0,0,0,0,0,0,0,0,0];
-			  		        
+			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
+			        
                       R99 = [0,0,0,0,0,0,0];
                   }  
                   
@@ -301,7 +303,7 @@
                       var indice = parseInt(students[i][j].slice(3,5))
                       R05[indice] = R05[indice]+1;
                   }
-                  
+
                   //Renda               
                   if (students[i][j].slice(0,3) == 'R09'){ 
                    	R09 = [0,0,0,0,0,0];
@@ -313,6 +315,7 @@
                   if (students[i][j].slice(0,3) == 'R07'){ 
                    	R07 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = 11};
                       R07[indice] = R07[indice]+1;
                   }
 
@@ -320,6 +323,7 @@
                   if (students[i][j].slice(0,3) == 'R06'){ 
                    	R06 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = 11};
                       R06[indice] = R06[indice]+1;
                   }
 
@@ -327,6 +331,7 @@
                   if (students[i][j].slice(0,3) == 'R08'){ 
                    	R08 = [0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = 7};
                       R08[indice] = R08[indice]+1;
                   }
 
@@ -337,6 +342,7 @@
                       if (indice == 99) { indice = 10};
                       R10[indice] = R10[indice]+1;
                   }
+
                   
                }   
   
@@ -397,7 +403,7 @@ tableCreate();
   
       //	}
   
-            drawChart01(outputArray03);
+             drawChart01(outputArray03);
             drawChart02(outputArray00);
             drawChart03(outputArray01);
             drawChart04(outputArray04);
