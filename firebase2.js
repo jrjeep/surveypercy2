@@ -50,8 +50,8 @@
   
             var outputArray03 = [
                 ['Grade', 'Sexo'],
-                ['Femimino', 0],
                 ['Masculino', 0],
+                ['Femimino', 0],
                 ['Nao respondeu', 0],
                 ['Outros', 0]
             ];
