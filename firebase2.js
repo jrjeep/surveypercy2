@@ -1,20 +1,21 @@
 (function() {
     const config = {
+    
     apiKey: "AIzaSyDrQGvVqEEoM8sAtIC6DmKcu9N4dtic28g",
     authDomain: "surveypercy-3914b.firebaseapp.com",
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
-
+    messagingSenderId: "748138801996"
     };
     firebase.initializeApp(config);
     
   
-     // Load Charts and the corechart package.
+    // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Juara_Marco_2023').orderByChild('numPergunta');//.endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Sinop_Midia_Abr_2023').orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -33,19 +34,46 @@
             ];
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-		['PQ ALVORADA I, II / VILA OPERÁRIA / JD. SANTA MARIA / JD PAULISTA', 0 ],
-		['JD CRUZEIRO DO SUL', 0 ],
-		['CENTRO NORTE', 0 ],
-		['CENTRO SUL', 0 ],
-		['JD PRIMAVERA I, II / JD CONTINENTAL', 0 ],
-		['JD CALIFORNIA I, II / FLAMBOYANT / JOÃO DE BARRO / JD FLORESTA / TOCAIA GRANDE / ELDORADO', 0 ],
-		['JD AMÉRICA / SÃO GABRIEL / BANDEIRANTES', 0 ],
-		['RESIDENCIAL PORTO SEGURO I, II / PORTAL DAS FLORES / VILA BOTELHO', 0 ],
-		['SÃO JOÃO / ITALIA / STA ANTONIETA / VILA AURORA / LOT GOUVEIA', 0 ],
-		['ITAPUÃ / BOA VISTA / PANORAMA / UBIRAJARA / COLINAS / SANTA ROSA', 0 ],
-		['SANTA CRUZ / VITÓRIA / BELA VISTA / AZOIA / SANTA CLARA', 0 ],
-		['JD PARANAGUÁ / KENNEDY / STA HELENA / COOHAB', 0 ],
-		['PARANORTE', 0 ]
+                ['ALTO DA GLÓRIA I, II E III / CIDADE ALTA / JD VIENA / JD VILA BELLA / LIC SUL / JD ORIENTE / JD RIO PRETO / JD AMÉRICA', 0 ],
+                ['JD AURORA / SEBASTIÃO DE MATOS I E II / JD UMUARAMA II E III / JD ROMA / BOA VISTA / RESID SABRINA I, II E III / NOVO JD / CHÁC DE LAZER MONALIZA', 0 ],
+                ['VILLA REAL / BELA VILLE / PAINERAS / JD LIBERDADE / JD TROPICAL / BELA MORADA / MENINO JESUS I E II / VILLA ITÁLIA', 0 ],
+                ['COSTA RICA / PORTO RICO / LUXEMBURGO / MÓRIA / PANAMBY I E II / BURITIS / SÃO FRANCISCO / RESERVA CELESTE', 0 ],
+                ['BELVEDERE I E II / COND NICO BARACAT / JD MÁLAGA / VIDA NOVA / COND FLAMBOYANTS / BOM JD / CHÁC VITÓRIA / VILLA TOSCANA I E II / VILA TORINOS / BELVEDERE III / CANARINHO I E III / JAMARI', 0 ],
+                ['JD UMUARAMA / PQ TANGARÁ / JD ATENAS / JD LISBOA I E II / RESID PÉROLA / BAIRRO SÃO CRISTOVÃO / RESID IPIRANGA / RESID MARIPÁ / UIRAPURU / PEQUENA LONDRES / BOURBON RESID / RESID JARAGUÁ / RESID BONNE VIE / RESID SANTA CATARINA / JD SANTA MÔNICA', 0 ],
+                ['CIDADE NOVA / SONHALTO VIDEIRAS / VILLA VORATA / RAVENA / COMUNIDADE NOSSA SENHORA DE FÁTIMA / JD MILÃO I E II / QUATRO ESTAÇÕES BOULEVARD / MORUMBI', 0 ],
+                ['MONTE CARLO / JD SANTA ROSA / RESID PIENZA / RESID MONTREAL PARK / CHÁC DE LAZER SÃO CRISTÓVÃO I E II / JD PAULISTA I E II / JD IBIRAPUERA / RESID ADRIANO LEITÃO / RESID LONDRINA / JD NAPOLES / JD TULIPAS', 0 ],
+                ['JD ITAÚBAS (ZONA 07) / JD CURITIBA I E II / PLATINI URBAN PARK / RESID BOUNGAINVILLE / PQ AMAZONAS', 0 ],
+                ['HABITAR BRASIL / JOÃO PAULO II 1 E 2 / MATO GROSSO I E II / RESID CELESTE / JD CELESTE / JD DOS JACARANDÁS / RESID ALLEGRO', 0 ],
+                ['SETOR IND SUL / DISTRITO IND E COMERCIAL / SETOR IND / SETOR IND NORTE / RESID BRASÍLIA', 0 ],
+                ['JD BOTÂNICO / SETOR RESID SUL', 0 ],
+                ['TERRA RICA I E II / LEBLOM / JD COPACABANA', 0 ],
+                ['SÃO LOURENÇO I E II / JD DUBAI / COND TUIM RESID / VIVENDA DOS IPÊS / CIDADE JARDIM I E II / PORTAL DO SERVIDOR', 0 ],
+                ['RESID GOIABEIRAS / LIC NORTE / VILLA VERDE / COND RESID ECOVILLE / GENTE FELIZ I E II / JD IPORÃ', 0 ],
+                ['SAFIRA / VILA RICA / JD ITAPUÃ / FLORAIS DA AMAZÔNIA / JD TOLEDO / JD DOS JESUÍTAS / JD DO OURO', 0 ],
+                ['CAMPING CLUBE / JD PLANALTO / EIXO NORTE', 0 ],
+                ['SETOR COMERCIAL', 0 ],
+                ['JD PARAÍSO I, II E III / JD MARINGÁ I E II', 0 ],
+                ['BELO HORIZONTE / QUINTA DA PAMPULHA / BELA SUIÇA I, II E III', 0 ],
+                ['SETOR RESID NORTE / JD DAS PRIMAVERAS', 0 ],
+                ['PQ DAS ARARAS I E II / RESID CANADÁ / JD GRAMADO / JD DAS ORQUÍDEAS', 0 ],
+                ['JD DAS NAÇÕES I, II E III / NOSSA SENHORA APARECIDA I E II', 0 ],
+                ['JD IMPERIAL / JD DAS PALMEIRAS', 0 ],
+                ['RESID JEQUITIBÁS / JD DAS VIOLETAS', 0 ],
+                ['JD DAS OLIVEIRAS / JD DAS AZALÉIAS / JD MARIA CAROLINA / JD DOS CRAVOS', 0 ],
+                ['JD DAS ROSAS / KAIABI RESID / PRIVILLEGE RESID / RECANTO DA MATA / FLOR DO CARIBE RESID / JD CARIBE', 0 ],
+                ['JD VENEZA / DAURY RIVA / JD CALIFÓRNIA', 0 ],
+                ['MARIA VINDILINA I, II E III / COMUNIDADE BETEL / RECANTO DOS PÁSSAROS / JD TARUMÃS / JD DAS ACÁCIAS', 0 ],
+                ['RESID IGUATEMI / MOINHO DOS VENTOS / RESID ARAGUAIA / CAMPO VERDE', 0 ],
+                ['JD NOVO HORIZONTE / JD SÃO PAULO I E II / CARANDÁ BOSQUE / JD IPÊ / JD NOVO ESTADO / JD SANTA RITA', 0 ],
+                ['JD BOA ESPERANÇA / JD CONQUISTA', 0 ],
+                ['JD VITÓRIA RÉGIA / RESID DELTA / FIGUEIRAS RESID / JD EUROPA', 0 ],
+                ['LOTEAMENTO VILLAGE / ITÁLIA I, II E III / BARCELONA I E II', 0 ],
+                ['FLORENÇA / LIFE SINOP CLUB RESIDENCE / RESID SANTA CECÍLIA / RESID DEVILLE / ATIVA SAÚDE CENTER / IPANEMA', 0 ],
+                ['JD DE MONET / RECANTO SUIÇO / AQUARELA BRASIL RESID', 0 ],
+                ['COND MONDRIAN / COND PORTAL DA MATA / COND CARPE DIEM', 0 ],
+                ['RESID PARIS / AQUARELA DAS ARTES / ALAMEDA DAS CORES / AQUARELA DOS POEMAS', 0 ],
+                ['RESID PQ DO LAGO / RIVIERA SUÍÇA I E II / PORTINARI / SANTORINI RESIDENCE / SAN MARTINI / BAIRRO EUNICE / BAIRRO EUNICE - SÃO LUCAS', 0 ]
+
             ];
   
             var outputArray03 = [
@@ -85,8 +113,7 @@
                 ['EMPRESÁRIO(A) (EMPREENDEDOR(A))', 0],
                 ['ESTUDANTE', 0],
                 ['FUNCIONÁRIO(A) PÚBLICO(A)', 0],
-                ['PRODUTOR(A) RURAL (AGRICULTOR(A), PECUARISTA)', 0],
-                ['Outro', 0]                
+                ['PRODUTOR(A) RURAL (AGRICULTOR(A), PECUARISTA)', 0]                
             ];
             
             //instrução
@@ -136,7 +163,7 @@
   var R05 = [0,0,0,0,0,0,0];
 
   //bairro
-  var R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   //sexo
   var R04 = [0,0,0,0,0];
@@ -145,7 +172,7 @@
   var R09 = [0,0,0,0,0,0];
 
   //Profissão
-  var R07 = [0,0,0,0,0,0,0,0,0,0,0];
+  var R07 = [0,0,0,0,0,0,0,0,0,0];
 
   //Instrução
   var R06 = [0,0,0,0,0];
@@ -201,7 +228,7 @@
                         var R99 = [0,0,0,0,0,0,1];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
                   }                  
-                  if (students[i][j] == 'R3399'){ 
+                  if (students[i][j] == 'R3199'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	}
@@ -250,7 +277,7 @@
 		        R05 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		        R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
 		        R04 = [0,0,0,0,0];
@@ -259,7 +286,7 @@
 		        R09 = [0,0,0,0,0,0];
 			  
 			//Profissão
-			R07 = [0,0,0,0,0,0,0,0,0,0,0];
+			R07 = [0,0,0,0,0,0,0,0,0,0];
 
 		        //Instrução
 		        R06 = [0,0,0,0,0];
@@ -304,7 +331,7 @@
                   }
 
                   //Renda               
-                  if (students[i][j].slice(0,3) == 'R09'){ 
+                  if (students[i][j].slice(0,3) == 'R10'){ 
                    	R09 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       R09[indice] = R09[indice]+1;
@@ -327,7 +354,7 @@
                   }
 
                   //Religião               
-                  if (students[i][j].slice(0,3) == 'R08'){ 
+                  if (students[i][j].slice(0,3) == 'R09'){ 
                    	R08 = [0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 7};
@@ -335,7 +362,7 @@
                   }
 
                   //Mídia               
-                  if (students[i][j].slice(0,3) == 'R10'){ 
+                  if (students[i][j].slice(0,3) == 'R11'){ 
                    	R10 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 10};
