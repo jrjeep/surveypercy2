@@ -1,3 +1,4 @@
+var pesquisaName = 'Sinop_Midia_Abr_2023';
 (function() {
     const config = {
     
@@ -7,15 +8,26 @@
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
+    /*
+     	// TESTE
+	  apiKey: "AIzaSyDNzPAOYVVQshQAJLxIrPwx67Fi_6FmLNw",
+	  authDomain: "surveypercy-5ae68.firebaseapp.com",
+	  databaseURL: "https://surveypercy-5ae68-default-rtdb.firebaseio.com",
+	  projectId: "surveypercy-5ae68",
+	  storageBucket: "surveypercy-5ae68.appspot.com",
+	  messagingSenderId: "80485888927",
+	  appId: "1:80485888927:web:75c75e2671c1d2d67083aa",
+	  measurementId: "G-0SWDLTTCCK"
+    */
     };
     firebase.initializeApp(config);
     
-  
+//    const pesquisaName = 'Sinop_Midia_Abr_2023';
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
-    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/Sinop_Midia_Abr_2023').orderByChild('numPergunta');//.endAt('05');
+    const dbEvaluationStudentsRef = firebase.database().ref('Formularios/'+pesquisaName).orderByChild('numPergunta');//.endAt('05');
     
     dbEvaluationStudentsRef.on('value', snap => {
       while(table.hasChildNodes()) {
@@ -442,6 +454,29 @@ tableCreate();
     });
   
   }());
+
+let greeting = document.querySelector('.greeting');
+
+                    
+// Get HTML content
+// returns "<p>Hello world!</p>"
+greeting.innerText =  pesquisaName.valueOf() ; //greeting.innerHTML;
+
+// Set HTML content
+// This replaces what was in there already
+//greeting.innerHTML = 'We can add this to the beginning. ' + textfield.value();
+//greeting.innerHTML = '<p>'+pesquisaName+'</p>'; //'We can dynamically change the HTML. We can even include HTML elements like <a href="#">this link</a>.';
+/*
+
+// Add HTML to the end of an element's existing content
+greeting.innerHTML += 'pesquisaName';
+
+// Add HTML to the beginning of an element's existing content
+greeting.innerHTML = 'We can add this to the beginning. ' + elem.innerHTML;
+
+// You can inject entire elements into other ones, too
+greeting.innerHTML += '<p>A new paragraph</p>';
+*/
   
   var drawChart01 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
