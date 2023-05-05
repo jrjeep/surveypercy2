@@ -12,7 +12,6 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
     };
     firebase.initializeApp(config);
     
-//    const pesquisaName = 'Sinop_Midia_Abr_2023';
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
@@ -27,11 +26,18 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
       var students = snap.val();
             var outputArray00 = [
                 ['Pesquisador', 'Formulários'],
-                ['pesquisador01', 0],
-                ['pesquisador02', 0],
-                ['pesquisador03', 0],
-                ['pesquisador04', 0],
-                ['pesquisador05', 0],
+                ['pesq01', 0],
+                ['pesq02', 0],
+                ['pesq03', 0],
+                ['pesq04', 0],
+                ['pesq05', 0],
+                ['pesq06', 0],
+                ['pesq07', 0],
+                ['pesq08', 0],
+                ['pesq09', 0],
+                ['pesq10', 0],
+                ['pesq11', 0],
+                ['pesq12', 0],
                 ['Victor', 0]
             ];
             var outputArray01 = [
@@ -157,7 +163,7 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
             
             
   //pesquisador 
-  var R00 = [0,0,0,0,0,0,0];           
+  var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
   //pesquisador ultima resposta            
   var R99 = [0,0,0,0,0,0,0];
 
@@ -204,30 +210,59 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
   
                   if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador01')){ 
                       x = 0;
-                        var R99 = [0,1,0,0,0,0,0];
+                        var R99 = [0,1,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[1][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador02')){ 
                       x = 0;
-                        var R99 = [0,0,1,0,0,0,0];
+                        var R99 = [0,0,1,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[2][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
-                        var R99 = [0,0,0,1,0,0,0];
+                        var R99 = [0,0,0,1,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[3][1]= students[i][j].slice(0, 3); 
                   //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,1,0,0];
+                        var R99 = [0,0,0,0,1,0,0,0,0,0,0,0,0,0];
                         outputArray00[4][1]= students[i][j].slice(0, 3); 
 		  //ultima pergunta            
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador05')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,1,0];
+                        var R99 = [0,0,0,0,0,1,0,0,0,0,0,0,0,0];
                         outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,1,0,0,0,0,0,0,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador07')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,1,0,0,0,0,0,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador08')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,1,0,0,0,0,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador09')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,1,0,0,0,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador10')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,1,0,0,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador11')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,1,0,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador12')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,1,0];
+                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-6, students[i][j].length) == 'victor')){ 
                   //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,1];
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
                   }                  
                   if (students[i][j] == 'R3199'){ 
@@ -312,7 +347,7 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
 
 		  //bairro               
                   if (students[i][j].slice(0,3) == 'R03'){ 
-                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
                       R03[indice03] = R03[indice03]+1;
                   }
