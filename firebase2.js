@@ -12,7 +12,7 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
     };
     firebase.initializeApp(config);
     
-    // Load Charts and the corechart package.
+        // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
@@ -165,7 +165,7 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
   //pesquisador 
   var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
   //pesquisador ultima resposta            
-  var R99 = [0,0,0,0,0,0,0];
+  var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
   //idade
   var R05 = [0,0,0,0,0,0,0];
@@ -233,37 +233,37 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,1,0,0,0,0,0,0,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[6][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador07')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,1,0,0,0,0,0,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[7][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador08')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,1,0,0,0,0,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[8][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador09')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,1,0,0,0,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[9][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador10')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,1,0,0,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[10][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador11')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,1,0,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[11][1]= students[i][j].slice(0, 3); 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador12')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,1,0];
-                        outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        outputArray00[12][1]= students[i][j].slice(0, 3); 
 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-6, students[i][j].length) == 'victor')){ 
                   //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1];
-                        outputArray00[6][1]= students[i][j].slice(0, 3); 
+                        outputArray00[13][1]= students[i][j].slice(0, 3); 
                   }                  
                   if (students[i][j] == 'R3199'){ 
                   	for(let i=1; i < R00.length; i++) {
@@ -334,11 +334,11 @@ var pesquisaName = 'Sinop_Midia_Abr_2023';
 			//Mídia
 			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
 			        
-                      R99 = [0,0,0,0,0,0,0];
+                      R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                   }  
                   
                   if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
-                      R99 = [0,0,0,0,0,0,0];
+                      R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		      teste = 1; // teste verdadeiro 
                   } 
                   
