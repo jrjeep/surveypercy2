@@ -339,7 +339,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
                   }
 
                   //Renda               
-                  if (students[i][j].slice(0,3) == 'R10'){ 
+                  if (students[i][j].slice(0,3) == 'R09'){ 
                    	R09 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       R09[indice] = R09[indice]+1;
@@ -362,7 +362,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
                   }
 
                   //Religião               
-                  if (students[i][j].slice(0,3) == 'R09'){ 
+                  if (students[i][j].slice(0,3) == 'R08'){ 
                    	R08 = [0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 7};
@@ -370,7 +370,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
                   }
 
                   //Mídia               
-                  if (students[i][j].slice(0,3) == 'R11'){ 
+                  if (students[i][j].slice(0,3) == 'R10'){ 
                    	R10 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 10};
