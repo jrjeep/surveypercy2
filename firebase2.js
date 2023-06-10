@@ -132,6 +132,52 @@ var pesquisaName = 'Peixoto_Jun_2023';
                 ['Outro', 0]
             ];
             
+//Peixoto jun 23 
+//18 - 09 - intenção de voto estimulada
+            var outputArray18 = [
+                ['Grade', 'intenção'],
+                ['CALEBE BORGES', 0 ],
+                ['PAULINHO DO POSTO', 0 ],
+                ['ZINHA', 0 ],
+                ['SINVALDO', 0 ],
+                ['PAULISTINHA', 0 ],
+                ['GILMAR DO ESPORTE', 0 ],
+                ['DONA LEDA', 0 ],
+                ['BRANCO/NULO', 0 ],
+                ['NS/NR', 0 ]
+            ];
+//22 - 04 - disputa entre kaleb e paulistinha
+            var outputArray22 = [
+                ['Grade', 'intenção'],
+                ['CALEBE BORGES', 0 ],
+                ['PAULISTINHA', 0 ],
+                ['BRANCO/NULO', 0 ],
+                ['NS/NR', 0 ]
+            ];
+//24 - 09 - rejeicao estimulada
+            var outputArray24 = [
+                ['Grade', 'intenção'],
+                ['CALEBE BORGES', 0 ],
+                ['PAULINHO DO POSTO', 0 ],
+                ['ZINHA', 0 ],
+                ['SINVALDO', 0 ],
+                ['PAULISTINHA', 0 ],
+                ['GILMAR DO ESPORTE', 0 ],
+                ['DONA LEDA', 0 ],
+                ['BRANCO/NULO', 0 ],
+                ['NS/NR', 0 ]
+            ];
+//26 - 05 - avaliacao do pref mauricio
+            var outputArray26 = [
+                ['Grade', 'intenção'],
+                ['Otimo', 0 ],
+                ['Bom', 0 ],
+                ['Regular', 0 ],
+                ['Ruim', 0 ],
+                ['Péssimo', 0 ]
+            ];
+
+// fim Peixoto
             
   //pesquisador 
   var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
@@ -161,6 +207,17 @@ var pesquisaName = 'Peixoto_Jun_2023';
 
   //Mídia
   var R10 = [0,0,0,0,0,0,0,0,0,0,0];
+
+//Peixoto jun 23 
+//18 - 09 - intenção de voto estimulada
+  var R18 = [0,0,0,0,0,0,0,0,0];
+//22 - 04 - disputa entre kaleb e paulistinha
+  var R22 = [0,0,0,0];
+//24 - 09 - rejeicao estimulada
+  var R24 = [0,0,0,0,0,0,0,0,0];
+//26 - 05 - avaliacao do pref mauricio
+  var R26 = [0,0,0,0,0];
+// fim Peixoto
 
      var x = 0, teste=0;
      var pesquisador = "";
@@ -280,6 +337,37 @@ var pesquisaName = 'Peixoto_Jun_2023';
 			  for (let i = 1; i < R10.length; i++)  {
 			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
 			  }
+			  
+                  	//Peixoto jun 23 
+                  	//18 - 09 - intenção de voto estimulada
+			  for (let i = 1; i < 9; i++)  {
+			  	outputArray18[i][1]=outputArray18[i][1]+R18[i];
+			  }
+                  	//22 - 04 - disputa entre kaleb e paulistinha
+             		  for (let i = 1; i < 5; i++)  {
+			  	outputArray22[i][1]=outputArray22[i][1]+R22[i];
+			  }
+                  	//24 - 09 - rejeicao estimulada
+             		  for (let i = 1; i < R24.length; i++)  {
+			  	outputArray24[i][1]=outputArray24[i][1]+R24[i];
+			  }
+                  	//26 - 05 - avaliacao do pref mauricio
+             		  for (let i = 1; i < R26.length; i++)  {
+			  	outputArray26[i][1]=outputArray26[i][1]+R26[i];
+			  }
+                  	// fim Peixoto
+
+                  	//Peixoto jun 23 
+                  	//18 - 09 - intenção de voto estimulada
+                  	  var R18 = [0,0,0,0,0,0,0,0,0];
+                  	//22 - 04 - disputa entre kaleb e paulistinha
+                  	  var R22 = [0,0,0,0];
+                  	//24 - 09 - rejeicao estimulada
+                  	  var R24 = [0,0,0,0,0,0,0,0,0];
+                  	//26 - 05 - avaliacao do pref mauricio
+                  	  var R26 = [0,0,0,0,0];
+                  	// fim Peixoto
+                  	
                   	
                   	//idade
 		        R05 = [0,0,0,0,0,0,0];
@@ -376,6 +464,33 @@ var pesquisaName = 'Peixoto_Jun_2023';
                       if (indice == 99) { indice = 10};
                       R10[indice] = R10[indice]+1;
                   }
+                  
+                  	//Peixoto jun 23 
+                  	//18 - 09 - intenção de voto estimulada
+                  if (students[i][j].slice(0,3) == 'R18'){ 
+                  	R018 = [0,0,0,0,0,0,0,0,0];
+                      var indice18 = parseInt(students[i][j].slice(3,5))
+                      R18[indice18] = R18[indice18]+1;
+                  }
+                  	//22 - 04 - disputa entre kaleb e paulistinha
+                  if (students[i][j].slice(0,3) == 'R22'){ 
+                  	R022 = [0,0,0,0];
+                      var indice22 = parseInt(students[i][j].slice(3,5))
+                      R22[indice22] = R22[indice22]+1;
+                  }
+                  	//24 - 09 - rejeicao estimulada
+                  if (students[i][j].slice(0,3) == 'R24'){ 
+                  	R024 = [0,0,0,0,0,0,0,0,0];
+                      var indice24 = parseInt(students[i][j].slice(3,5))
+                      R24[indice24] = R24[indice24]+1;
+                  }
+                  	//26 - 05 - avaliacao do pref mauricio
+                  if (students[i][j].slice(0,3) == 'R26'){ 
+                  	R026 = [0,0,0,0,0];
+                      var indice26 = parseInt(students[i][j].slice(3,5))
+                      R26[indice26] = R26[indice26]+1;
+                  }
+                  	// fim Peixoto
 
                   
                }   
@@ -383,9 +498,9 @@ var pesquisaName = 'Peixoto_Jun_2023';
           }
           }
           
-          function tableCreate() {
+function tableCreate() {
   const body = document.body,
-        tbl = document.createElement('table');
+  tbl = document.createElement('table');
   tbl.style.width = '200px';
   tbl.style.border = '2px solid black';
 
@@ -437,7 +552,7 @@ tableCreate();
   
       //	}
   
-             drawChart01(outputArray03);
+            drawChart01(outputArray03);
             drawChart02(outputArray00);
             drawChart03(outputArray01);
             drawChart04(outputArray04);
@@ -446,6 +561,10 @@ tableCreate();
             drawChart08(outputArray08);
             drawChart09(outputArray09);
             drawChart10(outputArray10);
+            drawChart18(outputArray18);
+            drawChart22(outputArray22);
+            drawChart24(outputArray24);
+            drawChart26(outputArray26);
   
     });
   
@@ -606,3 +725,57 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           chart.draw(data, options);
   
   }         
+
+// Peixoto jun 2023  
+    var drawChart18 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+          var options = {
+            title: 'intenção de voto estimulada',
+            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv18'));
+          chart.draw(data, options);
+  
+  }
+    var drawChart22 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+          var options = {
+            title: 'disputa entre Calebe e Paulistinha',
+            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv22'));
+          chart.draw(data, options);
+  
+  }
+    var drawChart24 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+          var options = {
+            title: 'rejeicao estimulada',
+            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv24'));
+          chart.draw(data, options);
+  
+  }
+    var drawChart26 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+          var options = {
+            title: 'avaliacao do pref',
+            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv26'));
+          chart.draw(data, options);
+  
+  }    
