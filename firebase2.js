@@ -210,13 +210,13 @@ var pesquisaName = 'Peixoto_Jun_2023';
 
 //Peixoto jun 23 
 //18 - 09 - intenção de voto estimulada
-  var R18 = [0,0,0,0,0,0,0,0,0];
+  var R18 = [0,0,0,0,0,0,0,0,0,0];
 //22 - 04 - disputa entre kaleb e paulistinha
-  var R22 = [0,0,0,0];
+  var R22 = [0,0,0,0,0];
 //24 - 09 - rejeicao estimulada
-  var R24 = [0,0,0,0,0,0,0,0,0];
+  var R24 = [0,0,0,0,0,0,0,0,0,0];
 //26 - 05 - avaliacao do pref mauricio
-  var R26 = [0,0,0,0,0];
+  var R26 = [0,0,0,0,0,0];
 // fim Peixoto
 
      var x = 0, teste=0;
@@ -340,11 +340,11 @@ var pesquisaName = 'Peixoto_Jun_2023';
 			  
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
-			  for (let i = 1; i < 9; i++)  {
+			  for (let i = 1; i < R22.length; i++)  {
 			  	outputArray18[i][1]=outputArray18[i][1]+R18[i];
 			  }
                   	//22 - 04 - disputa entre kaleb e paulistinha
-             		  for (let i = 1; i < 5; i++)  {
+             		  for (let i = 1; i < R22.length; i++)  {
 			  	outputArray22[i][1]=outputArray22[i][1]+R22[i];
 			  }
                   	//24 - 09 - rejeicao estimulada
@@ -361,11 +361,11 @@ var pesquisaName = 'Peixoto_Jun_2023';
                   	//18 - 09 - intenção de voto estimulada
                   	  var R18 = [0,0,0,0,0,0,0,0,0];
                   	//22 - 04 - disputa entre kaleb e paulistinha
-                  	  var R22 = [0,0,0,0];
+                  	  var R22 = [0,0,0,0,0];
                   	//24 - 09 - rejeicao estimulada
                   	  var R24 = [0,0,0,0,0,0,0,0,0];
                   	//26 - 05 - avaliacao do pref mauricio
-                  	  var R26 = [0,0,0,0,0];
+                  	  var R26 = [0,0,0,0,0,0];
                   	// fim Peixoto
                   	
                   	
@@ -468,25 +468,25 @@ var pesquisaName = 'Peixoto_Jun_2023';
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
                   if (students[i][j].slice(0,3) == 'R18'){ 
-                  	R018 = [0,0,0,0,0,0,0,0,0];
+                  	R018 = [0,0,0,0,0,0,0,0,0,0];
                       var indice18 = parseInt(students[i][j].slice(3,5))
                       R18[indice18] = R18[indice18]+1;
                   }
                   	//22 - 04 - disputa entre kaleb e paulistinha
                   if (students[i][j].slice(0,3) == 'R22'){ 
-                  	R022 = [0,0,0,0];
+                  	R022 = [0,0,0,0,0,0];
                       var indice22 = parseInt(students[i][j].slice(3,5))
                       R22[indice22] = R22[indice22]+1;
                   }
                   	//24 - 09 - rejeicao estimulada
                   if (students[i][j].slice(0,3) == 'R24'){ 
-                  	R024 = [0,0,0,0,0,0,0,0,0];
+                  	R024 = [0,0,0,0,0,0,0,0,0,0];
                       var indice24 = parseInt(students[i][j].slice(3,5))
                       R24[indice24] = R24[indice24]+1;
                   }
                   	//26 - 05 - avaliacao do pref mauricio
                   if (students[i][j].slice(0,3) == 'R26'){ 
-                  	R026 = [0,0,0,0,0];
+                  	R026 = [0,0,0,0,0,0];
                       var indice26 = parseInt(students[i][j].slice(3,5))
                       R26[indice26] = R26[indice26]+1;
                   }
