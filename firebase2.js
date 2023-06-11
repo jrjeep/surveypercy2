@@ -340,7 +340,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
 			  
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
-			  for (let i = 1; i < R22.length; i++)  {
+			  for (let i = 1; i < R18.length; i++)  {
 			  	outputArray18[i][1]=outputArray18[i][1]+R18[i];
 			  }
                   	//22 - 04 - disputa entre kaleb e paulistinha
@@ -359,11 +359,11 @@ var pesquisaName = 'Peixoto_Jun_2023';
 
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
-                  	  var R18 = [0,0,0,0,0,0,0,0,0];
+                  	  var R18 = [0,0,0,0,0,0,0,0,0,0];
                   	//22 - 04 - disputa entre kaleb e paulistinha
                   	  var R22 = [0,0,0,0,0];
                   	//24 - 09 - rejeicao estimulada
-                  	  var R24 = [0,0,0,0,0,0,0,0,0];
+                  	  var R24 = [0,0,0,0,0,0,0,0,0,0];
                   	//26 - 05 - avaliacao do pref mauricio
                   	  var R26 = [0,0,0,0,0,0];
                   	// fim Peixoto
