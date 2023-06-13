@@ -1,4 +1,4 @@
-var pesquisaName = 'Peixoto_Jun_2023';
+var pesquisaName = 'Matupa_Jun_2023';
 (function() {
     const config = {
     
@@ -70,16 +70,16 @@ var currentDate = year + "/" + month + "/" + day;
 
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-                ['Centro Antigo', 0 ],
-                ['Centro Novo / Alvorada', 0 ],
-                ['Aeroporto', 0 ],
-                ['Mãe de Deus', 0 ],
-                ['Jerusalém', 0 ],
-                ['Liberdade', 0 ],
-                ['Nova Esperança', 0 ],
-                ['Santa Isabel', 0 ],
-                ['Bela Vista', 0 ],
-                ['União do Norte (zona rural)', 0 ]
+                ['LINHA 03 UNIÃO-PADOVANI', 0 ],
+                ['ZH2-002 / ZC2-001 ALTO DOS LAGOS / ZH2-004 CIDADE ALTA', 0 ],
+                ['ZH2-001 / ZH2-003 UNIÃO', 0 ],
+                ['ZC1-001 ZONA CENTRAL / ZC1-002 ZONA CENTRAL / ZC1-003 ZONA CENTRAL / ZH1-001 / ZG-001 / ZG-002 / ZR-001 - ZONA REGIONAL', 0 ],
+                ['ZC1-004 ZONA CENTRAL / ZC1-005 ZONA CENTRAL / ZI 002 SETOR INDUSTRIAL / ZI-003 - ZONA INDUSTRIAL / ZI-006', 0 ]
+                //['Liberdade', 0 ],
+                //['Nova Esperança', 0 ],
+                //['Santa Isabel', 0 ],
+                //['Bela Vista', 0 ],
+                //['União do Norte (zona rural)', 0 ]
 
             ];
   
@@ -586,7 +586,7 @@ function tableCreate() {
   tbl.style.width = '200px';
   tbl.style.border = '2px solid black';
 
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 14; i++) {
     const tr = tbl.insertRow();
     for (let j = 0; j < 2; j++) {
       //if (i === 2 && j === 1) {
@@ -699,7 +699,9 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var options = {
             title: 'Pesquisadores Hoje',
             hAxis: {title: 'Pesquisadores',  titleTextStyle: {color: '#333'}},
-            vAxis: {minValue: 0}
+            vAxis: {minValue: 0},
+            colors: ['#004040']
+
           };
   
           var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv98'));
