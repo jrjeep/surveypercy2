@@ -23,6 +23,16 @@ var pesquisaName = 'Peixoto_Jun_2023';
               table.removeChild(table.firstChild);
               
         }
+
+const date = new Date();
+// Get year, month, and day part from the date
+var year = date.toLocaleString("default", { year: "numeric" });
+var month = date.toLocaleString("default", { month: "2-digit" });
+var day = date.toLocaleString("default", { day: "2-digit" });
+
+// Generate yyyy-mm-dd date string
+var currentDate = year + "/" + month + "/" + day;
+
       var students = snap.val();
             var outputArray00 = [
                 ['Pesquisador', 'Formulários'],
@@ -40,6 +50,24 @@ var pesquisaName = 'Peixoto_Jun_2023';
                 ['pesq12', 0],
                 ['Victor', 0]
             ];
+            // pesquisador Hoje
+            var outputArray98 = [ 
+                ['Pesquisador', 'Formulários'],
+                ['pesq01', 0],
+                ['pesq02', 0],
+                ['pesq03', 0],
+                ['pesq04', 0],
+                ['pesq05', 0],
+                ['pesq06', 0],
+                ['pesq07', 0],
+                ['pesq08', 0],
+                ['pesq09', 0],
+                ['pesq10', 0],
+                ['pesq11', 0],
+                ['pesq12', 0],
+                ['Victor', 0]
+            ];
+
             var outputArray01 = [
                 ['Grade', 'Bairros'],
                 ['Centro Antigo', 0 ],
@@ -183,6 +211,9 @@ var pesquisaName = 'Peixoto_Jun_2023';
   var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
   //pesquisador ultima resposta            
   var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  //pesquisador Hoje            
+  var R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R00H = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
 
   //idade
   var R05 = [0,0,0,0,0,0,0];
@@ -240,62 +271,111 @@ var pesquisaName = 'Peixoto_Jun_2023';
                       x = 0;
                         var R99 = [0,1,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[1][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador02')){ 
                       x = 0;
                         var R99 = [0,0,1,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[2][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
                         var R99 = [0,0,0,1,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[3][1]= students[i][j].slice(0, 3); 
                   //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
                         var R99 = [0,0,0,0,1,0,0,0,0,0,0,0,0,0];
                         outputArray00[4][1]= students[i][j].slice(0, 3); 
 		  //ultima pergunta            
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador05')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,1,0,0,0,0,0,0,0,0];
                         outputArray00[5][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,1,0,0,0,0,0,0,0];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador07')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,1,0,0,0,0,0,0];
                         outputArray00[7][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador08')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,1,0,0,0,0,0];
                         outputArray00[8][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador09')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,1,0,0,0,0];
                         outputArray00[9][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador10')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,1,0,0,0];
                         outputArray00[10][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador11')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,1,0,0];
                         outputArray00[11][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador12')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,1,0];
                         outputArray00[12][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-6, students[i][j].length) == 'victor')){ 
                   //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1];
                         outputArray00[13][1]= students[i][j].slice(0, 3); 
-                  }                  
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+                  } 
+                  
+                  /*if ((x==1) && (students[i][j].slice(8, 12) == '2023')){ 
+                  	R98 = R99;
+                  } else {
+                  	R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]; 	
+                  }
+                  */
+                  
                   if (students[i][j] == 'R3899'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
+                  	  R00H[i] = R00H[i] + R98[i];
                   	}
                   	
                   	  //sexo
@@ -394,10 +474,12 @@ var pesquisaName = 'Peixoto_Jun_2023';
 			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                   }  
                   
                   if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		      teste = 1; // teste verdadeiro 
                   } 
                   
@@ -527,6 +609,7 @@ tableCreate();
   //outputArray00=R00;
   for (let i = 1; i < R00.length; i++)  {
   	outputArray00[i][1]=R00[i];
+  	outputArray98[i][1]=R00H[i];
   }
   /* está fazendo acima, para filtrar formularios totalmente preenchidos
   //sexo
@@ -565,6 +648,7 @@ tableCreate();
             drawChart22(outputArray22);
             drawChart24(outputArray24);
             drawChart26(outputArray26);
+            drawChart98(outputArray98);
   
     });
   
@@ -607,7 +691,21 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           chart.draw(data, options);
   
   }
+
+  var drawChart98 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
   
+  
+          var options = {
+            title: 'Pesquisadores Hoje',
+            hAxis: {title: 'Pesquisadores',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv98'));
+          chart.draw(data, options);
+  
+  }  
   var drawChart02 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
   
