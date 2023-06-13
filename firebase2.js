@@ -188,7 +188,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
   var R05 = [0,0,0,0,0,0,0];
 
   //bairro
-  var R03 = [0,0,0,0,0,0,0,0,0,0];
+  var R03 = [0,0,0,0,0,0,0,0,0,0,0];
 
   //sexo
   var R04 = [0,0,0,0,0];
@@ -373,7 +373,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
 		        R05 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R03 = [0,0,0,0,0,0,0,0,0,0];
+		        R03 = [0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
 		        R04 = [0,0,0,0,0];
@@ -406,7 +406,7 @@ var pesquisaName = 'Peixoto_Jun_2023';
 
 		  //bairro               
                   if (students[i][j].slice(0,3) == 'R03'){ 
-                  	R03 = [0,0,0,0,0,0,0,0,0,0];
+                  	R03 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
                       R03[indice03] = R03[indice03]+1;
                   }
