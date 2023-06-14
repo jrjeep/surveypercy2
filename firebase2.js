@@ -372,7 +372,7 @@ var currentDate = year + "/" + month + "/" + day;
                   }
                   */
                   
-                  if (students[i][j] == 'R3899'){ 
+                  if (students[i][j] == 'R3299'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	  R00H[i] = R00H[i] + R98[i];
@@ -389,7 +389,7 @@ var currentDate = year + "/" + month + "/" + day;
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < R03.length; i++)  {
+			  for (let i = 1; i < 5; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
 			  }
 
@@ -417,7 +417,8 @@ var currentDate = year + "/" + month + "/" + day;
 			  for (let i = 1; i < R10.length; i++)  {
 			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
 			  }
-			  
+			
+			/*  
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
 			  for (let i = 1; i < R18.length; i++)  {
@@ -436,7 +437,8 @@ var currentDate = year + "/" + month + "/" + day;
 			  	outputArray26[i][1]=outputArray26[i][1]+R26[i];
 			  }
                   	// fim Peixoto
-
+                  	
+                  	
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
                   	  var R18 = [0,0,0,0,0,0,0,0,0,0];
@@ -447,7 +449,7 @@ var currentDate = year + "/" + month + "/" + day;
                   	//26 - 05 - avaliacao do pref mauricio
                   	  var R26 = [0,0,0,0,0,0];
                   	// fim Peixoto
-                  	
+                  	*/
                   	
                   	//idade
 		        R05 = [0,0,0,0,0,0,0];
@@ -586,7 +588,7 @@ function tableCreate() {
   tbl.style.width = '200px';
   tbl.style.border = '2px solid black';
 
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 7; i++) {
     const tr = tbl.insertRow();
     for (let j = 0; j < 2; j++) {
       //if (i === 2 && j === 1) {
