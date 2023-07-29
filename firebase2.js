@@ -1,4 +1,4 @@
-var pesquisaName = 'Matupa_Jun_2023';
+var pesquisaName = 'Tabapora_Jun_2023';
 (function() {
     const config = {
     
@@ -70,11 +70,12 @@ var currentDate = year + "/" + month + "/" + day;
 
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-                ['LINHA 03 UNIÃO-PADOVANI', 0 ],
-                ['ZH2-002 / ZC2-001 ALTO DOS LAGOS / ZH2-004 CIDADE ALTA', 0 ],
-                ['ZH2-001 / ZH2-003 UNIÃO', 0 ],
-                ['ZC1-001 ZONA CENTRAL / ZC1-002 ZONA CENTRAL / ZC1-003 ZONA CENTRAL / ZH1-001 / ZG-001 / ZG-002 / ZR-001 - ZONA REGIONAL', 0 ],
-                ['ZC1-004 ZONA CENTRAL / ZC1-005 ZONA CENTRAL / ZI 002 SETOR INDUSTRIAL / ZI-003 - ZONA INDUSTRIAL / ZI-006', 0 ]
+                ['CAIXA D’ÁGUA / COLÉGIO MILENIUM', 0 ],
+                ['CENTRO', 0 ],
+                ['ASTAB / MORADA DO SOL / SOL NASCENTE', 0 ],
+                ['MENINO JESUS / CASAS DA CAIXA', 0 ],
+                ['AMERICANA', 0 ],
+                ['NOVA FRONTEIRA', 0 ]
                 //['Liberdade', 0 ],
                 //['Nova Esperança', 0 ],
                 //['Santa Isabel', 0 ],
@@ -372,7 +373,7 @@ var currentDate = year + "/" + month + "/" + day;
                   }
                   */
                   
-                  if (students[i][j] == 'R3299'){ 
+                  if (students[i][j] == 'R2799'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	  R00H[i] = R00H[i] + R98[i];
