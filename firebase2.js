@@ -1,4 +1,4 @@
-var pesquisaName = 'Tabapora_Jun_2023';
+var pesquisaName = 'RochaForte_ago_2023';
 (function() {
     const config = {
     
@@ -8,6 +8,7 @@ var pesquisaName = 'Tabapora_Jun_2023';
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
+	    
     };
     firebase.initializeApp(config);
     
@@ -70,12 +71,33 @@ var currentDate = year + "/" + month + "/" + day;
 
             var outputArray01 = [
                 ['Grade', 'Bairros'],
-                ['CAIXA D’ÁGUA / COLÉGIO MILENIUM', 0 ],
-                ['CENTRO', 0 ],
-                ['ASTAB / MORADA DO SOL / SOL NASCENTE', 0 ],
-                ['MENINO JESUS / CASAS DA CAIXA', 0 ],
-                ['AMERICANA', 0 ],
-                ['NOVA FRONTEIRA', 0 ]
+                ['CAMPING CLUBE / LOTEAMENTO FLORAIS DA AMAZÔNIA / JARDIM SAFIRA / VILA RICA / JARDIM DO OURO / JARDIM DOS JESUÍTAS / ECO PARK RESIDENCE II / RESIDENCIAL GENTE FELIZ I, II / VILA VERDE / ITAPUÃ', 0 ],
+                ['LIC NORTE / JARDIM IPORÃ / RESIDENCIAL BRASÍLIA / INDUSTRIAL NORTE (LESTE BR-163) / DISTRITO COMERCIAL E INDÚSTRIAL / CIDADE JARDIM I E II', 0 ],
+                ['JARDIM DUBAI / SÃO LOURENÇO / TERRA RICA I, II / INDUSTRIAL SUL (LESTE BR-163) / JARDIM COPACABANA / VIVENDA DOS IPÊS / PORTO RICO', 0 ],
+                ['RECANTO DOS BURITIS / SÃO FRANCISCO / RESIDENCIAL RESERVA CELESTE I, II, III / RESIDENCIAL MORIÁ / BOM JARDIM / COMUNIDADE VITÓRIA / RESIDENCIAL PANAMBY', 0 ],
+                ['SÃO CRISTÓVÃO / MENINO JESUS I, II / IPORÃ / PÉROLA / LISBOA II, II / UMUARAMA III / VILLA ITÁLIA / CHÁCARAS DE LAZER SÃO CRISTÓVÃO / BONNE VIE', 0 ],
+                ['BELA MORADA / JARDIM ATENAS / JARDIM UMUARAMA I / PARQUE TANGARÁ / RESIDENCIAL SANTA CATARINA', 0 ],
+                ['SEBASTIÃO DE MATOS I, II / UMUARAMA II / VILA MARIANA / VILA LOBOS / VILA SANTANA / VILA JULIANA / VILA AMÉRICA / BOA VISTA / SABRINA I, II / NOVO JARDIM / JARDIM AURORA / ROMA', 0 ],
+                ['ALTO DA GLÓRIA / CIDADE ALTA / JARDIM AMÉRICA / JARDIM VIENA / JARDIM ORIENTE / LIC SUL', 0 ],
+                ['JARDIM SANTA MÔNICA / JARDIM IPIRANGA / RESIDENCIAL MARIPÁ / ADRIANO LEITÃO / JARDIM PAULISTA I, II / JARDIM IBIRAPUERA / PEQUENA LONDRES / JARAGUÁ / BOURBOM RESIDENCIAL / JARDIM NÁPOLES', 0 ],
+                ['RESIDENCIAL BOUGANVILLE / JARDIM MILÃO I, II / PARQUE AMAZONAS / RESIDENCIAL MONTE CARLO / JARDIM PIENZA / RESIDENCIAL MORUMBI / MONTREAL / TULIPAS', 0 ],
+                ['JARDIM ITAÚBAS / JARDIM CURITIBA I, II / JARDIM BELO HORIZONTE / RESIDENCIAL BELA SUÍÇA / QUINTA DA PAMPULHA / SANTA ROSA', 0 ],
+                ['JARDIM JACARANDÁS / INDUSTRIAL SUL OESTE DA BR 163 / HABITAR BRASIL / JARDIM CELESTE / JARDIM BOTÂNICO / JARDIM PARAÍSO I, II E III"}', 0 ],
+                ['JARDIM MARINGÁ I, II / SETOR RESIDENCIAL SUL / SETOR COMERCIAL PARTE SUL', 0 ],
+                ['RESIDENCIAL NORTE / SETOR COMERCIAL PARTE NORTE (AO NORTE DA JULIO CAMPOS) / INDUSTRIAL (OESTE BR-163)', 0 ],
+                ['JARDIM JEQUITIBÁS / JARDIM OLIVEIRAS I, II / JARDIM VIOLETAS / JARDIM DAS PALMEIRAS / JARDIM IMPERIAL', 0 ],
+                ['JARDIM EUROPA / RESIDENCIAL DELTA / RESIDENCIAL VITÓRIA RÉGIA / JARDIM CONQUISTA / JARDIM BOA ESPERANÇA / JARDIM SANTA RITA / JARDIM NOVO ESTADO / JARDIM DOS IPÊS', 0 ],
+                ['CARANDÁ BOSQUE / NOVO HORIZONTE / SÃO PAULO I, II', 0 ],
+                ['MARIA VINDILINA I, II, III / RECANTO DOS PÁSSAROS / JARDIM TARUMÃS / JARDIM DAS ACÁCIAS / JARDIM ARAGUAIA / COMUNIDADE BETEL / CAMPO VERDE', 0 ],
+                ['DAURY RIVA / JARDIM VENEZA / JARDIM CALIFÓRNIA / JARDIM IGUATEMI / JARDIM AZALÉIAS / JARDIM MARIA CAROLINA / JARDIM DOS CRAVOS', 0 ],
+                ['JARDIM CARIBE / JARDIM DAS ROSAS / KAIABI RESIDENCIAL / RECANTO DA MATA / RESIDENCIAL PRIVILLEGE', 0 ],
+                ['JARDIM ITÁLIA I, II, III / BARCELONA I, II / RESIDENCIAL FLORENÇA I, II, III, IV, V / RESIDENCIAL DEVILLE / SANTA CECÍLIA / IPANEMA', 0 ],
+                ['RECANTO SUIÇO / AQUARELA BRASIL RESIDENCIAL / JARDIM DAS NAÇÕES / NOSSA SENHORA APARECIDA / JARDIM DE MONET', 0 ],
+                ['RIVIERA SUÍÇA / PORTINARI I, II / SAN MARTINI', 0 ],
+                ['RESIDENCIAL MONDRIAN / PORTAL DA MATA / CARPE DIEM RESIDENCIAL / ALAMEDA DAS CORES', 0 ],
+                ['RESIDENCIAL PARIS / AQUARELA DAS ARTES', 0 ],
+                ['JARDIM PRIMAVERAS / PARQUE DAS ARARAS I, II / JARDIM DAS ORQUÍDEAS / RESIDENCIAL CANADÁ / INDUSTRIAL NORTE', 0 ],
+                ['BELVEDERE I, II E III / VILLA TOSCANA / CANARINHO', 0 ]
                 //['Liberdade', 0 ],
                 //['Nova Esperança', 0 ],
                 //['Santa Isabel', 0 ],
@@ -217,28 +239,28 @@ var currentDate = year + "/" + month + "/" + day;
   var R00H = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
 
   //idade
-  var R05 = [0,0,0,0,0,0,0];
+  var R06 = [0,0,0,0,0,0,0]; R06
 
   //bairro
-  var R03 = [0,0,0,0,0,0,0,0,0,0,0];
+  var R09 = [0,0,0,0,0,0,0,0,0,0,0]; //R09
 
   //sexo
-  var R04 = [0,0,0,0,0];
+  var R05 = [0,0,0,0,0]; //R05
 
   //renda
-  var R09 = [0,0,0,0,0,0];
+  var R08 = [0,0,0,0,0,0]; //R08
 
   //Profissão
-  var R07 = [0,0,0,0,0,0,0,0,0,0];
+  var R04 = [0,0,0,0,0,0,0,0,0,0]; //R04
 
   //Instrução
-  var R06 = [0,0,0,0,0,0];
+  var R07 = [0,0,0,0,0,0]; //R07
 
   //Religião
-  var R08 = [0,0,0,0,0,0,0,0];
+  var Z08 = [0,0,0,0,0,0,0,0]; //Não usa
 
   //Mídia
-  var R10 = [0,0,0,0,0,0,0,0,0,0,0];
+  var R13 = [0,0,0,0,0,0,0,0,0,0,0]; //R13
 
 //Peixoto jun 23 
 //18 - 09 - intenção de voto estimulada
@@ -380,43 +402,43 @@ var currentDate = year + "/" + month + "/" + day;
                   	}
                   	
                   	  //sexo
-			  for (let i = 1; i < R04.length; i++)  {
-			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
+			  for (let i = 1; i < R05.length; i++)  {
+			  	outputArray03[i][1]=outputArray03[i][1]+R05[i];
 			  }  
 
 			  //idade
-			  for (let i = 1; i < R05.length-1; i++)  {
-			  	outputArray04[i][1]=outputArray04[i][1]+R05[i];
+			  for (let i = 1; i < R06.length-1; i++)  {
+			  	outputArray04[i][1]=outputArray04[i][1]+R06[i];
 			  }   
 			  
 			  //Bairro
 			  for (let i = 1; i < 7; i++)  {
-			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
+			  	outputArray01[i][1]=outputArray01[i][1]+R09[i];
 			  }
 
 			  //Renda
-			  for (let i = 1; i < R09.length; i++)  {
-			  	outputArray09[i][1]=outputArray09[i][1]+R09[i];
+			  for (let i = 1; i < R08.length; i++)  {
+			  	outputArray09[i][1]=outputArray09[i][1]+R08[i];
 			  }
 
 			  //Profissão
-			  for (let i = 1; i < R07.length; i++)  {
-			  	outputArray07[i][1]=outputArray07[i][1]+R07[i];
+			  for (let i = 1; i < R04.length; i++)  {
+			  	outputArray07[i][1]=outputArray07[i][1]+R04[i];
 			  }
 
 			  //Instrução
-			  for (let i = 1; i < R06.length; i++)  {
-			  	outputArray06[i][1]=outputArray06[i][1]+R06[i];
+			  for (let i = 1; i < R07.length; i++)  {
+			  	outputArray06[i][1]=outputArray06[i][1]+R07[i];
 			  }
                   	
 			  //Religião
-			  for (let i = 1; i < R08.length; i++)  {
-			  	outputArray08[i][1]=outputArray08[i][1]+R08[i];
+			  for (let i = 1; i < Z08.length; i++)  {
+			  	outputArray08[i][1]=outputArray08[i][1]+Z08[i];
 			  }
 
 			  //Mídia
-			  for (let i = 1; i < R10.length; i++)  {
-			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
+			  for (let i = 1; i < R13.length; i++)  {
+			  	outputArray10[i][1]=outputArray10[i][1]+R13[i];
 			  }
 			
 			/*  
@@ -453,28 +475,28 @@ var currentDate = year + "/" + month + "/" + day;
                   	*/
                   	
                   	//idade
-		        R05 = [0,0,0,0,0,0,0];
+		        R06 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R03 = [0,0,0,0,0,0,0,0,0,0,0];
+		        R09 = [0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
-		        R04 = [0,0,0,0,0];
+		        R05 = [0,0,0,0,0];
 
 		        //Renda
-		        R09 = [0,0,0,0,0,0];
+		        R08 = [0,0,0,0,0,0];
 			  
 			//Profissão
-			R07 = [0,0,0,0,0,0,0,0,0,0];
+			R04 = [0,0,0,0,0,0,0,0,0,0];
 
 		        //Instrução
-		        R06 = [0,0,0,0,0,0];
+		        R07 = [0,0,0,0,0,0];
 
 		        //Religião
-		        R08 = [0,0,0,0,0,0,0,0];
+		        Z08 = [0,0,0,0,0,0,0,0];
 
 			//Mídia
-			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
+			R13 = [0,0,0,0,0,0,0,0,0,0,0];	
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -490,64 +512,64 @@ var currentDate = year + "/" + month + "/" + day;
                //if (true) {
 
 		  //bairro               
-                  if (students[i][j].slice(0,3) == 'R03'){ 
-                  	R03 = [0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R09'){ 
+                  	R09 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
-                      R03[indice03] = R03[indice03]+1;
+                      R09[indice03] = R09[indice03]+1;
                   }
 
 		  //sexo                    
-                  if (students[i][j].slice(0,3) == 'R04'){ 
-                  	R04 = [0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R05'){ 
+                  	R05 = [0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       //if indice = 99 {indice = 4}
-                      R04[indice] = R04[indice]+1;
+                      R05[indice] = R05[indice]+1;
                   }
                   
                   //idade               
-                  if (students[i][j].slice(0,3) == 'R05'){ 
-                   	R05 = [0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R06'){ 
+                   	R06 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      R05[indice] = R05[indice]+1;
+                      R06[indice] = R06[indice]+1;
                   }
 
                   //Renda               
-                  if (students[i][j].slice(0,3) == 'R09'){ 
-                   	R09 = [0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R08'){ 
+                   	R08 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      R09[indice] = R09[indice]+1;
+                      R08[indice] = R08[indice]+1;
                   }
 
                   //Profissão               
+                  if (students[i][j].slice(0,3) == 'R04'){ 
+                   	R04 = [0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = 11};
+                      R04[indice] = R04[indice]+1;
+                  }
+
+                  //Instrução               
                   if (students[i][j].slice(0,3) == 'R07'){ 
-                   	R07 = [0,0,0,0,0,0,0,0,0,0,0];
+                   	R07 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 11};
                       R07[indice] = R07[indice]+1;
                   }
 
-                  //Instrução               
-                  if (students[i][j].slice(0,3) == 'R06'){ 
-                   	R06 = [0,0,0,0,0,0];
-                      var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = 11};
-                      R06[indice] = R06[indice]+1;
-                  }
-
                   //Religião               
-                  if (students[i][j].slice(0,3) == 'R08'){ 
-                   	R08 = [0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'Z08'){ 
+                   	Z08 = [0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 7};
-                      R08[indice] = R08[indice]+1;
+                      Z08[indice] = Z08[indice]+1;
                   }
 
                   //Mídia               
-                  if (students[i][j].slice(0,3) == 'R10'){ 
-                   	R10 = [0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R13'){ 
+                   	R13 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 10};
-                      R10[indice] = R10[indice]+1;
+                      R13[indice] = R13[indice]+1;
                   }
                   
                   	//Peixoto jun 23 
@@ -616,13 +638,13 @@ tableCreate();
   }
   /* está fazendo acima, para filtrar formularios totalmente preenchidos
   //sexo
-  for (let i = 1; i < R03.length; i++)  {
-  	outputArray03[i][1]=R03[i];
+  for (let i = 1; i < R09.length; i++)  {
+  	outputArray03[i][1]=R09[i];
   }  
 
   //idade
-  for (let i = 1; i < R04.length; i++)  {
-  	outputArray04[i][1]=R04[i];
+  for (let i = 1; i < R05.length; i++)  {
+  	outputArray04[i][1]=R05[i];
   }   
   
   //Bairro
