@@ -395,7 +395,7 @@ var currentDate = year + "/" + month + "/" + day;
                   }
                   */
                   
-                  if (students[i][j] == 'R2799'){ 
+                  if (students[i][j] == 'R2599'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	  R00H[i] = R00H[i] + R98[i];
