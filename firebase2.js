@@ -11,9 +11,6 @@ var pesquisaName = 'RochaForte_ago_2023';
 	    
     };
     firebase.initializeApp(config);
-    
-//    const pesquisaName = 'Sinop_Midia_Abr_2023';
-    // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
     var table = document.querySelector('#table1 tbody');
@@ -242,7 +239,7 @@ var currentDate = year + "/" + month + "/" + day;
   var R06 = [0,0,0,0,0,0,0]; R06
 
   //bairro
-  var R09 = [0,0,0,0,0,0,0,0,0,0,0]; //R09
+  var R09 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //R09
 
   //sexo
   var R05 = [0,0,0,0,0]; //R05
@@ -412,7 +409,7 @@ var currentDate = year + "/" + month + "/" + day;
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < 7; i++)  {
+			  for (let i = 1; i < 27; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R09[i];
 			  }
 
@@ -478,7 +475,7 @@ var currentDate = year + "/" + month + "/" + day;
 		        R06 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R09 = [0,0,0,0,0,0,0,0,0,0,0];
+		        R09 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
 		        R05 = [0,0,0,0,0];
@@ -513,7 +510,7 @@ var currentDate = year + "/" + month + "/" + day;
 
 		  //bairro               
                   if (students[i][j].slice(0,3) == 'R09'){ 
-                  	R09 = [0,0,0,0,0,0,0,0,0,0,0];
+                  	R09 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
                       R09[indice03] = R09[indice03]+1;
                   }
