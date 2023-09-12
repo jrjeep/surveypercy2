@@ -180,6 +180,17 @@ var currentDate = year + "/" + month + "/" + day;
                 ['Outro', 0]
             ];
             
+            //Proprietario
+            var outputArray11 = [
+                ['Grade', 'Proprietario/Construtor'],
+                ['Proprietário(a)', 0],
+                ['Pedreiro(a)', 0],
+                ['Mestre de Obras', 0],
+                ['Arquiteto(a)', 0],
+                ['Engenheiro(a)', 0],
+                ['Construtor(a)', 0]
+            ];
+            
 //Peixoto jun 23 
 //18 - 09 - intenção de voto estimulada
             var outputArray18 = [
@@ -259,6 +270,9 @@ var currentDate = year + "/" + month + "/" + day;
   //Mídia
   var R13 = [0,0,0,0,0,0,0,0,0,0,0]; //R13
 
+  //Proprietario
+  var R03 = [0,0,0,0,0,0]; 
+  
 //Peixoto jun 23 
 //18 - 09 - intenção de voto estimulada
   var R18 = [0,0,0,0,0,0,0,0,0,0];
@@ -437,6 +451,11 @@ var currentDate = year + "/" + month + "/" + day;
 			  for (let i = 1; i < R13.length; i++)  {
 			  	outputArray10[i][1]=outputArray10[i][1]+R13[i];
 			  }
+			  
+			  //Proprietario
+			  for (let i = 1; i < R03.length; i++)  {
+			  	outputArray11[i][1]=outputArray11[i][1]+R03[i];
+			  }
 			
 			/*  
                   	//Peixoto jun 23 
@@ -494,6 +513,9 @@ var currentDate = year + "/" + month + "/" + day;
 
 			//Mídia
 			R13 = [0,0,0,0,0,0,0,0,0,0,0];	
+			
+			//Proprietario
+			R03 = [0,0,0,0,0,0];	
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -567,6 +589,14 @@ var currentDate = year + "/" + month + "/" + day;
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 10};
                       R13[indice] = R13[indice]+1;
+                  }
+                  
+                  //Proprietario               
+                  if (students[i][j].slice(0,3) == 'R03'){ 
+                   	R03 = [0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = 10};
+                      R03[indice] = R03[indice]+1;
                   }
                   
                   	//Peixoto jun 23 
@@ -666,7 +696,7 @@ tableCreate();
             drawChart08(outputArray08);
             drawChart09(outputArray09);
             drawChart10(outputArray10);
-            drawChart18(outputArray18);
+            drawChart18(outputArray11);
             drawChart22(outputArray22);
             drawChart24(outputArray24);
             drawChart26(outputArray26);
@@ -853,8 +883,8 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: 'intenção de voto estimulada',
-            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            title: 'Proprietario/Construtor',
+            hAxis: {title: 'Proprietario/Construtor',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
   
