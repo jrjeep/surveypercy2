@@ -423,7 +423,7 @@ var currentDate = year + "/" + month + "/" + day;
 			  }   
 			  
 			  //Bairro
-			  for (let i = 1; i < 27; i++)  {
+			  for (let i = 1; i < 28; i++)  {
 			  	outputArray01[i][1]=outputArray01[i][1]+R09[i];
 			  }
 
