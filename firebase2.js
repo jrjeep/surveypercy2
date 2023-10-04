@@ -524,7 +524,7 @@ var currentDate = year + "/" + month + "/" + day;
 			R11 = [0,0,0,0,0,0,0,0,0,0,0];	
 			
 			//Proprietario
-			R04 = [0,0,0,0,0,0];	
+			R04 = [0,0,0,0,0,0,0];	
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -602,10 +602,10 @@ var currentDate = year + "/" + month + "/" + day;
                   
                   //Proprietario               
                   if (students[i][j].slice(0,3) == 'R04'){ 
-                   	R04 = [0,0,0,0,0,0];
+                   	R04 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = 7};
-                      R04[indice] = R04[indice]+1;
+                      if (indice == 99) { indice = 07};
+                      //R04[indice] = R04[indice]+1;
                   }
                   
                   	//Peixoto jun 23 
