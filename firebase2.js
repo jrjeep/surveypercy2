@@ -604,7 +604,7 @@ var currentDate = year + "/" + month + "/" + day;
                   if (students[i][j].slice(0,3) == 'R04'){ 
                    	R04 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = 10};
+                      if (indice == 99) { indice = 7};
                       R04[indice] = R04[indice]+1;
                   }
                   
