@@ -414,7 +414,7 @@ var currentDate = year + "/" + month + "/" + day;
                   }
                   */
                   
-                  if (students[i][j] == 'R3199'){ 
+                  if (students[i][j] == 'R2399'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	  R00H[i] = R00H[i] + R98[i];
@@ -671,22 +671,6 @@ tableCreate();
   	outputArray00[i][1]=R00[i];
   	outputArray98[i][1]=R00H[i];
   }
-  /* está fazendo acima, para filtrar formularios totalmente preenchidos
-  //sexo
-  for (let i = 1; i < R09.length; i++)  {
-  	outputArray03[i][1]=R09[i];
-  }  
-
-  //idade
-  for (let i = 1; i < R05.length; i++)  {
-  	outputArray04[i][1]=R05[i];
-  }   
-  
-  //Bairro
-  for (let i = 1; i < R02.length; i++)  {
-  	outputArray01[i][1]=R02[i];
-  }
-  */
 
      //var total = 0;
      //for(var i in students) {
