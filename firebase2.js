@@ -1,4 +1,4 @@
-var pesquisaName = 'Machado_Set_2023';
+var pesquisaName = 'Sinop_Nov_2023';
 (function() {
     const config = {
     
@@ -74,7 +74,7 @@ var currentDate = year + "/" + month + "/" + day;
                 ['JD AURORA / SEBASTIÃO DE MATOS I E II / JD UMUARAMA II E III / JD ROMA / BOA VISTA / RESID SABRINA I, II E III / NOVO JD / CHÁC DE LAZER MONALIZA', 0 ],
                 ['VILLA REAL / BELA VILLE / PAINERAS / JD LIBERDADE / JD TROPICAL / BELA MORADA / MENINO JESUS I E II / VILLA ITÁLIA', 0 ],
                 ['COSTA RICA / PORTO RICO / LUXEMBURGO / MÓRIA / PANAMBY I E II / BURITIS / SÃO FRANCISCO / RESERVA CELESTE', 0 ],
-                ['BELVEDERE I E II / COND NICO BARACAT / JD MÁLAGA / VIDA NOVA / COND FLAMBOYANTS / BOM JD / CHÁC VITÓRIA / VILLA TOSCANA I E II / VILA TORINOS / BELVEDERE III / CANARINHO I E III / JAMARI', 0 ],
+                ['BELVEDERE I E II / COND NICO BARACAT / JD MÁLAGA / VIDA NOVA / COND FLAMBOYANTS / BOM JARDIM / CHÁC VITÓRIA / VILLA TOSCANA I E II / VILA TORINOS / BELVEDERE III / CANARINHO I E III / JAMARI', 0 ],
                 ['JD UMUARAMA / PQ TANGARÁ / JD ATENAS / JD LISBOA I E II / RESID PÉROLA / BAIRRO SÃO CRISTOVÃO / RESID IPIRANGA / RESID MARIPÁ / UIRAPURU / PEQUENA LONDRES / BOURBON RESID / RESID JARAGUÁ / RESID BONNE VIE / RESID SANTA CATARINA / JD SANTA MÔNICA', 0 ],
                 ['CIDADE NOVA / SONHALTO VIDEIRAS / VILLA VORATA / RAVENA / COMUNIDADE NOSSA SENHORA DE FÁTIMA / JD MILÃO I E II / QUATRO ESTAÇÕES BOULEVARD / MORUMBI', 0 ],
                 ['MONTE CARLO / JD SANTA ROSA / RESID PIENZA / RESID MONTREAL PARK / CHÁC DE LAZER SÃO CRISTÓVÃO I E II / JD PAULISTA I E II / JD IBIRAPUERA / RESID ADRIANO LEITÃO / RESID LONDRINA / JD NAPOLES / JD TULIPAS', 0 ],
@@ -106,9 +106,8 @@ var currentDate = year + "/" + month + "/" + day;
                 ['LOTEAMENTO VILLAGE / ITÁLIA I, II E III / BARCELONA I E II', 0 ],
                 ['FLORENÇA / LIFE SINOP CLUB RESIDENCE / RESID SANTA CECÍLIA / RESID DEVILLE / ATIVA SAÚDE CENTER / IPANEMA', 0 ],
                 ['JD DE MONET / RECANTO SUIÇO / AQUARELA BRASIL RESID', 0 ],
-                ['COND MONDRIAN / COND PORTAL DA MATA / COND CARPE DIEM', 0 ],
-                ['RESID PARIS / AQUARELA DAS ARTES / ALAMEDA DAS CORES / AQUARELA DOS POEMAS', 0 ],
-                ['RESID PQ DO LAGO / RIVIERA SUÍÇA I E II / PORTINARI / SANTORINI RESIDENCE / SAN MARTINI / BAIRRO EUNICE / BAIRRO EUNICE - SÃO LUCAS', 0 ]
+                ['COND MONDRIAN / COND PORTAL DA MATA / COND CARPE DIEM / RESID PARIS / AQUARELA DAS ARTES / ALAMEDA DAS CORES / AQUARELA DOS POEMAS', 0 ],
+                ['RESID PQ DO LAGO / RIVIERA SUIÇA I E II / PORTINARI / SANTORINI RESIDENCE / SAN MARTINI / BAIRRO EUNICE / BAIRRO EUNICE - SÃO LUCAS', 0 ]
 
             ];
   
@@ -256,31 +255,31 @@ var currentDate = year + "/" + month + "/" + day;
   var R00H = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
 
   //idade
-  var R07 = [0,0,0,0,0,0,0]; //R07
+  var R05 = [0,0,0,0,0,0,0]; //R05
 
   //bairro 
   var R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //R10
 
   //sexo
-  var R06 = [0,0,0,0,0]; //R06
+  var R04 = [0,0,0,0,0]; //R04
 
   //renda
   var R09 = [0,0,0,0,0,0]; //R09
 
   //Profissão
-  var R05 = [0,0,0,0,0,0,0,0,0,0]; //R05
+  var R07 = [0,0,0,0,0,0,0,0,0,0]; //R07
 
   //Instrução
-  var R08 = [0,0,0,0,0,0]; //R08
+  var R06 = [0,0,0,0,0,0]; //R06
 
   //Religião
-  var Z08 = [0,0,0,0,0,0,0,0]; //Não usa
+  var R08 = [0,0,0,0,0,0,0,0]; //Não usa
 
   //Mídia
-  var R11 = [0,0,0,0,0,0,0,0,0,0,0]; //R11
+  var R10 = [0,0,0,0,0,0,0,0,0,0,0]; //R10
 
   //Proprietario
-  var R04 = [0,0,0,0,0,0,0];  //R04
+  var Z04 = [0,0,0,0,0,0,0];  //Z04
   
 //Peixoto jun 23 
 //18 - 09 - intenção de voto estimulada
@@ -422,13 +421,13 @@ var currentDate = year + "/" + month + "/" + day;
                   	}
                   	
                   	  //sexo
-			  for (let i = 1; i < R06.length; i++)  {
-			  	outputArray03[i][1]=outputArray03[i][1]+R06[i];
+			  for (let i = 1; i < R04.length; i++)  {
+			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
 			  }  
 
 			  //idade
-			  for (let i = 1; i < R07.length-1; i++)  {
-			  	outputArray04[i][1]=outputArray04[i][1]+R07[i];
+			  for (let i = 1; i < R05.length-1; i++)  {
+			  	outputArray04[i][1]=outputArray04[i][1]+R05[i];
 			  }   
 			  
 			  //Bairro
@@ -442,28 +441,28 @@ var currentDate = year + "/" + month + "/" + day;
 			  }
 
 			  //Profissão
-			  for (let i = 1; i < R05.length; i++)  {
-			  	outputArray07[i][1]=outputArray07[i][1]+R05[i];
+			  for (let i = 1; i < R07.length; i++)  {
+			  	outputArray07[i][1]=outputArray07[i][1]+R07[i];
 			  }
 
 			  //Instrução
-			  for (let i = 1; i < R08.length; i++)  {
-			  	outputArray06[i][1]=outputArray06[i][1]+R08[i];
+			  for (let i = 1; i < R06.length; i++)  {
+			  	outputArray06[i][1]=outputArray06[i][1]+R06[i];
 			  }
                   	
 			  //Religião
-			  for (let i = 1; i < Z08.length; i++)  {
-			  	outputArray08[i][1]=outputArray08[i][1]+Z08[i];
+			  for (let i = 1; i < R08.length; i++)  {
+			  	outputArray08[i][1]=outputArray08[i][1]+R08[i];
 			  }
 
 			  //Mídia
-			  for (let i = 1; i < R11.length; i++)  {
-			  	outputArray10[i][1]=outputArray10[i][1]+R11[i];
+			  for (let i = 1; i < R10.length; i++)  {
+			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
 			  }
 			  
 			  //Proprietario
-			  for (let i = 1; i < R04.length; i++)  {
-			  	outputArray11[i][1]=outputArray11[i][1]+R04[i];
+			  for (let i = 1; i < Z04.length; i++)  {
+			  	outputArray11[i][1]=outputArray11[i][1]+Z04[i];
 			  }
 			
 			/*  
@@ -500,31 +499,31 @@ var currentDate = year + "/" + month + "/" + day;
                   	*/
                   	
                   	//idade
-		        R07 = [0,0,0,0,0,0,0];
+		        R05 = [0,0,0,0,0,0,0];
 
 		        //bairro
 		        R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
-		        R06 = [0,0,0,0,0];
+		        R04 = [0,0,0,0,0];
 
 		        //Renda
 		        R09 = [0,0,0,0,0,0];
 			  
 			//Profissão
-			R05 = [0,0,0,0,0,0,0,0,0,0];
+			R07 = [0,0,0,0,0,0,0,0,0,0];
 
 		        //Instrução
-		        R08 = [0,0,0,0,0,0];
+		        R06 = [0,0,0,0,0,0];
 
 		        //Religião
-		        Z08 = [0,0,0,0,0,0,0,0];
+		        R08 = [0,0,0,0,0,0,0,0];
 
 			//Mídia
-			R11 = [0,0,0,0,0,0,0,0,0,0,0];	
+			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
 			
 			//Proprietario
-			R04 = [0,0,0,0,0,0,0];	
+			Z04 = [0,0,0,0,0,0,0];	
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -547,18 +546,18 @@ var currentDate = year + "/" + month + "/" + day;
                   }
 
 		  //sexo                    
-                  if (students[i][j].slice(0,3) == 'R06'){ 
-                  	R06 = [0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R04'){ 
+                  	R04 = [0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       //if indice = 99 {indice = 4}
-                      R06[indice] = R06[indice]+1;
+                      R04[indice] = R04[indice]+1;
                   }
                   
                   //idade               
-                  if (students[i][j].slice(0,3) == 'R07'){ 
-                   	R07 = [0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R05'){ 
+                   	R05 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      R07[indice] = R07[indice]+1;
+                      R05[indice] = R05[indice]+1;
                   }
 
                   //Renda               
@@ -569,43 +568,43 @@ var currentDate = year + "/" + month + "/" + day;
                   }
 
                   //Profissão               
-                  if (students[i][j].slice(0,3) == 'R05'){ 
-                   	R05 = [0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R07'){ 
+                   	R07 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 11};
-                      R05[indice] = R05[indice]+1;
+                      R07[indice] = R07[indice]+1;
                   }
 
                   //Instrução               
-                  if (students[i][j].slice(0,3) == 'R09'){ 
-                   	R08 = [0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R06'){ 
+                   	R06 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 11};
-                      R08[indice] = R08[indice]+1;
+                      R06[indice] = R06[indice]+1;
                   }
 
                   //Religião               
-                  if (students[i][j].slice(0,3) == 'Z08'){ 
-                   	Z08 = [0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R08'){ 
+                   	R08 = [0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 7};
-                      Z08[indice] = Z08[indice]+1;
+                      R08[indice] = R08[indice]+1;
                   }
 
                   //Mídia               
-                  if (students[i][j].slice(0,3) == 'R11'){ 
-                   	R11 = [0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R10'){ 
+                   	R10 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 10};
-                      R11[indice] = R11[indice]+1;
+                      R10[indice] = R10[indice]+1;
                   }
                   
                   //Proprietario               
-                  if (students[i][j].slice(0,3) == 'R04'){ 
-                   	R04 = [0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'Z04'){ 
+                   	Z04 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = 07};
-                      //R04[indice] = R04[indice]+1;
+                      if (indice == 99) { indice = 7};
+                      //Z04[indice] = Z04[indice]+1;
                   }
                   
                   	//Peixoto jun 23 
