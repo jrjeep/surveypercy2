@@ -8,10 +8,10 @@ var pesquisaName = 'Sinop_Nov_2023';
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
+
     };
     firebase.initializeApp(config);
     
-//    const pesquisaName = 'Sinop_Midia_Abr_2023';
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
@@ -128,6 +128,24 @@ var currentDate = year + "/" + month + "/" + day;
                 ['60 acima', 0]
             ];
             
+            var outputArray04m = [
+                ['Grade', 'Idade'],
+                ['16 a 24', 0],
+                ['25 a 34', 0],
+                ['35 a 44', 0],
+                ['45 a 59', 0],
+                ['60 acima', 0]
+            ];
+
+            var outputArray04f = [
+                ['Grade', 'Idade'],
+                ['16 a 24', 0],
+                ['25 a 34', 0],
+                ['35 a 44', 0],
+                ['45 a 59', 0],
+                ['60 acima', 0]
+            ];
+
             var outputArray09 = [
                 ['Grade', 'Renda'],
                 ['MENOS DE R$ 1.320,00', 0],
@@ -256,6 +274,8 @@ var currentDate = year + "/" + month + "/" + day;
 
   //idade
   var R05 = [0,0,0,0,0,0,0]; //R05
+  var R05m = [0,0,0,0,0,0,0]; //R05
+  var R05f = [0,0,0,0,0,0,0]; //R05
 
   //bairro 
   var R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //R10
@@ -291,6 +311,8 @@ var currentDate = year + "/" + month + "/" + day;
 //26 - 05 - avaliacao do pref mauricio
   var R26 = [0,0,0,0,0,0];
 // fim Peixoto
+
+var sexo = 9
 
      var x = 0, teste=0;
      var pesquisador = "";
@@ -423,11 +445,20 @@ var currentDate = year + "/" + month + "/" + day;
                   	  //sexo
 			  for (let i = 1; i < R04.length; i++)  {
 			  	outputArray03[i][1]=outputArray03[i][1]+R04[i];
-			  }  
+			  	if (R04[i] == 1) 
+			  	sexo = i;
+			  } 
 
 			  //idade
 			  for (let i = 1; i < R05.length-1; i++)  {
 			  	outputArray04[i][1]=outputArray04[i][1]+R05[i];
+			  	if (sexo == 1) {
+			  	    outputArray04m[i][1]=outputArray04m[i][1]+R05[i];
+			  	} 
+			  	if (sexo == 2) {
+			  	    outputArray04f[i][1]=outputArray04f[i][1]+R05[i];	
+			  	}
+			  	
 			  }   
 			  
 			  //Bairro
@@ -633,7 +664,6 @@ var currentDate = year + "/" + month + "/" + day;
                       R26[indice26] = R26[indice26]+1;
                   }
                   	// fim Peixoto
-
                   
                }   
   
@@ -649,40 +679,28 @@ function tableCreate() {
   for (let i = 0; i < 7; i++) {
     const tr = tbl.insertRow();
     for (let j = 0; j < 2; j++) {
-      //if (i === 2 && j === 1) {
-      //  break;
-      //} else {
         const td = tr.insertCell();
         td.appendChild(document.createTextNode(outputArray00[i][j]));
         td.style.border = '1px  black';
-        //if (i === 1 && j === 1) {
-        //  td.setAttribute('rowSpan', '2');
-        //}
-      //}
+
     }
   }
   body.appendChild(tbl);
 }
 
 tableCreate();
-  //pesquisador
-  //outputArray00=R00;
+
   for (let i = 1; i < R00.length; i++)  {
   	outputArray00[i][1]=R00[i];
   	outputArray98[i][1]=R00H[i];
   }
-
-     //var total = 0;
-     //for(var i in students) {
-        //var row = table.insertRow(-1);
-  
-  
-      //	}
   
             drawChart01(outputArray03);
             drawChart02(outputArray00);
             drawChart03(outputArray01);
             drawChart04(outputArray04);
+            drawChart04m(outputArray04m);
+            drawChart04f(outputArray04f);
             drawChart06(outputArray06);
             drawChart07(outputArray07);
             drawChart08(outputArray08);
@@ -797,6 +815,37 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           chart.draw(data, options);
   
   }
+
+    var drawChart04m = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+  
+          var options = {
+            title: 'Masculino - idade',
+            hAxis: {title: 'idade',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv04m'));
+          chart.draw(data, options);
+  
+  }
+
+    var drawChart04f = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+  
+  
+          var options = {
+            title: 'Feminino - idade',
+            hAxis: {title: 'idade',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv04f'));
+          chart.draw(data, options);
+  
+  }
+  
   
     var drawChart09 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
