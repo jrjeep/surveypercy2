@@ -290,7 +290,7 @@ var currentDate = year + "/" + month + "/" + day;
   var R07 = [0,0,0,0,0,0,0,0,0,0]; //R07
 
   //Instrução
-  var R06 = [0,0,0,0,0,0]; //R06
+  var R06 = [0,0,0,0,0,0,0]; //R06
 
   //Religião
   var R08 = [0,0,0,0,0,0,0,0]; //Não usa
@@ -477,7 +477,7 @@ var sexo = 9
 			  }
 
 			  //Instrução
-			  for (let i = 1; i < R06.length; i++)  {
+			  for (let i = 1; i < R06.length-1; i++)  {
 			  	outputArray06[i][1]=outputArray06[i][1]+R06[i];
 			  }
                   	
@@ -545,7 +545,7 @@ var sexo = 9
 			R07 = [0,0,0,0,0,0,0,0,0,0];
 
 		        //Instrução
-		        R06 = [0,0,0,0,0,0];
+		        R06 = [0,0,0,0,0,0,0];
 
 		        //Religião
 		        R08 = [0,0,0,0,0,0,0,0];
