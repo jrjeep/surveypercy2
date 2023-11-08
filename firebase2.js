@@ -12,6 +12,7 @@ var pesquisaName = 'Sinop_Nov_2023';
     };
     firebase.initializeApp(config);
     
+//    const pesquisaName = 'Sinop_Midia_Abr_2023';
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
     
@@ -278,7 +279,7 @@ var currentDate = year + "/" + month + "/" + day;
   var R05f = [0,0,0,0,0,0,0]; //R05
 
   //bairro 
-  var R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //R10
+  var R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; //R10
 
   //sexo
   var R04 = [0,0,0,0,0]; //R04
@@ -463,7 +464,7 @@ var sexo = 9
 			  
 			  //Bairro
 			  for (let i = 1; i < 39; i++)  {
-			  	outputArray01[i][1]=outputArray01[i][1]+R10[i];
+			  	outputArray01[i][1]=outputArray01[i][1]+R03[i];
 			  }
 
 			  //Renda
@@ -533,7 +534,7 @@ var sexo = 9
 		        R05 = [0,0,0,0,0,0,0];
 
 		        //bairro
-		        R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		        R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		        //sexo
 		        R04 = [0,0,0,0,0];
@@ -570,10 +571,10 @@ var sexo = 9
                //if (true) {
 
 		  //bairro               
-                  if (students[i][j].slice(0,3) == 'R10'){ 
-                  	R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R03'){ 
+                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
-                      R10[indice03] = R10[indice03]+1;
+                      R03[indice03] = R03[indice03]+1;
                   }
 
 		  //sexo                    
