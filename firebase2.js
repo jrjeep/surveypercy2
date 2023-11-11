@@ -1069,9 +1069,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray11.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv11'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv11'));
+          //if (outputArray11.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv11'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv11'));
           chart.draw(data, options);
   }         
     var drawChart12 = function(withData) {
@@ -1081,9 +1082,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray12.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv12'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv12'));
+          //if (outputArray12.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv12'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv12'));
           chart.draw(data, options);
   }         
     var drawChart13 = function(withData) {
@@ -1093,9 +1095,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray13.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv13'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv13'));
+          //if (outputArray13.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv13'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv13'));
           chart.draw(data, options);
   }         
     var drawChart14 = function(withData) {
@@ -1105,9 +1108,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-           if (outputArray14.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv14'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv14'));
+           //if (outputArray14.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv14'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv14'));
          chart.draw(data, options);
   }         
     var drawChart15 = function(withData) {
@@ -1117,9 +1121,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray15.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv15'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv15'));
+          //if (outputArray15.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv15'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv15'));
           chart.draw(data, options);
   }         
     var drawChart16 = function(withData) {
@@ -1129,9 +1134,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray16.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv16'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv16'));
+          //if (outputArray16.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv16'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv16'));
           chart.draw(data, options);
   }         
     var drawChart17 = function(withData) {
@@ -1141,9 +1147,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray17.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv17'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv17'));
+          //if (outputArray17.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv17'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv17'));
           chart.draw(data, options);
   }         
     var drawChart18 = function(withData) {
@@ -1153,9 +1160,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray18.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv18'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv18'));
+          //if (outputArray18.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv18'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv18'));
           chart.draw(data, options);
   }         
     var drawChart19 = function(withData) {
@@ -1165,9 +1173,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray19.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv19'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv19'));
+          //if (outputArray19.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv19'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv19'));
           chart.draw(data, options);
   }         
     var drawChart20 = function(withData) {
@@ -1177,9 +1186,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray20.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv20'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv20'));
+          //if (outputArray20.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv20'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv20'));
           chart.draw(data, options);
   }         
     var drawChart21 = function(withData) {
@@ -1189,9 +1199,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray21.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv21'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv21'));
+          //if (outputArray21.length > 7) 
+          //	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv21'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv21'));
           chart.draw(data, options);
   }         
     var drawChart22 = function(withData) {
@@ -1201,9 +1212,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray22.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv22'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv22'));
+          //if (outputArray22.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv22'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv22'));
           chart.draw(data, options);
   }         
     var drawChart23 = function(withData) {
@@ -1213,9 +1225,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray23.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv23'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv23'));
+          //if (outputArray23.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv23'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv23'));
           chart.draw(data, options);
   }         
     var drawChart24 = function(withData) {
@@ -1225,9 +1238,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray24.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv24'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv24'));
+          //if (outputArray24.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv24'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv24'));
           chart.draw(data, options);
   }         
     var drawChart25 = function(withData) {
@@ -1237,9 +1251,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray25.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv25'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv25'));
+          //if (outputArray25.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv25'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv25'));
           chart.draw(data, options);
   }         
     var drawChart26 = function(withData) {
@@ -1249,9 +1264,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray26.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv26'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv26'));
+          //if (outputArray26.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv26'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv26'));
           chart.draw(data, options);
   }         
     var drawChart27 = function(withData) {
@@ -1261,9 +1277,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray27.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv27'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv27'));
+          //if (outputArray27.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv27'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv27'));
           chart.draw(data, options);
   }         
     var drawChart28 = function(withData) {
@@ -1273,9 +1290,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray28.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv28'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv28'));
+          //if (outputArray28.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv28'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv28'));
           chart.draw(data, options);
   }         
     var drawChart29 = function(withData) {
@@ -1285,9 +1303,10 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray29.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv29'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv29'));
+          //if (outputArray29.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv29'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv29'));
           chart.draw(data, options);
   }         
     var drawChart30 = function(withData) {
@@ -1297,8 +1316,9 @@ greeting.innerHTML += '<p>A new paragraph</p>';
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-          if (outputArray30.length > 7) 
-          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv30'));
-          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv30'));
+          //if (outputArray30.length > 7) 
+          //	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv30'));
+          //else
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv30'));
           chart.draw(data, options);
   }         
