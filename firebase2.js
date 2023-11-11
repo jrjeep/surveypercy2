@@ -10,7 +10,6 @@ var perguntas;
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
-
     };
     firebase.initializeApp(config);
     
@@ -73,6 +72,49 @@ outputArray07 = outputArray[7];
 outputArray08 = outputArray[8];
 outputArray09 = outputArray[9];
 outputArray10 = outputArray[10];
+
+outputArray11 = [];
+outputArray12 = [];
+outputArray13 = [];
+outputArray14 = [];
+outputArray15 = [];
+outputArray16 = [];
+outputArray17 = [];
+outputArray18 = [];
+outputArray19 = [];
+outputArray20 = [];
+outputArray21 = [];
+outputArray22 = [];
+outputArray23 = [];
+outputArray24 = [];
+outputArray25 = [];
+outputArray26 = [];
+outputArray27 = [];
+outputArray28 = [];
+outputArray29 = [];
+outputArray30 = [];
+
+if (numPergunta > '11') {outputArray11 = outputArray[11]};
+if (numPergunta > '12') {outputArray12 = outputArray[12]};
+if (numPergunta > '13') {outputArray13 = outputArray[13]};
+if (numPergunta > '14') {outputArray14 = outputArray[14]};
+if (numPergunta > '15') {outputArray15 = outputArray[15]};
+if (numPergunta > '16') {outputArray16 = outputArray[16]};
+if (numPergunta > '17') {outputArray17 = outputArray[17]};
+if (numPergunta > '18') {outputArray18 = outputArray[18]};
+if (numPergunta > '19') {outputArray19 = outputArray[19]};
+if (numPergunta > '20') {outputArray20 = outputArray[20]};
+if (numPergunta > '21') {outputArray21 = outputArray[21]};
+if (numPergunta > '22') {outputArray22 = outputArray[22]};
+if (numPergunta > '23') {outputArray23 = outputArray[23]};
+if (numPergunta > '24') {outputArray24 = outputArray[24]};
+if (numPergunta > '25') {outputArray25 = outputArray[25]};
+if (numPergunta > '26') {outputArray26 = outputArray[26]};
+if (numPergunta > '27') {outputArray27 = outputArray[27]};
+if (numPergunta > '28') {outputArray28 = outputArray[28]};
+if (numPergunta > '29') {outputArray29 = outputArray[29]};
+if (numPergunta > '30') {outputArray30 = outputArray[30]};
+
 
     });    
         
@@ -147,63 +189,6 @@ var currentDate = year + "/" + month + "/" + day;
                 ['60 acima', 0]
             ];
             
-            //Proprietario
-            var outputArray11 = [
-                ['Grade', 'Proprietario/Construtor'],
-                ['Proprietário(a)', 0],
-                ['Pedreiro(a)', 0],
-                ['Mestre de Obras', 0],
-                ['Arquiteto(a)', 0],
-                ['Engenheiro(a)', 0],
-                ['Construtor(a)', 0]
-            ];
-            
-//Peixoto jun 23 
-//18 - 09 - intenção de voto estimulada
-            var outputArray18 = [
-                ['Grade', 'intenção'],
-                ['CALEBE BORGES', 0 ],
-                ['PAULINHO DO POSTO', 0 ],
-                ['ZINHA', 0 ],
-                ['SINVALDO', 0 ],
-                ['PAULISTINHA', 0 ],
-                ['GILMAR DO ESPORTE', 0 ],
-                ['DONA LEDA', 0 ],
-                ['BRANCO/NULO', 0 ],
-                ['NS/NR', 0 ]
-            ];
-//22 - 04 - disputa entre kaleb e paulistinha
-            var outputArray22 = [
-                ['Grade', 'intenção'],
-                ['CALEBE BORGES', 0 ],
-                ['PAULISTINHA', 0 ],
-                ['BRANCO/NULO', 0 ],
-                ['NS/NR', 0 ]
-            ];
-//24 - 09 - rejeicao estimulada
-            var outputArray24 = [
-                ['Grade', 'intenção'],
-                ['CALEBE BORGES', 0 ],
-                ['PAULINHO DO POSTO', 0 ],
-                ['ZINHA', 0 ],
-                ['SINVALDO', 0 ],
-                ['PAULISTINHA', 0 ],
-                ['GILMAR DO ESPORTE', 0 ],
-                ['DONA LEDA', 0 ],
-                ['BRANCO/NULO', 0 ],
-                ['NS/NR', 0 ]
-            ];
-//26 - 05 - avaliacao do pref mauricio
-            var outputArray26 = [
-                ['Grade', 'intenção'],
-                ['Otimo', 0 ],
-                ['Bom', 0 ],
-                ['Regular', 0 ],
-                ['Ruim', 0 ],
-                ['Péssimo', 0 ]
-            ];
-
-// fim Peixoto
             
   //pesquisador 
   var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
@@ -240,8 +225,28 @@ var currentDate = year + "/" + month + "/" + day;
   //Mídia
   var R10 = [0,0,0,0,0,0,0,0,0,0,0]; //R10
 
-  //Proprietario
-  var Z04 = [0,0,0,0,0,0,0];  //Z04
+
+  var R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R13 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R17 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R18 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R19 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R20 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R21 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R22 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R23 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R24 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R25 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R26 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R27 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
 
 /*  
 //Peixoto jun 23 
@@ -426,15 +431,73 @@ var sexo = 9
 			  }
 
 			  //Mídia
-			  for (let i = 1; i < R10.length; i++)  {
+			  for (let i = 1; i < outputArray10.length; i++)  {
 			  	outputArray10[i][1]=outputArray10[i][1]+R10[i];
 			  }
+
 			  
-			  //Proprietario
-			  for (let i = 1; i < Z04.length; i++)  {
-			  	outputArray11[i][1]=outputArray11[i][1]+Z04[i];
-			  }
-			
+			        for (let i = 1; i < outputArray11.length; i++)  {
+			                 outputArray11[i][1]=outputArray11[i][1]+R11[i];
+			                }
+			        for (let i = 1; i < outputArray12.length-1; i++)  {
+					 outputArray12[i][1]=outputArray12[i][1]+R12[i];
+					}
+				for (let i = 1; i < outputArray13.length-1; i++)  {
+					 outputArray13[i][1]=outputArray13[i][1]+R13[i];
+					}
+				for (let i = 1; i < outputArray14.length-1; i++)  {
+					 outputArray14[i][1]=outputArray14[i][1]+R14[i];
+					}
+				for (let i = 1; i < outputArray15.length-1; i++)  {
+					 outputArray15[i][1]=outputArray15[i][1]+R15[i];
+					}
+				for (let i = 1; i < outputArray16.length-1; i++)  {
+					 outputArray16[i][1]=outputArray16[i][1]+R16[i];
+					}
+				for (let i = 1; i < outputArray17.length-1; i++)  {
+					 outputArray17[i][1]=outputArray17[i][1]+R17[i];
+					}
+				for (let i = 1; i < outputArray18.length-1; i++)  {
+					 outputArray18[i][1]=outputArray18[i][1]+R18[i];
+					}
+				for (let i = 1; i < outputArray19.length-1; i++)  {
+					 outputArray19[i][1]=outputArray19[i][1]+R19[i];
+					}
+				for (let i = 1; i < outputArray20.length-1; i++)  {
+					 outputArray20[i][1]=outputArray20[i][1]+R20[i];
+					}
+				for (let i = 1; i < outputArray21.length-1; i++)  {
+					 outputArray21[i][1]=outputArray21[i][1]+R21[i];
+					}
+				for (let i = 1; i < outputArray22.length-1; i++)  {
+					 outputArray22[i][1]=outputArray22[i][1]+R22[i];
+					}
+				for (let i = 1; i < outputArray23.length-1; i++)  {
+					 outputArray23[i][1]=outputArray23[i][1]+R23[i];
+					}
+				for (let i = 1; i < outputArray24.length-1; i++)  {
+					 outputArray24[i][1]=outputArray24[i][1]+R24[i];
+					}
+				for (let i = 1; i < outputArray25.length-1; i++)  {
+					 outputArray25[i][1]=outputArray25[i][1]+R25[i];
+					}
+				for (let i = 1; i < outputArray26.length-1; i++)  {
+					 outputArray26[i][1]=outputArray26[i][1]+R26[i];
+					}
+				for (let i = 1; i < outputArray27.length-1; i++)  {
+					 outputArray27[i][1]=outputArray27[i][1]+R27[i];
+					}
+				for (let i = 1; i < outputArray28.length-1; i++)  {
+					 outputArray28[i][1]=outputArray28[i][1]+R28[i];
+					}
+				for (let i = 1; i < outputArray29.length-1; i++)  {
+					 outputArray29[i][1]=outputArray29[i][1]+R29[i];
+					}
+				for (let i = 1; i < outputArray30.length-1; i++)  {
+					 outputArray30[i][1]=outputArray30[i][1]+R30[i];
+					}
+
+
 			/*  
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
@@ -491,12 +554,31 @@ var sexo = 9
 			  
 			//Mídia
 			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
-			
-			//Proprietario
-			Z04 = [0,0,0,0,0,0,0];	
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      
+                          R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R13 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R17 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R18 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R19 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R20 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R21 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R22 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R23 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R24 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R25 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R26 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R27 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			  R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
                   }  
                   
                   if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
@@ -568,15 +650,129 @@ var sexo = 9
                       if (indice == 99) { indice = 10};
                       R10[indice] = R10[indice]+1;
                   }
+
                   
-                  //Proprietario               
-                  if (students[i][j].slice(0,3) == 'Z04'){ 
-                   	Z04 = [0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R11'){ 
+                    R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = 7};
-                      //Z04[indice] = Z04[indice]+1;
+                      if (indice == 99) { indice = outputArray11.length};
+                      R11[indice] = R11[indice]+1;
                   }
-                  
+                  if (students[i][j].slice(0,3) == 'R12'){ 
+                    R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray12.length};
+                      R12[indice] = R12[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R13'){ 
+                    R13 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray13.length};
+                      R13[indice] = R13[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R14'){ 
+                    R14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray14.length};
+                      R14[indice] = R14[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R15'){ 
+                    R15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray15.length};
+                      R15[indice] = R15[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R16'){ 
+                    R16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray16.length};
+                      R16[indice] = R16[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R17'){ 
+                    R17 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray17.length};
+                      R17[indice] = R17[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R18'){ 
+                    R18 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray18.length};
+                      R18[indice] = R18[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R19'){ 
+                    R19 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray19.length};
+                      R19[indice] = R19[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R20'){ 
+                    R20 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray20.length};
+                      R20[indice] = R20[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R21'){ 
+                    R21 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray21.length};
+                      R21[indice] = R21[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R22'){ 
+                    R22 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray22.length};
+                      R22[indice] = R22[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R23'){ 
+                    R23 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray23.length};
+                      R23[indice] = R23[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R24'){ 
+                    R24 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray24.length};
+                      R24[indice] = R24[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R25'){ 
+                    R25 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray25.length};
+                      R25[indice] = R25[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R26'){ 
+                    R26 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray26.length};
+                      R26[indice] = R26[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R27'){ 
+                    R27 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray27.length};
+                      R27[indice] = R27[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R28'){ 
+                    R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray28.length};
+                      R28[indice] = R28[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R29'){ 
+                    R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray29.length};
+                      R29[indice] = R29[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R30'){ 
+                    R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray30.length};
+                      R30[indice] = R30[indice]+1;
+                  }
+
                   /*
                   	//Peixoto jun 23 
                   	//18 - 09 - intenção de voto estimulada
@@ -647,11 +843,29 @@ tableCreate();
             drawChart08(outputArray08);
             drawChart09(outputArray09);
             drawChart10(outputArray10);
-            drawChart18(outputArray11);
-            drawChart22(outputArray22);
-            drawChart24(outputArray24);
-            drawChart26(outputArray26);
             drawChart01h(outputArray98);
+
+            drawChart11(outputArray11);
+            drawChart12(outputArray12);
+            drawChart13(outputArray13);
+            drawChart14(outputArray14);
+            drawChart15(outputArray15);
+            drawChart16(outputArray16);
+            drawChart17(outputArray17);
+            drawChart18(outputArray18);
+            drawChart19(outputArray19);
+            drawChart20(outputArray20);
+            drawChart21(outputArray21);
+            drawChart22(outputArray22);
+            drawChart23(outputArray23);
+            drawChart24(outputArray24);
+            drawChart25(outputArray25);
+            drawChart26(outputArray26);
+            drawChart27(outputArray27);
+            drawChart28(outputArray28);
+            drawChart29(outputArray29);
+            drawChart30(outputArray30);
+
   
     });
   
@@ -848,56 +1062,243 @@ greeting.innerHTML += '<p>A new paragraph</p>';
   
   }         
 
-// Peixoto jun 2023  
+    var drawChart11 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P11'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray11.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv11'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv11'));
+          chart.draw(data, options);
+  }         
+    var drawChart12 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P12'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray12.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv12'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv12'));
+          chart.draw(data, options);
+  }         
+    var drawChart13 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P13'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray13.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv13'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv13'));
+          chart.draw(data, options);
+  }         
+    var drawChart14 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P14'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+           if (outputArray14.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv14'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv14'));
+         chart.draw(data, options);
+  }         
+    var drawChart15 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P15'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray15.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv15'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv15'));
+          chart.draw(data, options);
+  }         
+    var drawChart16 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P16'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray16.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv16'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv16'));
+          chart.draw(data, options);
+  }         
+    var drawChart17 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P17'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray17.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv17'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv17'));
+          chart.draw(data, options);
+  }         
     var drawChart18 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
-  
           var options = {
-            title: 'Proprietario/Construtor',
-            hAxis: {title: 'Proprietario/Construtor',  titleTextStyle: {color: '#333'}},
+            title: perguntas['P18'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-  
-          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv18'));
+          if (outputArray18.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv18'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv18'));
           chart.draw(data, options);
-  
-  }
+  }         
+    var drawChart19 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P19'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray19.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv19'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv19'));
+          chart.draw(data, options);
+  }         
+    var drawChart20 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P20'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray20.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv20'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv20'));
+          chart.draw(data, options);
+  }         
+    var drawChart21 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P21'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray21.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv21'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv21'));
+          chart.draw(data, options);
+  }         
     var drawChart22 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
-  
           var options = {
-            title: 'disputa entre Calebe e Paulistinha',
-            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            title: perguntas['P22'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-  
-          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv22'));
+          if (outputArray22.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv22'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv22'));
           chart.draw(data, options);
-  
-  }
+  }         
+    var drawChart23 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P23'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray23.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv23'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv23'));
+          chart.draw(data, options);
+  }         
     var drawChart24 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
-  
           var options = {
-            title: 'rejeicao estimulada',
-            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            title: perguntas['P24'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-  
-          var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv24'));
+          if (outputArray24.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv24'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv24'));
           chart.draw(data, options);
-  
-  }
+  }         
+    var drawChart25 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P25'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray25.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv25'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv25'));
+          chart.draw(data, options);
+  }         
     var drawChart26 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
-  
           var options = {
-            title: 'avaliacao do pref',
-            hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
+            title: perguntas['P26'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
-  
-          var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv26'));
+          if (outputArray26.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv26'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv26'));
           chart.draw(data, options);
-  
-  }    
+  }         
+    var drawChart27 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P27'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray27.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv27'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv27'));
+          chart.draw(data, options);
+  }         
+    var drawChart28 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P28'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray28.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv28'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv28'));
+          chart.draw(data, options);
+  }         
+    var drawChart29 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P29'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray29.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv29'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv29'));
+          chart.draw(data, options);
+  }         
+    var drawChart30 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: perguntas['P30'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+          if (outputArray30.length > 7) 
+          	var chart = new google.visualization.ColumnChart(document.getElementById('bellChartDiv30'));
+          else	var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv30'));
+          chart.draw(data, options);
+  }         
