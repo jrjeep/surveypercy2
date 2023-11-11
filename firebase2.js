@@ -439,61 +439,61 @@ var sexo = 9
 			        for (let i = 1; i < outputArray11.length; i++)  {
 			                 outputArray11[i][1]=outputArray11[i][1]+R11[i];
 			                }
-			        for (let i = 1; i < outputArray12.length-1; i++)  {
+			        for (let i = 1; i < outputArray12.length; i++)  {
 					 outputArray12[i][1]=outputArray12[i][1]+R12[i];
 					}
-				for (let i = 1; i < outputArray13.length-1; i++)  {
+				for (let i = 1; i < outputArray13.length; i++)  {
 					 outputArray13[i][1]=outputArray13[i][1]+R13[i];
 					}
-				for (let i = 1; i < outputArray14.length-1; i++)  {
+				for (let i = 1; i < outputArray14.length; i++)  {
 					 outputArray14[i][1]=outputArray14[i][1]+R14[i];
 					}
-				for (let i = 1; i < outputArray15.length-1; i++)  {
+				for (let i = 1; i < outputArray15.length; i++)  {
 					 outputArray15[i][1]=outputArray15[i][1]+R15[i];
 					}
-				for (let i = 1; i < outputArray16.length-1; i++)  {
+				for (let i = 1; i < outputArray16.length; i++)  {
 					 outputArray16[i][1]=outputArray16[i][1]+R16[i];
 					}
-				for (let i = 1; i < outputArray17.length-1; i++)  {
+				for (let i = 1; i < outputArray17.length; i++)  {
 					 outputArray17[i][1]=outputArray17[i][1]+R17[i];
 					}
-				for (let i = 1; i < outputArray18.length-1; i++)  {
+				for (let i = 1; i < outputArray18.length; i++)  {
 					 outputArray18[i][1]=outputArray18[i][1]+R18[i];
 					}
-				for (let i = 1; i < outputArray19.length-1; i++)  {
+				for (let i = 1; i < outputArray19.length; i++)  {
 					 outputArray19[i][1]=outputArray19[i][1]+R19[i];
 					}
-				for (let i = 1; i < outputArray20.length-1; i++)  {
+				for (let i = 1; i < outputArray20.length; i++)  {
 					 outputArray20[i][1]=outputArray20[i][1]+R20[i];
 					}
-				for (let i = 1; i < outputArray21.length-1; i++)  {
+				for (let i = 1; i < outputArray21.length; i++)  {
 					 outputArray21[i][1]=outputArray21[i][1]+R21[i];
 					}
-				for (let i = 1; i < outputArray22.length-1; i++)  {
+				for (let i = 1; i < outputArray22.length; i++)  {
 					 outputArray22[i][1]=outputArray22[i][1]+R22[i];
 					}
-				for (let i = 1; i < outputArray23.length-1; i++)  {
+				for (let i = 1; i < outputArray23.length; i++)  {
 					 outputArray23[i][1]=outputArray23[i][1]+R23[i];
 					}
-				for (let i = 1; i < outputArray24.length-1; i++)  {
+				for (let i = 1; i < outputArray24.length; i++)  {
 					 outputArray24[i][1]=outputArray24[i][1]+R24[i];
 					}
-				for (let i = 1; i < outputArray25.length-1; i++)  {
+				for (let i = 1; i < outputArray25.length; i++)  {
 					 outputArray25[i][1]=outputArray25[i][1]+R25[i];
 					}
-				for (let i = 1; i < outputArray26.length-1; i++)  {
+				for (let i = 1; i < outputArray26.length; i++)  {
 					 outputArray26[i][1]=outputArray26[i][1]+R26[i];
 					}
-				for (let i = 1; i < outputArray27.length-1; i++)  {
+				for (let i = 1; i < outputArray27.length; i++)  {
 					 outputArray27[i][1]=outputArray27[i][1]+R27[i];
 					}
-				for (let i = 1; i < outputArray28.length-1; i++)  {
+				for (let i = 1; i < outputArray28.length; i++)  {
 					 outputArray28[i][1]=outputArray28[i][1]+R28[i];
 					}
-				for (let i = 1; i < outputArray29.length-1; i++)  {
+				for (let i = 1; i < outputArray29.length; i++)  {
 					 outputArray29[i][1]=outputArray29[i][1]+R29[i];
 					}
-				for (let i = 1; i < outputArray30.length-1; i++)  {
+				for (let i = 1; i < outputArray30.length; i++)  {
 					 outputArray30[i][1]=outputArray30[i][1]+R30[i];
 					}
 
