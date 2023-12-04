@@ -1,4 +1,4 @@
-var pesquisaName = 'Sinop_Nov_2023';
+var pesquisaName = 'Juara_Dez_2023';
 var outputArray = [];
 var perguntas;
 (function() {
@@ -378,7 +378,7 @@ var sexo = 9
                         } 
                   } 
 
-                  if (students[i][j] == 'R2399'){ 
+                  if (students[i][j] == 'R2899'){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	  R00H[i] = R00H[i] + R98[i];
