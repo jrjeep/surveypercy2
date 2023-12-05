@@ -44,7 +44,7 @@ var perguntas;
 
 
 		    if ((numResposta > '00')){
-		    	if ((numResposta == '01') || flag99 || umPergunta == '12'){
+		    	if ((numResposta == '01') || flag99 || numPergunta == '12'){
 		    
 		          outputArray.push(outputArrayz);
 		          outputArrayz= [['Grade','.']];
