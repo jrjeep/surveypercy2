@@ -385,7 +385,7 @@ var sexo = 9
                   	}
                   	
 			  //Bairro
-			  for (let i = 1; i < R03.length; i++)  {
+			  for (let i = 1; i < 13; i++)  {
 			  	outputArray03[i][1]=outputArray03[i][1]+R03[i];
 			  }
 
