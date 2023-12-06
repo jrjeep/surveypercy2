@@ -1,4 +1,5 @@
 var pesquisaName = 'Juara_Dez_2023';
+
 var outputArray = [];
 var perguntas;
 (function() {
@@ -28,6 +29,7 @@ var perguntas;
         }
 
         var flag99 = false;
+        var numPerguntaOld = '';
      perguntas = snap.val(); 	
      for(var i in perguntas) {
 
@@ -43,27 +45,21 @@ var perguntas;
 		});
 
 
-		    if ((numResposta > '00')){
-		    	if ((numResposta == '01') || flag99 || numPergunta == '12'){
-		    
+		    if ((numResposta > '00') && (numPergunta > '00')){
+		    	if ( numPergunta > numPerguntaOld ){
 		          outputArray.push(outputArrayz);
-		          outputArrayz= [['Grade','.']];
+		          outputArrayz= [	['Grade','.']];
 		          flag99 = false;
+		          numPerguntaOld = numPergunta;
 		          
 		        }  	
-			    //console.log(perguntas.children);
-			outputArrayz.push([perguntas[i].texto+'',0]);
-			if ((numResposta == '99')){
-				flag99 = true;
-			}
-			    
-
+			outputArrayz.push([numPergunta+'-'+perguntas[i].texto+'',0]);
 		    }
 
      }             
 
 outputArray.push(outputArrayz);
-//console.log(outputArray[3]);
+
 outputArray03 = outputArray[3];
 outputArray04 = outputArray[4];
 outputArray05 = outputArray[5];
@@ -110,7 +106,7 @@ if (numPergunta > '23') {outputArray23 = outputArray[23]};
 if (numPergunta > '24') {outputArray24 = outputArray[24]};
 if (numPergunta > '25') {outputArray25 = outputArray[25]};
 if (numPergunta > '26') {outputArray26 = outputArray[26]};
-if (numPergunta > '27') {outputArray27 = []};
+if (numPergunta > '27') {outputArray27 = outputArray[27]};
 if (numPergunta > '28') {outputArray28 = outputArray[28]};
 if (numPergunta > '29') {outputArray29 = outputArray[29]};
 if (numPergunta > '30') {outputArray30 = outputArray[30]};
@@ -655,109 +651,109 @@ var sexo = 9
                   if (students[i][j].slice(0,3) == 'R11'){ 
                     R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray11.length};
+                      if (indice == 99) { indice = outputArray11.length-1};
                       R11[indice] = R11[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R12'){ 
                     R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray12.length};
+                      if (indice == 99) { indice = outputArray12.length-1};
                       R12[indice] = R12[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R13'){ 
                     R13 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray13.length};
+                      if (indice == 99) { indice = outputArray13.length-1};
                       R13[indice] = R13[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R14'){ 
                     R14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray14.length};
+                      if (indice == 99) { indice = outputArray14.length-1};
                       R14[indice] = R14[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R15'){ 
                     R15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray15.length};
+                      if (indice == 99) { indice = outputArray15.length-1};
                       R15[indice] = R15[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R16'){ 
                     R16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray16.length};
+                      if (indice == 99) { indice = outputArray16.length-1};
                       R16[indice] = R16[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R17'){ 
                     R17 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray17.length};
+                      if (indice == 99) { indice = outputArray17.length-1};
                       R17[indice] = R17[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R18'){ 
                     R18 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray18.length};
+                      if (indice == 99) { indice = outputArray18.length-1};
                       R18[indice] = R18[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R19'){ 
                     R19 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray19.length};
+                      if (indice == 99) { indice = outputArray19.length-1};
                       R19[indice] = R19[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R20'){ 
                     R20 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray20.length};
+                      if (indice == 99) { indice = outputArray20.length-1};
                       R20[indice] = R20[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R21'){ 
                     R21 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray21.length};
+                      if (indice == 99) { indice = outputArray21.length-1};
                       R21[indice] = R21[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R22'){ 
                     R22 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray22.length};
+                      if (indice == 99) { indice = outputArray22.length-1};
                       R22[indice] = R22[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R23'){ 
                     R23 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray23.length};
+                      if (indice == 99) { indice = outputArray23.length-1};
                       R23[indice] = R23[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R24'){ 
                     R24 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray24.length};
+                      if (indice == 99) { indice = outputArray24.length-1};
                       R24[indice] = R24[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R25'){ 
                     R25 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray25.length};
+                      if (indice == 99) { indice = outputArray25.length-1};
                       R25[indice] = R25[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R26'){ 
                     R26 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray26.length};
+                      if (indice == 99) { indice = outputArray26.length-1};
                       R26[indice] = R26[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R27'){ 
                     R27 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray27.length};
+                      if (indice == 99) { indice = outputArray27.length-1};
                       R27[indice] = R27[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R28'){ 
                     R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
-                      if (indice == 99) { indice = outputArray28.length};
+                      if (indice == 99) { indice = outputArray28.length-1};
                       R28[indice] = R28[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R29'){ 
