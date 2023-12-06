@@ -53,7 +53,7 @@ var perguntas;
 		          numPerguntaOld = numPergunta;
 		          
 		        }  	
-			outputArrayz.push([numPergunta+'-'+perguntas[i].texto+'',0]);
+			outputArrayz.push([perguntas[i].texto+'',0]);
 		    }
 
      }             
