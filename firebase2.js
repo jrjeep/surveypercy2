@@ -49,7 +49,7 @@ var perguntas;
 		    	/*if ((perguntas[i].numResposta == '01') || flag99 ){
 		    
 		          outputArray.push(outputArrayz);
-		          outputArrayz= [	['Grade','.']];
+		          outputArrayz= [['Grade','.']];
 		          flag99 = false;
 		          
 		        } 
@@ -57,13 +57,13 @@ var perguntas;
 		    	if ( numPergunta > numPerguntaOld ){
 		    	  //console.log(numPergunta);
 		          outputArray.push(outputArrayz);
-		          outputArrayz= [	['Grade','.']];
+		          outputArrayz= [['Grade','.']];
 		          flag99 = false;
 		          numPerguntaOld = numPergunta;
 		          
 		        }  	
 			    //console.log(perguntas.children);
-			outputArrayz.push([numPergunta+'-'+perguntas[i].texto+'',0]);
+			outputArrayz.push([perguntas[i].texto+'',0]);
 			/*if ((numResposta == '99')){
 				flag99 = true;
 			}*/
