@@ -1,5 +1,5 @@
-var pesquisaName = 'Juara_Dez_2023';
-
+var pesquisaName = 'Colider_Dez_2023';
+var ultimaQuestao = 'R3499';
 var outputArray = [];
 var perguntas;
 (function() {
@@ -46,20 +46,35 @@ var perguntas;
 
 
 		    if ((numResposta > '00') && (numPergunta > '00')){
+		    	/*if ((perguntas[i].numResposta == '01') || flag99 ){
+		    
+		          outputArray.push(outputArrayz);
+		          outputArrayz= [	['Grade','.']];
+		          flag99 = false;
+		          
+		        } 
+		        */ 	
 		    	if ( numPergunta > numPerguntaOld ){
+		    	  //console.log(numPergunta);
 		          outputArray.push(outputArrayz);
 		          outputArrayz= [	['Grade','.']];
 		          flag99 = false;
 		          numPerguntaOld = numPergunta;
 		          
 		        }  	
-			outputArrayz.push([perguntas[i].texto+'',0]);
+			    //console.log(perguntas.children);
+			outputArrayz.push([numPergunta+'-'+perguntas[i].texto+'',0]);
+			/*if ((numResposta == '99')){
+				flag99 = true;
+			}*/
+			    
+
 		    }
 
      }             
 
 outputArray.push(outputArrayz);
-
+//console.log(outputArray[12]);
 outputArray03 = outputArray[3];
 outputArray04 = outputArray[4];
 outputArray05 = outputArray[5];
@@ -374,7 +389,7 @@ var sexo = 9
                         } 
                   } 
 
-                  if (students[i][j] == 'R2899'){ 
+                  if (students[i][j] == ultimaQuestao){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
                   	  R00H[i] = R00H[i] + R98[i];
