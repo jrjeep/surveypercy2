@@ -234,7 +234,7 @@ var currentDate = year + "/" + month + "/" + day;
   var R09 = [0,0,0,0,0,0]; //R09
 
   //Mídia
-  var R10 = [0,0,0,0,0,0,0,0,0,0,0]; //R10
+  var R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 
   var R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -564,7 +564,7 @@ var sexo = 9
 		        R09 = [0,0,0,0,0,0];
 			  
 			//Mídia
-			R10 = [0,0,0,0,0,0,0,0,0,0,0];	
+			R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 			        
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -603,14 +603,14 @@ var sexo = 9
 
 		  //bairro               
                   if (students[i][j].slice(0,3) == 'R03'){ 
-                  	R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                  	//R03 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice03 = parseInt(students[i][j].slice(3,5))
                       R03[indice03] = R03[indice03]+1;
                   }
 
 		  //sexo                    
                   if (students[i][j].slice(0,3) == 'R04'){ 
-                  	R04 = [0,0,0,0,0];
+                  	//R04 = [0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       //if indice = 99 {indice = 4}
                       R04[indice] = R04[indice]+1;
@@ -618,14 +618,14 @@ var sexo = 9
                   
                   //idade               
                   if (students[i][j].slice(0,3) == 'R05'){ 
-                   	R05 = [0,0,0,0,0,0,0];
+                   	//R05 = [0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       R05[indice] = R05[indice]+1;
                   }
 
                   //Instrução               
                   if (students[i][j].slice(0,3) == 'R06'){ 
-                   	R06 = [0,0,0,0,0,0];
+                   	//R06 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 11};
                       R06[indice] = R06[indice]+1;
@@ -633,7 +633,7 @@ var sexo = 9
 
                   //Profissão               
                   if (students[i][j].slice(0,3) == 'R07'){ 
-                   	R07 = [0,0,0,0,0,0,0,0,0,0,0];
+                   	//R07 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 11};
                       R07[indice] = R07[indice]+1;
@@ -641,7 +641,7 @@ var sexo = 9
 
                   //Religião               
                   if (students[i][j].slice(0,3) == 'R08'){ 
-                   	R08 = [0,0,0,0,0,0,0,0];
+                   	//R08 = [0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 7};
                       R08[indice] = R08[indice]+1;
@@ -649,14 +649,14 @@ var sexo = 9
 
                   //Renda               
                   if (students[i][j].slice(0,3) == 'R09'){ 
-                   	R09 = [0,0,0,0,0,0];
+                   	//R09 = [0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       R09[indice] = R09[indice]+1;
                   }
 
                   //Mídia               
                   if (students[i][j].slice(0,3) == 'R10'){ 
-                   	R10 = [0,0,0,0,0,0,0,0,0,0,0];
+                   	//R10 = [0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = 10};
                       R10[indice] = R10[indice]+1;
@@ -664,121 +664,121 @@ var sexo = 9
 
                   
                   if (students[i][j].slice(0,3) == 'R11'){ 
-                    R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray11.length-1};
                       R11[indice] = R11[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R12'){ 
-                    R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray12.length-1};
                       R12[indice] = R12[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R13'){ 
-                    R13 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R13 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray13.length-1};
                       R13[indice] = R13[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R14'){ 
-                    R14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R14 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray14.length-1};
                       R14[indice] = R14[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R15'){ 
-                    R15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R15 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray15.length-1};
                       R15[indice] = R15[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R16'){ 
-                    R16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R16 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray16.length-1};
                       R16[indice] = R16[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R17'){ 
-                    R17 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R17 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray17.length-1};
                       R17[indice] = R17[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R18'){ 
-                    R18 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R18 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray18.length-1};
                       R18[indice] = R18[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R19'){ 
-                    R19 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R19 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray19.length-1};
                       R19[indice] = R19[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R20'){ 
-                    R20 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R20 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray20.length-1};
                       R20[indice] = R20[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R21'){ 
-                    R21 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R21 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray21.length-1};
                       R21[indice] = R21[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R22'){ 
-                    R22 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R22 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray22.length-1};
                       R22[indice] = R22[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R23'){ 
-                    R23 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R23 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray23.length-1};
                       R23[indice] = R23[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R24'){ 
-                    R24 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R24 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray24.length-1};
                       R24[indice] = R24[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R25'){ 
-                    R25 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R25 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray25.length-1};
                       R25[indice] = R25[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R26'){ 
-                    R26 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R26 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray26.length-1};
                       R26[indice] = R26[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R27'){ 
-                    R27 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R27 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray27.length-1};
                       R27[indice] = R27[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R28'){ 
-                    R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray28.length-1};
                       R28[indice] = R28[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R29'){ 
-                    R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray29.length};
                       R29[indice] = R29[indice]+1;
                   }
                   if (students[i][j].slice(0,3) == 'R30'){ 
-                    R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                    //R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray30.length};
                       R30[indice] = R30[indice]+1;
@@ -959,7 +959,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
 
           var options = {
-            title: perguntas['P04'].texto,
+            title: '04-'+perguntas['P04'].texto,
             hAxis: {title: 'Sexo',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -972,7 +972,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: perguntas['P05'].texto,
+            title: '05-'+perguntas['P05'].texto,
             hAxis: {title: 'idade',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1011,7 +1011,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData); 
   
           var options = {
-            title: perguntas['P06'].texto,
+            title: '06-'+perguntas['P06'].texto,
             hAxis: {title: 'Instrução',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1024,7 +1024,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
    
           var options = {
-            title: perguntas['P07'].texto,
+            title: '07-'+perguntas['P07'].texto,
             hAxis: {title: 'Profissão',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1037,7 +1037,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: perguntas['P08'].texto,
+            title: '08-'+perguntas['P08'].texto,
             hAxis: {title: 'Religião',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1050,7 +1050,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: perguntas['P09'].texto,
+            title: '09-'+perguntas['P09'].texto,
             hAxis: {title: 'Renda',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1063,7 +1063,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: perguntas['P10'].texto,
+            title: '10-'+perguntas['P10'].texto,
             hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1076,7 +1076,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart11 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P11'].texto,
+            title: '11-'+perguntas['P11'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1089,7 +1089,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart12 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P12'].texto,
+            title: '12-'+perguntas['P12'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1102,7 +1102,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart13 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P13'].texto,
+            title: '13-'+perguntas['P13'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1115,7 +1115,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart14 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P14'].texto,
+            title: '14-'+perguntas['P14'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1128,7 +1128,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart15 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P15'].texto,
+            title: '15-'+perguntas['P15'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1141,7 +1141,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart16 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P16'].texto,
+            title: '16-'+perguntas['P16'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1154,7 +1154,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart17 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P17'].texto,
+            title: '17-'+perguntas['P17'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1167,7 +1167,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart18 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P18'].texto,
+            title: '18-'+perguntas['P18'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1180,7 +1180,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart19 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P19'].texto,
+            title: '9-'+perguntas['P19'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1193,7 +1193,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart20 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P20'].texto,
+            title: '20-'+perguntas['P20'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1206,7 +1206,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart21 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P21'].texto,
+            title: '21-'+perguntas['P21'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1219,7 +1219,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart22 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P22'].texto,
+            title: '22-'+perguntas['P22'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1232,7 +1232,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart23 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P23'].texto,
+            title: '23-'+perguntas['P23'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1245,7 +1245,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart24 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P24'].texto,
+            title: '24-'+perguntas['P24'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1258,7 +1258,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart25 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P25'].texto,
+            title: '25-'+perguntas['P25'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1271,7 +1271,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart26 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P26'].texto,
+            title: '26-'+perguntas['P26'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1284,7 +1284,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart27 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P27'].texto,
+            title: '27-'+perguntas['P27'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1297,7 +1297,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart28 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P28'].texto,
+            title: '28-'+perguntas['P28'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1310,7 +1310,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart29 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P29'].texto,
+            title: '29-'+perguntas['P29'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1323,7 +1323,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart30 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: perguntas['P30'].texto,
+            title: '30-'+perguntas['P30'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
