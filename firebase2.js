@@ -1180,7 +1180,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart19 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '9-'+perguntas['P19'].texto,
+            title: '19-'+perguntas['P19'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
