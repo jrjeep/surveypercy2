@@ -1,5 +1,5 @@
 var pesquisaName = 'Matupa_Dez_2023';
-var ultimaQuestao = 'R3199';
+var ultimaQuestao = '';
 var outputArray = [];
 var perguntas;
 (function() {
@@ -62,7 +62,7 @@ var perguntas;
 		          numPerguntaOld = numPergunta;
 		          
 		        }  	
-			    //console.log(perguntas.children);
+			    //console.log(perguntas[i].texto);
 			outputArrayz.push([perguntas[i].texto+'',0]);
 			/*if ((numResposta == '99')){
 				flag99 = true;
@@ -126,6 +126,8 @@ if (numPergunta > '28') {outputArray28 = outputArray[28]};
 if (numPergunta > '29') {outputArray29 = outputArray[29]};
 if (numPergunta > '30') {outputArray30 = outputArray[30]};
 
+ultimaQuestao = 'R'+numPergunta+'99';
+console.log(ultimaQuestao);
 
     });    
         
