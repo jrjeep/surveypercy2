@@ -127,8 +127,6 @@ if (numPergunta > '29') {outputArray29 = outputArray[29]};
 if (numPergunta > '30') {outputArray30 = outputArray[30]};
 
 ultimaQuestao = 'R'+numPergunta+'99';
-console.log(ultimaQuestao);
-
     });    
         
     const dbEvaluationStudentsRef = firebase.database().ref('Formularios/'+pesquisaName).orderByChild('numPergunta');//.endAt('05');
