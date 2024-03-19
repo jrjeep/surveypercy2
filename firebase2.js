@@ -1,4 +1,4 @@
-var pesquisaName = 'Tabapora_Mar_2024';
+var pesquisaName = 'Juara_Mar2024';
 var ultimaQuestao = '';
 var outputArray = [];
 var perguntas;
