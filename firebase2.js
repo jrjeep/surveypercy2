@@ -1,4 +1,4 @@
-var pesquisaName = 'Matupa_Abr_2024';
+var pesquisaName = ''; //'Matupa_Abr_2024';
 var ultimaQuestao = '';
 var outputArray = [];
 var perguntas;
@@ -13,7 +13,21 @@ var perguntas;
     messagingSenderId: "748138801996"
     };
     firebase.initializeApp(config);
+
+    const dbEvaluationQuestRef = firebase.database().ref('Questionario');//.endAt('05');
     
+    //var query = firebase.database().ref("users").orderByKey();
+	dbEvaluationQuestRef.once("value")
+	  .then(function(snapshot) {
+	    snapshot.forEach(function(childSnapshot) {
+	      pesquisaName = childSnapshot.key; 
+	      // Cancel enumeration
+	      return true;
+	  });
+	
+	
+
+
 
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
@@ -127,7 +141,7 @@ if (numPergunta > '29') {outputArray29 = outputArray[29]};
 if (numPergunta > '30') {outputArray30 = outputArray[30]};
 
 ultimaQuestao = 'R'+numPergunta+'99';
-console.log(ultimaQuestao);
+//console.log(ultimaQuestao);
 
     });    
         
@@ -880,16 +894,22 @@ tableCreate();
             drawChart30(outputArray30);
 
   
-    });
+    }); // final dos formularios 
   
-  }());
-
 let greeting = document.querySelector('.greeting');
+greeting.innerText =  '- Questionário de Pesquisa - '+pesquisaName.valueOf() ; //greeting.innerHTML;
+
+	}); // final do get quest name
+	
+
+  }()); // final da function
+
+
 
                     
 // Get HTML content
 // returns "<p>Hello world!</p>"
-greeting.innerText =  '- Questionário de Pesquisa - '+pesquisaName.valueOf() ; //greeting.innerHTML;
+//greeting.innerText =  '- Questionário de Pesquisa - '+pesquisaName.valueOf() ; //greeting.innerHTML;
 
 // Set HTML content
 // This replaces what was in there already
