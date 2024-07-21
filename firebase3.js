@@ -11,6 +11,7 @@ var perguntas;
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
+    
     };
     firebase.initializeApp(config);
 
@@ -23,7 +24,8 @@ var perguntas;
 	      pesquisaName = childSnapshot.key; 
 	      // Cancel enumeration
 	      //return true;
-	  });
+	  }
+	  );
 	
 	
 
@@ -233,12 +235,12 @@ var currentDate = year + "/" + month + "/" + day;
             
             
   //pesquisador 
-  var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
+  var R00 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
   //pesquisador ultima resposta            
-  var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];  
   //pesquisador Hoje            
-  var R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-  var R00H = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];           
+  var R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];  
+  var R00H = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];            
 
 
   //bairro 
@@ -486,6 +488,16 @@ var sexo = 9
                         	R98 = R99;
                         } 
                   }
+                  /*} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'victor_______')){ 
+                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1];
+                        outputArray00[13][1]= students[i][j].slice(0, 3); 
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+                  } 
+                  */
 
                   if (students[i][j] == ultimaQuestao){ 
                   	for(let i=1; i < R00.length; i++) {
@@ -664,8 +676,8 @@ var sexo = 9
 			//Mídia
 			R10 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 			        
-                      R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];  
                       
                           R11 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 			  R12 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -691,8 +703,8 @@ var sexo = 9
                   }  
                   
                   if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
-                      R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		      teste = 1; // teste verdadeiro 
                   } 
                   
