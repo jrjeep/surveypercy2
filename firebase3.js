@@ -498,7 +498,6 @@ var sexo = 9
                         } 
                   } 
                   */
-
                   if (students[i][j] == ultimaQuestao){ 
                   	for(let i=1; i < R00.length; i++) {
                   	  R00[i] = R00[i] + R99[i];
@@ -934,7 +933,7 @@ function tableCreate() {
   tbl.style.width = '200px';
   tbl.style.border = '2px solid black';
 
-  for (let i = 0; i < 13; i++) {
+  for (let i = 0; i < 21; i++) {
     const tr = tbl.insertRow();
     for (let j = 0; j < 2; j++) {
         const td = tr.insertCell();
