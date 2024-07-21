@@ -177,7 +177,15 @@ var currentDate = year + "/" + month + "/" + day;
                 ['pesq10', 0],
                 ['pesq11', 0],
                 ['pesq12', 0],
-                ['Victor', 0]
+                ['pesq13', 0],
+                ['pesq14', 0],
+                ['pesq15', 0],
+                ['pesq16', 0],
+                ['pesq17', 0],
+                ['pesq18', 0],
+                ['pesq19', 0],
+                ['pesq20', 0]
+                //['Victor', 0]
             ];
             // pesquisador Hoje
             var outputArray98 = [ 
@@ -194,7 +202,14 @@ var currentDate = year + "/" + month + "/" + day;
                 ['pesq10', 0],
                 ['pesq11', 0],
                 ['pesq12', 0],
-                ['Victor', 0]
+                ['pesq13', 0],
+                ['pesq14', 0],
+                ['pesq15', 0],
+                ['pesq16', 0],
+                ['pesq17', 0],
+                ['pesq18', 0],
+                ['pesq19', 0],
+                ['pesq20', 0]
             ];
 
             
@@ -309,21 +324,21 @@ var sexo = 9
   
                   if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador01')){ 
                       x = 0;
-                        var R99 = [0,1,0,0,0,0,0,0,0,0,0,0,0,0];
+                        var R99 = [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[1][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador02')){ 
                       x = 0;
-                        var R99 = [0,0,1,0,0,0,0,0,0,0,0,0,0,0];
+                        var R99 = [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[2][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador03')){ 
                       x = 0;
-                        var R99 = [0,0,0,1,0,0,0,0,0,0,0,0,0,0];
+                        var R99 = [0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[3][1]= students[i][j].slice(0, 3); 
                   //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-2, students[i][j].length) == 'jr')){ 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
@@ -331,7 +346,7 @@ var sexo = 9
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador04')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,1,0,0,0,0,0,0,0,0,0];
+                        var R99 = [0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[4][1]= students[i][j].slice(0, 3); 
 		  //ultima pergunta            
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
@@ -339,71 +354,138 @@ var sexo = 9
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador05')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,1,0,0,0,0,0,0,0,0];
+                        var R99 = [0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[5][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,1,0,0,0,0,0,0,0];
+                        var R99 = [0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[6][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador07')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,1,0,0,0,0,0,0];
+                        var R99 = [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[7][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador08')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,0,1,0,0,0,0,0];
+                        var R99 = [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[8][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador09')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,0,0,1,0,0,0,0];
+                        var R99 = [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[9][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador10')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,0,0,0,1,0,0,0];
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0];
                         outputArray00[10][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador11')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,1,0,0];
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0];
                         outputArray00[11][1]= students[i][j].slice(0, 3); 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador12')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,1,0];
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0];
                         outputArray00[12][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
 
-                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'victor_______')){ 
-                  //} else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador06')){ 
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador13')){ 
                       x = 0;
-                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1];
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0];
                         outputArray00[13][1]= students[i][j].slice(0, 3); 
+
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
-                  } 
+
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador14')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0];
+                        outputArray00[14][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador15')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0];
+                        outputArray00[15][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador16')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0];
+                        outputArray00[16][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador17')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0];
+                        outputArray00[17][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador18')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0];
+                        outputArray00[18][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador19')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0];
+                        outputArray00[19][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+
+
+                  } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador20')){ 
+                      x = 0;
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
+                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+
+                        if ( (students[i][j].slice(8, 18) == currentDate)){ 
+                        	R98 = R99;
+                        } 
+                  }
 
                   if (students[i][j] == ultimaQuestao){ 
                   	for(let i=1; i < R00.length; i++) {
