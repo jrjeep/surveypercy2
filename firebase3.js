@@ -4,7 +4,7 @@ var outputArray = [];
 var perguntas;
 (function() {
     const config = {
-        
+    
     apiKey: "AIzaSyDrQGvVqEEoM8sAtIC6DmKcu9N4dtic28g",
     authDomain: "surveypercy-3914b.firebaseapp.com",
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
@@ -163,6 +163,7 @@ var day = date.toLocaleString("default", { day: "2-digit" });
 
 // Generate yyyy-mm-dd date string
 var currentDate = year + "/" + month + "/" + day;
+//var currentDate = "2024/07/20" ;
       var students = snap.val();
             var outputArray00 = [
                 ['Pesquisador', 'Formulários'],
@@ -751,7 +752,8 @@ var sexo = 9
 			  */
                   }  
                   
-                  if (students[i][j].slice(0,5).toLowerCase() == 'teste'){ 
+                  if ((students[i][j].slice(0,5).toLowerCase() == 'teste') 
+                  && (students[i][j].slice(0,9).toLowerCase() != 'testemunh')){ // testemunha de Jeová 
                       R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		      teste = 1; // teste verdadeiro 
