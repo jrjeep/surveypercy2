@@ -322,6 +322,8 @@ var sexo = 9
                   if ((students[i][j] == '00')){ 
                       x = 1  ;
                       teste = 0; // teste falso
+                        var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                        var R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];  
                     } 
   
                   if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador01')){ 
