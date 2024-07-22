@@ -162,8 +162,7 @@ var month = date.toLocaleString("default", { month: "2-digit" });
 var day = date.toLocaleString("default", { day: "2-digit" });
 
 // Generate yyyy-mm-dd date string
-//var currentDate = year + "/" + month + "/" + day;
-var currentDate = "2024/07/20" ;
+var currentDate = year + "/" + month + "/" + day;
       var students = snap.val();
             var outputArray00 = [
                 ['Pesquisador', 'Formulários'],
