@@ -5,6 +5,18 @@ var perguntas;
 (function() {
     const config = {
     
+    /*
+     	// TESTE
+	  apiKey: "AIzaSyDNzPAOYVVQshQAJLxIrPwx67Fi_6FmLNw",
+	  authDomain: "surveypercy-5ae68.firebaseapp.com",
+	  databaseURL: "https://surveypercy-5ae68-default-rtdb.firebaseio.com",
+	  projectId: "surveypercy-5ae68",
+	  storageBucket: "surveypercy-5ae68.appspot.com",
+	  messagingSenderId: "80485888927",
+	  appId: "1:80485888927:web:75c75e2671c1d2d67083aa",
+	  measurementId: "G-0SWDLTTCCK"
+    */
+    
     apiKey: "AIzaSyDrQGvVqEEoM8sAtIC6DmKcu9N4dtic28g",
     authDomain: "surveypercy-3914b.firebaseapp.com",
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
@@ -425,6 +437,11 @@ var sexo = 9
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
                         } 
+//**************************************************
+                                              R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                      R98 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+                        teste = 1;
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador08')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -759,6 +776,7 @@ var sexo = 9
 		      teste = 1; // teste verdadeiro 
                   } 
                   
+                  
                if (teste == 0) {   
                //if (true) {
 
@@ -1042,7 +1060,7 @@ tableCreate();
     }); // final dos formularios 
   
 let greeting = document.querySelector('.greeting');
-greeting.innerText =  '- Questionário de Pesquisa - '+pesquisaName.valueOf() ; //greeting.innerHTML;
+greeting.innerText =  '- Questionário de Pesquisa ******SEM PESQUISADOR07******* - '+pesquisaName.valueOf() ; //greeting.innerHTML;
 
 	}); // final do get quest name
 	
