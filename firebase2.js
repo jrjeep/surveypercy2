@@ -1055,7 +1055,7 @@ tableCreate();
     }); // final dos formularios 
   
 let greeting = document.querySelector('.greeting');
-greeting.innerText =  '- Questionário de Pesquisa ******SEM PESQUISADOR07******* - '+pesquisaName.valueOf() ; //greeting.innerHTML;
+greeting.innerText =  '- Questionário de Pesquisa - '+pesquisaName.valueOf() ; //greeting.innerHTML;
 
 	}); // final do get quest name
 	
