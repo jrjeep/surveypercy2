@@ -987,7 +987,7 @@ function tableCreate() {
   tbl.style.width = '200px';
   tbl.style.border = '2px solid black';
 
-  for (let i = 0; i < 21; i++) {
+  for (let i = 0; i < R00.length; i++) {
     const tr = tbl.insertRow();
     for (let j = 0; j < 2; j++) {
         const td = tr.insertCell();
