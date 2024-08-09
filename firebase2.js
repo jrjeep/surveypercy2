@@ -4,7 +4,7 @@ var outputArray = [];
 var perguntas;
 (function() {
     const config = {
-    
+
     apiKey: "AIzaSyDrQGvVqEEoM8sAtIC6DmKcu9N4dtic28g",
     authDomain: "surveypercy-3914b.firebaseapp.com",
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
@@ -27,6 +27,9 @@ var perguntas;
 	  }
 	  );
 	
+	
+
+
 
     // Load Charts and the corechart package.
         google.charts.load('current', {'packages':['corechart']});
@@ -559,7 +562,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador21')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[21][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -568,7 +571,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador22')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[22][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -577,7 +580,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador23')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[23][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -586,7 +589,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador24')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[24][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -595,7 +598,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador25')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[25][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -604,7 +607,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador26')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[26][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -613,7 +616,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador27')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[27][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -622,7 +625,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador28')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[28][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -631,7 +634,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador29')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[29][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -640,7 +643,7 @@ var sexo = 9
                   } else if ((x==1) && ( students[i][j].slice(students[i][j].length-13, students[i][j].length) == 'pesquisador30')){ 
                       x = 0;
                         var R99 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
-                        outputArray00[20][1]= students[i][j].slice(0, 3); 
+                        outputArray00[30][1]= students[i][j].slice(0, 3); 
 
                         if ( (students[i][j].slice(8, 18) == currentDate)){ 
                         	R98 = R99;
@@ -984,7 +987,7 @@ function tableCreate() {
   tbl.style.width = '200px';
   tbl.style.border = '2px solid black';
 
-  for (let i = 0; i < 21; i++) {
+  for (let i = 0; i < R00.length; i++) {
     const tr = tbl.insertRow();
     for (let j = 0; j < 2; j++) {
         const td = tr.insertCell();
