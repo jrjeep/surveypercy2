@@ -4,14 +4,24 @@ var outputArray = [];
 var perguntas;
 (function() {
     const config = {
-
+  
+     	// TESTE
+	  apiKey: "AIzaSyDNzPAOYVVQshQAJLxIrPwx67Fi_6FmLNw",
+	  authDomain: "surveypercy-5ae68.firebaseapp.com",
+	  databaseURL: "https://surveypercy-5ae68-default-rtdb.firebaseio.com",
+	  projectId: "surveypercy-5ae68",
+	  storageBucket: "surveypercy-5ae68.appspot.com",
+	  messagingSenderId: "80485888927",
+	  appId: "1:80485888927:web:75c75e2671c1d2d67083aa",
+	  measurementId: "G-0SWDLTTCCK"
+    /*
     apiKey: "AIzaSyDrQGvVqEEoM8sAtIC6DmKcu9N4dtic28g",
     authDomain: "surveypercy-3914b.firebaseapp.com",
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
-    
+    */
     };
     firebase.initializeApp(config);
 
