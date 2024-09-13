@@ -23,7 +23,7 @@ var perguntas;
 	    snapshot.forEach(function(childSnapshot) {
 	      //pesquisaName = childSnapshot.key; 
 	      // Cancel enumeration
-	      return true;
+	      //return true;
 	  }
 	  );
 	
