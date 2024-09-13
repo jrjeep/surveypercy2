@@ -1,4 +1,4 @@
-var pesquisaName = 'Juara_Ago_2024';
+var pesquisaName = ''; //'Matupa_Abr_2024';
 var ultimaQuestao = '';
 var outputArray = [];
 var perguntas;
@@ -21,7 +21,7 @@ var perguntas;
 	dbEvaluationQuestRef.once("value")
 	  .then(function(snapshot) {
 	    snapshot.forEach(function(childSnapshot) {
-	      //pesquisaName = childSnapshot.key; 
+	      pesquisaName = childSnapshot.key; 
 	      // Cancel enumeration
 	      //return true;
 	  }
