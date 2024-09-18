@@ -696,7 +696,7 @@ var sexo = 9
 
 
 			  //Instrução
-			  for (let i = 1; i < R06.length-1; i++)  {
+			  for (let i = 1; i < R06.length-2; i++)  {
 			  	outputArray06[i][1]=outputArray06[i][1]+R06[i];
 			  }
 
