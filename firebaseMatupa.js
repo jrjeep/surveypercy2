@@ -18,6 +18,7 @@ var perguntas;
     const dbEvaluationQuestRef = firebase.database().ref('Questionario');//.endAt('05');
     
     //var query = firebase.database().ref("users").orderByKey();
+	/*
 	dbEvaluationQuestRef.once("value")
 	  .then(function(snapshot) {
 	    snapshot.forEach(function(childSnapshot) {
@@ -26,7 +27,7 @@ var perguntas;
 	      return true;
 	  }
 	  );
-	
+	*/
 	
 
 
