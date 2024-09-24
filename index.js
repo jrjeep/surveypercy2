@@ -41,11 +41,6 @@ var x = 0;
 
     //});   
 
-
-
-let greeting = document.querySelector('.greeting');
-greeting.innerText =  '- Questionário de Pesquisa - '+pesquisaName.valueOf() ; //greeting.innerHTML;
-  
 let greeting1 = document.querySelector('.greeting1');
 greeting1.innerText =  ' Pesquisa: '+pesquisaName1.valueOf() ; //greeting.innerHTML;
 
