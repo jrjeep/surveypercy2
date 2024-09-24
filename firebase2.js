@@ -1,7 +1,8 @@
-var pesquisaName = ''; //'Matupa_Abr_2024';
+var pesquisaName = '';
 var ultimaQuestao = '';
 var outputArray = [];
 var perguntas;
+var x = 0;
 (function() {
     const config = {
 
@@ -18,12 +19,14 @@ var perguntas;
     const dbEvaluationQuestRef = firebase.database().ref('Questionario');//.endAt('05');
     
     //var query = firebase.database().ref("users").orderByKey();
+	
 	dbEvaluationQuestRef.once("value")
 	  .then(function(snapshot) {
 	    snapshot.forEach(function(childSnapshot) {
 	      pesquisaName = childSnapshot.key; 
 	      // Cancel enumeration
-	      return true;
+	      x++;
+	      if (x == 2) return true;
 	  }
 	  );
 	
