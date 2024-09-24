@@ -1,39 +1,32 @@
-var pesquisaName = ''; //'Matupa_Abr_2024';
+var pesquisaName = '';
 var ultimaQuestao = '';
 var outputArray = [];
 var perguntas;
+var x = 0;
 (function() {
     const config = {
-  
-     	// TESTE
-	  apiKey: "AIzaSyDNzPAOYVVQshQAJLxIrPwx67Fi_6FmLNw",
-	  authDomain: "surveypercy-5ae68.firebaseapp.com",
-	  databaseURL: "https://surveypercy-5ae68-default-rtdb.firebaseio.com",
-	  projectId: "surveypercy-5ae68",
-	  storageBucket: "surveypercy-5ae68.appspot.com",
-	  messagingSenderId: "80485888927",
-	  appId: "1:80485888927:web:75c75e2671c1d2d67083aa",
-	  measurementId: "G-0SWDLTTCCK"
-    /*
+
     apiKey: "AIzaSyDrQGvVqEEoM8sAtIC6DmKcu9N4dtic28g",
     authDomain: "surveypercy-3914b.firebaseapp.com",
     databaseURL: "https://surveypercy-3914b.firebaseio.com",
     projectId: "surveypercy-3914b",
     storageBucket: "surveypercy-3914b.appspot.com",
     messagingSenderId: "748138801996"
-    */
+    
     };
     firebase.initializeApp(config);
 
     const dbEvaluationQuestRef = firebase.database().ref('Questionario');//.endAt('05');
     
     //var query = firebase.database().ref("users").orderByKey();
+	
 	dbEvaluationQuestRef.once("value")
 	  .then(function(snapshot) {
 	    snapshot.forEach(function(childSnapshot) {
 	      pesquisaName = childSnapshot.key; 
 	      // Cancel enumeration
-	      //return true;
+	      x++;
+	      if (x == 3) return true;
 	  }
 	  );
 	
@@ -706,7 +699,7 @@ var sexo = 9
 
 
 			  //Instrução
-			  for (let i = 1; i < R06.length-1; i++)  {
+			  for (let i = 1; i < R06.length-2; i++)  {
 			  	outputArray06[i][1]=outputArray06[i][1]+R06[i];
 			  }
 
