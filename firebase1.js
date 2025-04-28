@@ -1194,7 +1194,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
    
           var options = {
-            title: '07-'+perguntas['P07'].texto,
+            title: '07-'+perguntas['P07__'].texto,
             hAxis: {title: 'Profissão',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
