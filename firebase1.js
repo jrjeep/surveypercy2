@@ -1,3 +1,4 @@
+//****** ATENCAO QUESTAO 30 Alterada para questão 36
 var pesquisaName = '';
 var ultimaQuestao = '';
 var outputArray = [];
@@ -141,7 +142,7 @@ if (numPergunta > '26') {outputArray26 = outputArray[26]};
 if (numPergunta > '27') {outputArray27 = outputArray[27]};
 if (numPergunta > '28') {outputArray28 = outputArray[28]};
 if (numPergunta > '29') {outputArray29 = outputArray[29]};
-if (numPergunta > '30') {outputArray30 = outputArray[30]};
+if (numPergunta > '36') {outputArray30 = outputArray[36]};
 
 ultimaQuestao = 'R'+numPergunta+'99';
 //console.log(ultimaQuestao);
@@ -971,7 +972,7 @@ var sexo = 9
                       if (indice == 99) { indice = outputArray29.length};
                       R29[indice] = R29[indice]+1;
                   }
-                  if (students[i][j].slice(0,3) == 'R30'){ 
+                  if (students[i][j].slice(0,3) == 'R36'){ 
                     //R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray30.length};
@@ -1493,7 +1494,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart30 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '30-'+perguntas['P30__'].texto,
+            title: '36-'+perguntas['P36__'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
