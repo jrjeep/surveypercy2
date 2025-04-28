@@ -1,4 +1,3 @@
-//****** ATENCAO QUESTAO 30 Alterada para questão 36
 var pesquisaName = '';
 var ultimaQuestao = '';
 var outputArray = [];
