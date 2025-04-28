@@ -122,6 +122,16 @@ outputArray27 = [];
 outputArray28 = [];
 outputArray29 = [];
 outputArray30 = [];
+outputArray31 = [];
+outputArray32 = [];
+outputArray33 = [];
+outputArray34 = [];
+outputArray35 = [];
+outputArray36 = [];
+outputArray37 = [];
+outputArray38 = [];
+outputArray39 = [];
+outputArray40 = [];
 
 if (numPergunta > '11') {outputArray11 = outputArray[11]};
 if (numPergunta > '12') {outputArray12 = outputArray[12]};
@@ -142,7 +152,17 @@ if (numPergunta > '26') {outputArray26 = outputArray[26]};
 if (numPergunta > '27') {outputArray27 = outputArray[27]};
 if (numPergunta > '28') {outputArray28 = outputArray[28]};
 if (numPergunta > '29') {outputArray29 = outputArray[29]};
-if (numPergunta > '36') {outputArray30 = outputArray[36]};
+if (numPergunta > '30') {outputArray30 = outputArray[30]};
+if (numPergunta > '31') {outputArray31 = outputArray[31]};
+if (numPergunta > '32') {outputArray32 = outputArray[32]};
+if (numPergunta > '33') {outputArray33 = outputArray[33]};
+if (numPergunta > '34') {outputArray34 = outputArray[34]};
+if (numPergunta > '35') {outputArray35 = outputArray[35]};
+if (numPergunta > '36') {outputArray36 = outputArray[36]};
+if (numPergunta > '37') {outputArray37 = outputArray[37]};
+if (numPergunta > '38') {outputArray38 = outputArray[38]};
+if (numPergunta > '39') {outputArray39 = outputArray[39]};
+if (numPergunta > '40') {outputArray40 = outputArray[40]};
 
 ultimaQuestao = 'R'+numPergunta+'99';
 //console.log(ultimaQuestao);
@@ -313,7 +333,16 @@ var currentDate = year + "/" + month + "/" + day;
   var R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-
+  var R31 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R32 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R33 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R34 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R35 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R36 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R37 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R38 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R39 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var R40 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 /*  
 //Peixoto jun 23 
@@ -394,6 +423,16 @@ var sexo = 9
 			  var R28 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 			  var R29 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 			  var R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R31 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R32 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R33 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R34 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R35 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R36 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R37 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R38 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R39 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+              var R40 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
                     } 
   
@@ -783,6 +822,36 @@ var sexo = 9
 				for (let i = 1; i < outputArray30.length; i++)  {
 					 outputArray30[i][1]=outputArray30[i][1]+R30[i];
 					}
+				for (let i = 1; i < outputArray31.length; i++)  {
+					 outputArray31[i][1]=outputArray31[i][1]+R31[i];
+					}
+				for (let i = 1; i < outputArray32.length; i++)  {
+					 outputArray32[i][1]=outputArray32[i][1]+R32[i];
+					}
+				for (let i = 1; i < outputArray33.length; i++)  {
+					 outputArray33[i][1]=outputArray33[i][1]+R33[i];
+					}
+				for (let i = 1; i < outputArray34.length; i++)  {
+					 outputArray34[i][1]=outputArray34[i][1]+R34[i];
+					}
+				for (let i = 1; i < outputArray35.length; i++)  {
+					 outputArray35[i][1]=outputArray35[i][1]+R35[i];
+					}
+				for (let i = 1; i < outputArray36.length; i++)  {
+					 outputArray36[i][1]=outputArray36[i][1]+R36[i];
+					}
+				for (let i = 1; i < outputArray37.length; i++)  {
+					 outputArray37[i][1]=outputArray37[i][1]+R37[i];
+					}
+				for (let i = 1; i < outputArray38.length; i++)  {
+					 outputArray38[i][1]=outputArray38[i][1]+R38[i];
+					}
+				for (let i = 1; i < outputArray39.length; i++)  {
+					 outputArray39[i][1]=outputArray39[i][1]+R39[i];
+					}
+				for (let i = 1; i < outputArray40.length; i++)  {
+					 outputArray40[i][1]=outputArray40[i][1]+R40[i];
+					}
 
                   }  
                   
@@ -972,11 +1041,60 @@ var sexo = 9
                       if (indice == 99) { indice = outputArray29.length};
                       R29[indice] = R29[indice]+1;
                   }
-                  if (students[i][j].slice(0,3) == 'R36'){ 
-                    //R30 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                  if (students[i][j].slice(0,3) == 'R30'){ 
                       var indice = parseInt(students[i][j].slice(3,5))
                       if (indice == 99) { indice = outputArray30.length};
                       R30[indice] = R30[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R31'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray31.length};
+                      R31[indice] = R31[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R32'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray32.length};
+                      R32[indice] = R32[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R33'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray33.length};
+                      R33[indice] = R33[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R34'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray34.length};
+                      R34[indice] = R34[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R35'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray35.length};
+                      R35[indice] = R35[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R36'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray36.length};
+                      R36[indice] = R36[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R37'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray37.length};
+                      R37[indice] = R37[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R38'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray38.length};
+                      R38[indice] = R38[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R39'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray39.length};
+                      R39[indice] = R39[indice]+1;
+                  }
+                  if (students[i][j].slice(0,3) == 'R40'){ 
+                      var indice = parseInt(students[i][j].slice(3,5))
+                      if (indice == 99) { indice = outputArray40.length};
+                      R40[indice] = R40[indice]+1;
                   }
                   
                }     
@@ -1042,6 +1160,16 @@ tableCreate();
             drawChart29(outputArray29);
             drawChart30(outputArray30);
 
+            drawChart31(outputArray31);
+            drawChart32(outputArray32);
+            drawChart33(outputArray33);
+            drawChart34(outputArray34);
+            drawChart35(outputArray35);
+            drawChart36(outputArray36);
+            drawChart37(outputArray37);
+            drawChart38(outputArray38);
+            drawChart39(outputArray39);
+            drawChart40(outputArray40);
   
     }); // final dos formularios 
   
@@ -1494,7 +1622,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart30 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '36-'+perguntas['P36__'].texto,
+            title: '30-'+perguntas['P30__'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1504,3 +1632,104 @@ greeting.innerHTML += '<p>A new paragraph</p>';
 	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv30'));
           chart.draw(data, options);
   }
+      var drawChart31 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '31-'+perguntas['P31__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv31'));
+          chart.draw(data, options);
+  }
+        var drawChart32 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '32-'+perguntas['P32__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv32'));
+          chart.draw(data, options);
+  }
+        var drawChart33 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '33-'+perguntas['P33__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv33'));
+          chart.draw(data, options);
+  }
+        var drawChart34 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '34-'+perguntas['P34__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv34'));
+          chart.draw(data, options);
+  }
+        var drawChart35 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '35-'+perguntas['P35__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv35'));
+          chart.draw(data, options);
+  }
+        var drawChart36 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '36-'+perguntas['P36__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv36'));
+          chart.draw(data, options);
+  }
+        var drawChart37 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '37-'+perguntas['P37__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv37'));
+          chart.draw(data, options);
+  }
+        var drawChart38 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '38-'+perguntas['P38__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv38'));
+          chart.draw(data, options);
+  }
+        var drawChart39 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '39-'+perguntas['P39__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv39'));
+          chart.draw(data, options);
+  }
+        var drawChart40 = function(withData) {
+          var data = google.visualization.arrayToDataTable(withData);
+          var options = {
+            title: '40-'+perguntas['P40__'].texto,
+            hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+	  var chart = new google.visualization.PieChart(document.getElementById('bellChartDiv40'));
+          chart.draw(data, options);
+  }
+  
