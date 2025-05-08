@@ -1236,7 +1236,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
 
           var options = {
-            title: perguntas['P03__'].texto,
+            title: perguntas['P03'].texto,
             hAxis: {title: 'Bairro',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0},
             colors: ['#008000', '#c6693e', '#cc8f6e', '#f3b49f', '#f6c7b6'
@@ -1257,7 +1257,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
 
           var options = {
-            title: '04-'+perguntas['P04__'].texto,
+            title: '04-'+perguntas['P04'].texto,
             hAxis: {title: 'Sexo',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1270,7 +1270,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: '05-'+perguntas['P05__'].texto,
+            title: '05-'+perguntas['P05'].texto,
             hAxis: {title: 'idade',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1309,7 +1309,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData); 
   
           var options = {
-            title: '06-'+perguntas['P06__'].texto,
+            title: '06-'+perguntas['P06'].texto,
             hAxis: {title: 'Instrução',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1322,7 +1322,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
    
           var options = {
-            title: '07-'+perguntas['P07__'].texto,
+            title: '07-'+perguntas['P07'].texto,
             hAxis: {title: 'Profissão',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1335,7 +1335,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: '08-'+perguntas['P08__'].texto,
+            title: '08-'+perguntas['P08'].texto,
             hAxis: {title: 'Religião',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1348,7 +1348,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: '09-'+perguntas['P09__'].texto,
+            title: '09-'+perguntas['P09'].texto,
             hAxis: {title: 'Renda',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1361,7 +1361,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
           var data = google.visualization.arrayToDataTable(withData);
   
           var options = {
-            title: '10-'+perguntas['P10__'].texto,
+            title: '10-'+perguntas['P10'].texto,
             hAxis: {title: 'Mídia',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1374,7 +1374,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart11 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '11-'+perguntas['P11__'].texto,
+            title: '11-'+perguntas['P11'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1387,7 +1387,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart12 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '12-'+perguntas['P12__'].texto,
+            title: '12-'+perguntas['P12'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1400,7 +1400,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart13 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '13-'+perguntas['P13__'].texto,
+            title: '13-'+perguntas['P13'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1413,7 +1413,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart14 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '14-'+perguntas['P14__'].texto,
+            title: '14-'+perguntas['P14'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1426,7 +1426,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart15 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '15-'+perguntas['P15__'].texto,
+            title: '15-'+perguntas['P15'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1439,7 +1439,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart16 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '16-'+perguntas['P16__'].texto,
+            title: '16-'+perguntas['P16'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1452,7 +1452,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart17 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '17-'+perguntas['P17__'].texto,
+            title: '17-'+perguntas['P17'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1465,7 +1465,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart18 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '18-'+perguntas['P18__'].texto,
+            title: '18-'+perguntas['P18'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1478,7 +1478,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart19 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '19-'+perguntas['P19__'].texto,
+            title: '19-'+perguntas['P19'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1491,7 +1491,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart20 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '20-'+perguntas['P20__'].texto,
+            title: '20-'+perguntas['P20'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1504,7 +1504,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart21 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '21-'+perguntas['P21__'].texto,
+            title: '21-'+perguntas['P21'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1517,7 +1517,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart22 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '22-'+perguntas['P22__'].texto,
+            title: '22-'+perguntas['P22'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1530,7 +1530,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart23 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '23-'+perguntas['P23__'].texto,
+            title: '23-'+perguntas['P23'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1543,7 +1543,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart24 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '24-'+perguntas['P24__'].texto,
+            title: '24-'+perguntas['P24'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1556,7 +1556,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart25 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '25-'+perguntas['P25__'].texto,
+            title: '25-'+perguntas['P25'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1569,7 +1569,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart26 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '26-'+perguntas['P26__'].texto,
+            title: '26-'+perguntas['P26'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1582,7 +1582,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart27 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '27-'+perguntas['P27__'].texto,
+            title: '27-'+perguntas['P27'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1595,7 +1595,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart28 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '28-'+perguntas['P28__'].texto,
+            title: '28-'+perguntas['P28'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1608,7 +1608,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart29 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '29-'+perguntas['P29__'].texto,
+            title: '29-'+perguntas['P29'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1621,7 +1621,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
     var drawChart30 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '30-'+perguntas['P30__'].texto,
+            title: '30-'+perguntas['P30'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1634,7 +1634,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
       var drawChart31 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '31-'+perguntas['P31__'].texto,
+            title: '31-'+perguntas['P31'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1644,7 +1644,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart32 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '32-'+perguntas['P32__'].texto,
+            title: '32-'+perguntas['P32'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1654,7 +1654,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart33 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '33-'+perguntas['P33__'].texto,
+            title: '33-'+perguntas['P33'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1664,7 +1664,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart34 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '34-'+perguntas['P34__'].texto,
+            title: '34-'+perguntas['P34'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1674,7 +1674,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart35 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '35-'+perguntas['P35__'].texto,
+            title: '35-'+perguntas['P35'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1684,7 +1684,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart36 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '36-'+perguntas['P36__'].texto,
+            title: '36-'+perguntas['P36'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1694,7 +1694,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart37 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '37-'+perguntas['P37__'].texto,
+            title: '37-'+perguntas['P37'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1704,7 +1704,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart38 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '38-'+perguntas['P38__'].texto,
+            title: '38-'+perguntas['P38'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1714,7 +1714,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart39 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '39-'+perguntas['P39__'].texto,
+            title: '39-'+perguntas['P39'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -1724,7 +1724,7 @@ greeting.innerHTML += '<p>A new paragraph</p>';
         var drawChart40 = function(withData) {
           var data = google.visualization.arrayToDataTable(withData);
           var options = {
-            title: '40-'+perguntas['P40__'].texto,
+            title: '40-'+perguntas['P40'].texto,
             hAxis: {title: '.',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
